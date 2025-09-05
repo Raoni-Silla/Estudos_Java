@@ -1,0 +1,11 @@
+package Fundamentos;
+
+public class ConversaoTiposPrimitivos {
+    public static void main(String[] args) {
+        // double > int
+        double a = 1; // aqui houve uma conversão implicita de um inteiro indo pra um ponto flutuante
+        // conversão explicita de double pra float
+        float b = (float)1.0; //o literal é do tipo double, entao tem que especificar colocando a letra f ou fazendo cast
+
+    }
+}

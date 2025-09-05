@@ -99,3 +99,12 @@ todoquando vc cria objetos de uma determinada classes nele vai ter comportamento
 wrapper é uma classe que dentro dela tem um tipo primitivo,q quando voce envolve um tipo primitico com wrapper
 esse tipo passa a ter comportamentos de um objeto, podendo usar a notação ponto pra acessar certos comportamentos
 pra cada versão do tipo primitivo tem uma versão orientada a objetos com comportametnos e atributos
+
+
+conversão de tipos primitivos
+
+byte>shorte>int>long -> convertendo assim voce não perde informações, do menor pro maior
+long>int>short>byte -> assim voce tem que dar uma permissão explicita pro java
+
+float > inteiro -> voce perde informações apos a virgula, agora ao contrario não tem problema de int > float
+as conversões forçadas são explicitas e as não forçadas são implicitas, java nao analisa valor e sim o tipo
