@@ -62,4 +62,25 @@ Import:
  java ja vem com tudo padrão pra rolar e ser executado, se vocẽ precisar de coisas a mais
  voce precisa importar bibliotecas, voce só pode usar a data, importando a biblioteca util e date, pois nao vem
  como bibliotecas padrões da linguagem
+ #Strings:
+ 13:00 uma string é uma forma mais maleavel de se manusear frases em java, tendo varios metodos
+ pra utilizar nela como .lenght() que diz o tamamnho daquela string, ou um metodo endwith que verifica se a ultima palavra
+ é oque voce colocar nos parenteses como criterio, o starts with funciona da mesma forma so que com o começo
+ a frase termina com tal palavra, uso o end with, tem o indexof que vai te dizer em qual indice do vetor se encontra o começo da palavra que voce passar pra ele
+ substring que quebra a string pegando um indice de inicio e de fim, pra te retornar partes dela
+
+ler e imprimir dados do usuario 13:30:
+
+usa-se o Scanner para ler dados
+
+Scanner nome_do_scanner = new Scanner (tipo de leitura que ele fara);
+no caso seria Scanner cin = new Scanner (System.in); o System.in diz que ele fara a leitura da entrada de dados atraves do teclado
+lembrar sempre de fechar o scanner pra economizar recursos com nome_do_scanner.close
+
+pra imprimir podemos ter algumas formas
+System.out.println("quebra a linha");
+System.out.printf("melhor pra se imprimir strings de forma formatada")
+%d para inteiros, %f para reais e %s para string, o %f da pra ajustar as casas decimais que o numero tera no output pro console
+como %.2f;
+
 
