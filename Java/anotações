@@ -1,0 +1,58 @@
+Revisão do conteudo 04 setembro, 2025
+
+ontem estudei sobre java, a introdução da linguagem java, coisas basicas sobre como
+oque é um algoritimo, que na minha explicação atraves do meu entendimento seria, passos a passos que voce usa para a resolução
+de um problema, podendo ter passos que só acontecem se outra condição acontecer, ou passos que se repetem até determinada situa
+ção for atingida
+
+então um algoritimo recebe entradas, as entradas vão para o processamento (algoritimo), dali gera um dado de saida
+esse é o tipo mais comum de algoritimo visto, porem existe algoritimos que só recebem entrada mas não tem saida apos
+processamento(algoritimo), tem aqueles que só tem saida, e aqueles que são mais esquisitos ainda que nao possuem entada
+nem saida de dados
+
+#Estrutura de dados
+uma estrutura de dados serve para organizar e admnistrar os dados
+podendo ser um exemplo de estrutura de dados
+--listas (ordenadas ou não ordenadas)
+--filas (FIFO)
+--pilhas (LIFO)
+--arvore
+--int, real char, variaveis e constates e operação
+
+#TERMINAL
+um terminal é uma forma de conversar com o So de forma direta atraves de linhas de comandos
+um terminal quando aberto ele sempre vai apontar para a pasta raiz da sua maquina
+como meu exemplo raoni@PcRaoni:~$
+o comando LS, lista os arquivos que estão na pasta apontada pelo terminal no momento
+o comando PWD(print work directory) printa o caminho de pastas para o diretorio que voce esta agora
+LS -A mostra todos os arquivos escondidos
+LS -L mostra a versão longa do ls normal, trazendo mais informações
+podendo juntar as duas LS -AL
+cd (change directory) muda o diretorio atual da maquina
+clear limpa o terminal
+mkdir cria uma pasta nova
+RMDIR remove as pastas
+rm remove arquivos
+
+#FUNDAMENTOS
+src -> source, fonte, pasta raiz do codigo java, onde vai ficar guardado os pacotes e as classes
+package -> um pacote que agrupa e organiza as suas classes de função parecida em java
+como por exemplo se tivessemos um projeto chamado clinica
+teriamos um package de pessoas por exemplo
+dentro dele teriamos a seguinte ordem package pessoas > medico.java, paciente.java, atendente.java
+todas são class do nosso arquvio java, ficariam dentro dos packages organizados por funções parecidas
+#TIPOS PRIMITIVOS
+Inteiros:
+Short
+Byte
+Long
+Int
+reais:
+Float
+Double
+
+char -> 1 caracteres
+boolean -> false or true
+
+hoje sexta, setembro 5, 2025
+
