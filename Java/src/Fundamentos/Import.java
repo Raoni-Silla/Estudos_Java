@@ -12,3 +12,7 @@ public class Import {
         JButton botao = new JButton();
     }
 }
+/*o import traz bibliotecas de fora, como se fossem peças de um carro novo
+* java ja vem com tudo padrão pra rolar e ser executado, se vocẽ precisar de coisas a mais
+* voce precisa importar bibliotecas, voce só pode usar a data, importando a biblioteca util e date, pois nao vem
+* como bibliotecas padrões da linguagem  */
