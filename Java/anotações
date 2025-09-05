@@ -83,4 +83,19 @@ System.out.printf("melhor pra se imprimir strings de forma formatada")
 %d para inteiros, %f para reais e %s para string, o %f da pra ajustar as casas decimais que o numero tera no output pro console
 como %.2f;
 
+14:26: Primitivos vs objetos:
+a string é uma classe assim como primitivovsobjeto tbm é
 
+no momento que vc cria um valor pra uma classe, nos dizemos que esse valor criado para classe é um objeto, tendo atributos e comportamentos
+comportamento do objeto string que foi criado com valor texto
+
+voce nao tem nenhum comportamento associado a um tipo primitivo
+o tipo primitivo só carrega dentro dele um valor
+mas se eu precisar que um valor numerico tenha um comportamento associado
+ai se usa wrappers, aquilo que envolve, versao objeto dos tipos primitivos. e pra cada tipo tem wrappers
+tudo em java é baseado em classes com exceções de tipos primitivos
+todoquando vc cria objetos de uma determinada classes nele vai ter comportamentos e atributos
+
+wrapper é uma classe que dentro dela tem um tipo primitivo,q quando voce envolve um tipo primitico com wrapper
+esse tipo passa a ter comportamentos de um objeto, podendo usar a notação ponto pra acessar certos comportamentos
+pra cada versão do tipo primitivo tem uma versão orientada a objetos com comportametnos e atributos
