@@ -1,4 +1,4 @@
-package Fundamentos;
+package Fundamentos.basico;
 import javax.swing.*;
 import java.util.Date;
 public class Import {

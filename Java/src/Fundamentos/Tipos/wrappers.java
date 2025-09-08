@@ -1,4 +1,4 @@
-package Fundamentos;
+package Fundamentos.Tipos;
 
 public class wrappers {
     public static void main(String[] args) {

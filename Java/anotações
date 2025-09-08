@@ -53,7 +53,7 @@ Double
 
 char -> 1 caracteres
 boolean -> false or true
-
+------------------------------
 hoje sexta, setembro 5, 2025
 
 Import:
@@ -109,7 +109,10 @@ long>int>short>byte -> assim voce tem que dar uma permissão explicita pro java
 float > inteiro -> voce perde informações apos a virgula, agora ao contrario não tem problema de int > float
 as conversões forçadas são explicitas e as não forçadas são implicitas, java nao analisa valor e sim o tipo
 
+
+-------------------------------------
 Hoje Segunda, setembro 8, 2025 10:24:
+
 Conversão de string pra tipos numericos e vice e versa:
 Double.parseDouble(vl1); converte de string para numero, tem que tomar cuidado com a perca de alguns dados
 ystem.out.println(n1.toString().length()); o integer tranforma apartir de metodos para string
@@ -120,6 +123,7 @@ unarios, binarios e ternarios
 
 a soma é um operador binario por exemplo, pois precisamos de um valor antes e depois
 aritmeticos
+sao todos como +,-,/,% e todos outros que retornem calculos matematicos
 relacionais
 logicos
 atribuição

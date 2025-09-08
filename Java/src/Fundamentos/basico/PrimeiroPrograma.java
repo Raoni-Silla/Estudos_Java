@@ -1,4 +1,4 @@
-package Fundamentos;
+package Fundamentos.basico;
 
 public class PrimeiroPrograma {
     //no java o main é a porta de entrada
