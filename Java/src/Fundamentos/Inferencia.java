@@ -13,7 +13,7 @@ public class Inferencia {
         System.out.println(c);
 
         // quando se tem uma inferencia não pode se mudar o valor, sempre sendo de um determinado tipo e esse nunca ira mudar
-       // c = 7; isso da erro, porque o java ja entendeu que a variavel "c" é string
+        //c = 7; isso da erro, porque o java ja entendeu que a variavel "c" é string
 
         double d; // variavel declarada
         d = 123.65; // inicializada
