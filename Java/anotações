@@ -147,3 +147,5 @@ ja a jdk java development kit, é um kit de desenvolvimento java, ele vem com co
 
 estruturas de repetições 15:38:
 o laço ideal para se usar quanto se tem algo determinado pra quando acabar é o for
+e pra quando for indeterminado é melhor se usar o while
+ja o do while, o do executa primeiro e o while depois testa a condição pra executar denovo, mas pelo menos uma vez ee é executado
