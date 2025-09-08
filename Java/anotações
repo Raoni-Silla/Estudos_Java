@@ -130,3 +130,7 @@ atribuição
 quanto o operador vem antes do operando é prefix ++a
 quando vem apos do operando é postfix a++
 e quando o operando estiver no meio de dois operandos se usa infix 3 + 2
+
+na comparação de string se usa equals, e trim para tirar os espaços em branco, e equals para comparar o conteudo da string
+sempre comparar qualquer objeto com equals para comparar o valor e nao ==, porque pra objetos em java o == confere se esses objetos
+estao guardados no mesmo lugar da memoria
