@@ -111,3 +111,18 @@ as conversões forçadas são explicitas e as não forçadas são implicitas, ja
 
 Hoje Segunda, setembro 8, 2025 10:24:
 Conversão de string pra tipos numericos e vice e versa:
+Double.parseDouble(vl1); converte de string para numero, tem que tomar cuidado com a perca de alguns dados
+ystem.out.println(n1.toString().length()); o integer tranforma apartir de metodos para string
+System.out.println(Integer.toString(n2));
+
+operadores em java 11:50:
+unarios, binarios e ternarios
+
+a soma é um operador binario por exemplo, pois precisamos de um valor antes e depois
+aritmeticos
+relacionais
+logicos
+atribuição
+quanto o operador vem antes do operando é prefix ++a
+quando vem apos do operando é postfix a++
+e quando o operando estiver no meio de dois operandos se usa infix 3 + 2
