@@ -134,3 +134,14 @@ e quando o operando estiver no meio de dois operandos se usa infix 3 + 2
 na comparação de string se usa equals, e trim para tirar os espaços em branco, e equals para comparar o conteudo da string
 sempre comparar qualquer objeto com equals para comparar o valor e nao ==, porque pra objetos em java o == confere se esses objetos
 estao guardados no mesmo lugar da memoria
+
+13:30desafio calculadora concluida
+
+14:42:
+jre vs jdk
+
+jre java runtime enviroment, é uma aplicação java que voce precisa ter no seu dispositivo para usar java em sua maquina, pois ele instala uma jvm na sua maquina
+essa jvm le o arquivo que foi compilado pelo javac.class(bytecode) que é enviado para ela e retorna um arquivo.exe pro seu So
+
+ja a jdk java development kit, é um kit de desenvolvimento java, ele vem com coisas muito uteis para o desenvolvedor java
+
