@@ -17,7 +17,7 @@ public class DesafioCalculadoraUm {
         String opr = JOptionPane.showInputDialog ("Digite a operação desejada:(+,-,/,*): ");
         double resultado;
          resultado = "+".equals(opr) ? numero1 + n2 : 0;
-         resultado = "-".equals(opr) ? numero1 - n2 : resultado;
+         resultado = "-".equals(opr) ? numero1 - n2 : resultado; // aqui caso o resultado do ternario de cima seja 0, o resultado fica como 0, se nao fica como o resultado da adição e assim por diante
          resultado = "/".equals(opr) ? numero1 / n2 : resultado;
          resultado = "*".equals(opr) ? numero1 * n2 : resultado;
 
