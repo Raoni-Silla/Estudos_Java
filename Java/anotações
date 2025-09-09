@@ -151,3 +151,11 @@ e pra quando for indeterminado é melhor se usar o while
 ja o do while, o do executa primeiro e o while depois testa a condição pra executar denovo, mas pelo menos uma vez ee é executado
 
 Hoje terça, setembro 9, 10:52
+o uso do switch vem de uma parte se passa o valor e os casos que podem ter de acordo com o valor guardado naquela variavel
+lembrar de usar o break pra quebrar o codigo pra proxima linha
+
+tbm da pra usar string pra manipular o for como
+        for (String v = "#"; !v.equals("#####");v+="#"){
+            System.out.println(v);
+        }
+aqui se cria uma string v, e equanto a string v for diferente de 5 # ele concatena mais uma # no final e imprime na tela
