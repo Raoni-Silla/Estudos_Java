@@ -159,3 +159,4 @@ tbm da pra usar string pra manipular o for como
             System.out.println(v);
         }
 aqui se cria uma string v, e equanto a string v for diferente de 5 # ele concatena mais uma # no final e imprime na tela
+o break não se usa toda hora, usa-se uma vez ou outra em situações especificas, se nao ele causa má leitura no codigo
