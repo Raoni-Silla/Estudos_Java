@@ -242,3 +242,30 @@ apartir do ponto vc consegue acessar seus mebros, seja variavel, metodo
 System.out.prinf("")
 O print é um membro do out q por sua vez é um mebro do system, notação ponto é a forma que voce tem pra acessar membro de um objeto ou membros de uma classe
 
+
+metodos:
+recebem entradas e saidas
+recebem apenas entradas
+apenas saida
+e nao recebem nem saem
+
+nomeMetodo (metodo camelCase)
+tipo que o metodo vai retornar nomeMetodo(); <- nao recebe parametro {
+        algoritimos, sequencia de passos;
+        retorno do metodo,
+
+      caso um metodo nao retorne nada é void
+      nao recebe entrada nem saida
+      void nomeMetodo (){}
+
+tipo de retorno nome (parametros de entrada){}
+um metodo que recebe dois parametros para somar
+
+//recebe dois parametros de entrada e retorna um parametro
+int somarNum (int n1, int n2){
+        int resultado = n1 + n2;
+       return resultado; voce precisa retornar um inteiro
+}
+}
+}
+}
