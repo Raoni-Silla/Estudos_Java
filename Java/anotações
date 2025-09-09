@@ -231,4 +231,14 @@ metodos
 classes
 dentro de uma classe voce pode definir quantos metodos forem necessarios
 
+nos temos atributos que podem ser de classe ou objeto, e diversas outras coisas que podem ser de classe ou objeto
+oque vai diferenciar se um atributo é de classe ou objeto é a palavra static, a palavra static diz que aquela variavel vai pertencer ao objeto, constantes tbm e metodos tbm
+adicionando a palavra static voce pode dizer que um objeto pertence a class
+
+acessar os membros...
+
+objeto.membro, se usa a notação ponto para acessar os metodos do objeto, acessando os membros que pertencem a um objeto ou uma classe
+apartir do ponto vc consegue acessar seus mebros, seja variavel, metodo
+System.out.prinf("")
+O print é um membro do out q por sua vez é um mebro do system, notação ponto é a forma que voce tem pra acessar membro de um objeto ou membros de uma classe
 
