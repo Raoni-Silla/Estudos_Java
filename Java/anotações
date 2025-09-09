@@ -269,7 +269,35 @@ int somarNum (int n1, int n2){
        nomeMetodo (tipo nome, tipo nome) <- define a identidade do metodo
        pro java oque importa é se os parametros são diferentes, mesmo tendo o mesmo nome
        ele vai diferenciar um metodo do outro pela qntd de parametros
+
+       é mais interessante usar return do que o void que nao retorna nada, porque quando nao tem return ela fica presa ao terminal para funcionar
+
+       construtor voce pode ter mais de um, sendo eles metodos especiais que criam novos objetos
+       apartir de uma classe
+
+       quando se cria uma classe chamada produto, essa clase tera um construtor de mesmo nome
+       tbm chamado produto nome da classe == nome do construtor
+       o construtor padrão java, é o construtor que nao recebe nenhum parametro
+                        /////////  <- conhecida como construtor padrão pois nao recebe parametros
+       Produto p1 = new Produto ();
+       Produto p1 = new Produto (2);
+
+       quando voce define um outro construtor de forma explicita, o construtor padrão n vai existir mais
+
+       class Produto {
+
+       Produto (int a){
+
+       definido construtor de forma explicita, oque distingue um metodo de um construtor é a ausencia de um retorno
+
+
+       }
+
+
+       }
+       }
 }
 }
 }
 }
+parei em construtores 16:40 fim do dia
