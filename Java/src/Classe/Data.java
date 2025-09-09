@@ -1,19 +1,13 @@
 package Classe;
 
 public class Data {
-    Integer dia;
-    Integer mes;
-    Integer ano;
+    int dia;
+    int mes;
+    int ano;
 
     String obterDataFormatada (){
 
-       String diaS = dia.toString();
-       String mesS = mes.toString();
-       String anoS = ano.toString();
-
-       String dataFormatada = diaS + "/" + mesS + "/" + anoS;
-
-       return dataFormatada;
+        return String.format("%d/%d/%d", dia, mes, ano); //o metodo format formata como se fosse um printf
 
     }
 }
