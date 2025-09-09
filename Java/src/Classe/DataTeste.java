@@ -11,20 +11,24 @@ public class DataTeste {
 
 
             System.out.println("Digite o dia da primeira data:");
-            data1.dia = cin.nextLine();
+            data1.dia = cin.nextInt();
             System.out.println("Digite o mes da primeira data:");
-            data1.mes = cin.nextLine();
+            data1.mes = cin.nextInt();
             System.out.println("Digite o ano da  primeira data:");
-            data1.ano = cin.nextLine();
+            data1.ano = cin.nextInt();
             System.out.println("Digite o dia da segunda data:");
-            data2.dia = cin.nextLine();
+            data2.dia = cin.nextInt();
             System.out.println("Digite o mes da segunda data:");
-            data2.mes = cin.nextLine();
+            data2.mes = cin.nextInt();
             System.out.println("Digite o ano segunda data:");
-            data2.ano = cin.nextLine();
+            data2.ano = cin.nextInt();
 
-        System.out.println("primeira data dia:"+ data1.dia + " do mes " + data1.mes + " do ano "+ data1.ano);
-        System.out.println("segunda data dia:"+ data2.dia + " do mes " + data2.mes + " do ano "+ data2.ano);
+        String dataformatada1 = data1.obterDataFormatada();
+        String dataformatada2 =  data2.obterDataFormatada();
+
+        System.out.println(dataformatada1);
+        System.out.println(dataformatada2);
+
         cin.close();
     }
 }

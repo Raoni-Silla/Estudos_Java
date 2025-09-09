@@ -265,6 +265,10 @@ um metodo que recebe dois parametros para somar
 int somarNum (int n1, int n2){
         int resultado = n1 + n2;
        return resultado; voce precisa retornar um inteiro
+
+       nomeMetodo (tipo nome, tipo nome) <- define a identidade do metodo
+       pro java oque importa é se os parametros são diferentes, mesmo tendo o mesmo nome
+       ele vai diferenciar um metodo do outro pela qntd de parametros
 }
 }
 }

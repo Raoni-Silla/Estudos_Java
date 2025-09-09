@@ -22,8 +22,13 @@ public class ProdutoTeste {
         System.out.println(p2.nome);
         System.out.println(p1.nome);
 
-        double preco_fim1 = p1.preco * (1 - p1.desconto);
+        double preco_fim1 = p1.precoComDesconto(0);
+        double preco_fim2 = p2.precoComDesconto();
+
         System.out.println(preco_fim1);
+        System.out.println(preco_fim2);
+
+
         //criei um tipo de estrutura de dados com 3 atributos, e instanciei 2 objetos com o tipo produto atraves
         //do construtor new (metodo especial)
     }

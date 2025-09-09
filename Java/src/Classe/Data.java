@@ -1,7 +1,19 @@
 package Classe;
 
 public class Data {
-    String dia;
-    String mes;
-    String ano;
+    Integer dia;
+    Integer mes;
+    Integer ano;
+
+    String obterDataFormatada (){
+
+       String diaS = dia.toString();
+       String mesS = mes.toString();
+       String anoS = ano.toString();
+
+       String dataFormatada = diaS + "/" + mesS + "/" + anoS;
+
+       return dataFormatada;
+
+    }
 }
