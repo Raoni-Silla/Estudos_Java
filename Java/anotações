@@ -150,6 +150,7 @@ o laço ideal para se usar quanto se tem algo determinado pra quando acabar é o
 e pra quando for indeterminado é melhor se usar o while
 ja o do while, o do executa primeiro e o while depois testa a condição pra executar denovo, mas pelo menos uma vez ee é executado
 
+----------------------------------------------------------
 Hoje terça, setembro 9, 10:52
 o uso do switch vem de uma parte se passa o valor e os casos que podem ter de acordo com o valor guardado naquela variavel
 lembrar de usar o break pra quebrar o codigo pra proxima linha
@@ -161,3 +162,73 @@ tbm da pra usar string pra manipular o for como
 aqui se cria uma string v, e equanto a string v for diferente de 5 # ele concatena mais uma # no final e imprime na tela
 o break não se usa toda hora, usa-se uma vez ou outra em situações especificas, se nao ele causa má leitura no codigo
 evitar principalmente o break rotulado e do continue rotulado, evitar ao maximo pois quebra o entedimento de maneira facil e dinamica do seu codigo
+
+13:30 acabei todos os exercicios do final do modulo de estrutura de repetição
+comecei o modulo java poo
+até agora :
+quando de cria um produto.java, por padrão ele fica dentro de um pacote pra organizar
+quando se cria um arquivo .java, dentro desse arquivo se cria automaticamente uma classe com mesmo nome la dentro
+public class Produto {}
+quando se tem uma classe publica, o nome da classe reflete o nome do arquivo, em lock ou nao tudo igual o nome
+dentro de um programa so tem um metodo main, uma classe que tera o metodo main
+uma classe define um bloco de codigo
+quando se tem public class Produto {bloco de codigo, que aqui dentro vem o metodo main}
+uma classe define um bloco de codigo
+quando a classe é publica tem a amarração do nome do arquivo com o nome da classe
+Classe vs Objeto:
+Anatomia de uma classe
+modificadores class Nome(convenção CamelCase) variações {
+
+    //corpo
+
+    dentro do corpo da classe temos
+    atributos(caracteristicas) e comportamentos(oque tal coisa faz)
+    atributos são dados e comportamentos são metodos
+    podemos ter dados com estrutura de dados de diversos tipos, como int, boolean, Date, String, Integer
+    comportamentos
+    no mundo real temos objetos com atributos e comportamentos que podem se relacionar entre si
+    uma mae pode ter varios filhos
+    um aluno pode fazer varios cursos
+    como os objetos interagem e se relacionem entre si ?
+    atributos e comportamentos = membros da classe
+
+    dentro de uma unica estrutura posso agrupar atributos e comportamentos
+
+    é uma forma de trazer o mundo real pro software
+    uma classe define um tipo - > é uma estrutura de dados personalizada sua
+
+    classe representa uma abstração - simplificação pega o cenario real com todas as complexidades e traz pro sftw de forma simplificada
+    a abstração de um produto pra um sftw x pode ser diferente pra outro sftw y, dependendo do grau de complexidade do sftw e produto que voce trabalha
+    a classe representa uma simplificação do mundo real
+
+    ja que definimos que a classe é uma estrutura de dados, obviamente uma hora ela vai definir um dado
+    esses dados definidos pela classe são os objetos dessa classe
+    posso ter varios objetos de uma mesma classe, aonde nao muda a estrutura mas os valores associados aos atributos(caracteristicas)
+
+    objeto são os dados criados apartir da estrutura de dados de uma classe
+    entao classe é um tipo e objetos são dados
+
+    objetos = instancia tbm, criei 10 objetos de um tipo produto, entao posso dizer que acabei de instanciar 10 objetos do tipo produto
+    instanciar e instancia são sinonimos de objeto
+    eu instanciei apartir da classe produto, os objetos soja, arroz e bolacha
+    instancia == objeto
+
+   a classe instancia varios objetos, podendo ter varios objetos apartir do mesmo molde
+}
+
+se eu tivesse uma classe produto, essa classe teria nome, preço e desconto, 3 atributos, e esses atributos teram tipos
+String nome, float preço e int desconto, quando eu crio um objeto apartir dessa classe, os objetos teram os mesmos atributos
+notebool, 4.200,15%, todos tem os mesmos dados porque vieram da mesma estrutura de dados
+
+o construtor é um metodo especial, que é responsavel que apartir de uma classe instanciar objetos
+o new por exemplo chama o construtor, o construtor é um metodo que apartir de uma classe cria objetos
+
+membros de uma classe 14:19:
+classe:
+variaveis/constantes
+construtor
+metodos
+classes
+dentro de uma classe voce pode definir quantos metodos forem necessarios
+
+
