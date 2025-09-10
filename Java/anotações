@@ -374,3 +374,9 @@ e em objetos é por referencia, aonde elas apontam para o mesmo objeto em memori
 se eu passo um objeto como parametro pra um metodo, esse objeto tbm é passado por referencia
 nao passa um clone do objeto, mas uma referencia, e se dentro desse metodo eu mexer nesses dados
 quando esse metodo terminar, quem mandou esse objeto vai perceber uma mudança
+
+entao quando eu passo um objeto pra um metodo, ele referencia o endereço do objeto e muda o valor do mesmo
+ja com tipos primitivos passados a um metodo , elas duplicam o valor da variavel mas nao altera o valor original
+
+
+this, sempre que eu quero acessar uma variavel que pertence a uma instancia eu posso usar this.nome da variavel
