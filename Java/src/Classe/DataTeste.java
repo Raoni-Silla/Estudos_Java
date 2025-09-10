@@ -29,6 +29,17 @@ public class DataTeste {
         System.out.println(dataformatada1);
         System.out.println(dataformatada2);
 
+
+
+
+        //objetos com construtores diferentes:
+        System.out.println("Construtores diferentes: ");
+        Data data3 = new Data(); //instancia uma data com construtor padrao
+        String data3formatada = data3.obterDataFormatada(); //chamo o metodo data formatada para formatar a data padrao
+        System.out.println(data3formatada); //imprimo
+        Data data4 = new Data(05,06,2006); //chamo o outro construtor, e passo os valores pra ele
+        String data4formatada = data4.obterDataFormatada(); //formato no metodo
+        System.out.println(data4formatada);//chamo o print
         cin.close();
     }
 }

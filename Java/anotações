@@ -303,3 +303,7 @@ int somarNum (int n1, int n2){
 parei em construtores 16:40 fim do dia
 
 quarta, setembro 10, 10:40
+
+o construtor instancia um objeto, ele inicializa o objeto, entao voce diz o tipo do objeto criado
+Produto nome do objeto = new Produto(); <- entao a ordem cria um objeto do tipo produto, aonde o new vai alocar o espaço na memoria para o construtor instanciar o novo objeto
+
