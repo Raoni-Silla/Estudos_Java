@@ -380,3 +380,23 @@ ja com tipos primitivos passados a um metodo , elas duplicam o valor da variavel
 
 
 this, sempre que eu quero acessar uma variavel que pertence a uma instancia eu posso usar this.nome da variavel
+
+quando crio uma variavel do tipos int é 0, dos tipos float é 0.0, e boolean é false e do char é '\u000'
+valor padrão é dado quando nao se define nada
+quando defino uma variavel local e vou usar o valor da variavel a
+para imprimir, ela da errp, porque?
+variaveis definidas dentro da classe são inicializadas por padrão,
+agora variaveis definidas localmente, nao sao inicializados de forma padrao
+
+objetos são inicializados de forma nula
+String s = null; ou seja, o objeto s nao aponta pra lugar da memoria nenhum
+
+pra variaveis locais é obrigatorio a inicialização da mesma
+
+valor null:
+temos erro de compilação, que nao permite seu codigo nem rodar, de ir pra java pra .class
+um erro de codigo, alguma regra da linguagem foi violada
+temos erro de tempo de execução, ele compila mas na hora de rodar nao vai
+
+nao posso acessar atributo nem metodo de um objeto nulo, que nao aponta pra nenhum
+valor da memoria
