@@ -6,6 +6,8 @@ public class DataTeste {
     public static void main(String[] args) {
         Scanner cin = new Scanner(System.in);
 
+
+        // inicio dos estudos de construtores, classes e objetos:
         Data data1 = new Data();
         Data data2 = new Data();
 

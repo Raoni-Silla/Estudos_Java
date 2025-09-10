@@ -306,4 +306,63 @@ quarta, setembro 10, 10:40
 
 o construtor instancia um objeto, ele inicializa o objeto, entao voce diz o tipo do objeto criado
 Produto nome do objeto = new Produto(); <- entao a ordem cria um objeto do tipo produto, aonde o new vai alocar o espaço na memoria para o construtor instanciar o novo objeto
+tomar cuidados com as assinaturas de metodo
+mesmo sendo dois valores diferentes como
+Data(int dia)
+Data (int ano) <- as assinaturas são iguais, o java não diferencia o valor, ele olha apenas que sao construtores da classe data, recebendo um unico parametro inteiro, e o java nao sabe diferenciar isso
 
+membros de classe vs instancia:
+a classe DAT tem 3 atriibutos
+mes
+dia
+ano
+quando eu crio uma nova instancia da data, usando new e o construtor
+significa que eu crio uma instancia e essa instancia vao ter alguns espaços
+para serem armazenados os valores associados a instancia, significa que para cada novo objeto criado
+eu vou ter um espaço em memoria novo pra esses atributos
+data new d1 (3,10,2020)
+data new d2 (05,06,2006) para cada nova instancia que eu crio, os valores estao associados a instancia
+e qual a diferença dos atributos de classe?
+se eu vier e dizer que o dia não é mais atributo de instancia
+DATA:
+static dia <- quando eu uso o static eu digo que o valor do atributo pertence a classe, nao tendo mais um valor dia diferente para cada instancia, estando associado a classe
+mes
+ano
+
+se eu coloco static dia = 3, todas as instancias teram o mesmo dia 3 associados a elas, pois esse valor foi definido no atributo da classe
+antes que o valor era associado individualmente a atributos da instancia, se eu uso o static, esse atributo passa a pertencer a classe
+sendo padrão a objetos que vierem a ser desse tipo classe
+
+se precisa instanciar um objeto, pois so depois de instanciado voce pode acessar seus atributos
+pra acessar o static, eu posso acessar diretamente pela classe, sem criar uma instancia
+sout ("Math.PI"); <- diretamente apartir da classe uso a notação ponto sem precisar instanciar um objeto
+em vez de se ter diversas copias associadas a um atributo instanciando objetos
+com static voce joga esse valor como uma copia unica para um unico lugar da memoria
+
+valor vs referencia
+
+valor = primitivo
+referencia = objetos
+
+quando eu crio uma variavel
+int a = 2
+em memoria se cria um local chamado a com valor 2
+e depois quando vc atribui b = a, é criado outro espaço de memoria
+rotulado com o nome b, tendo tbm valor 2, é feito uma copia em memoria
+sendo assim uma copia do valor foi atribuida pra b
+
+quando eu crio um objeto Data d1 = new Data();
+neste caso se eu fizer
+Data d2 = d1; <- tbm vou ter uma area de memoria, e aqui dentro quando crio d1
+ele cria uma area de memoria rotulada com o nome da variavel d1, e o valor associado
+a essa area de memoria nao vai ser o objeto em si, vai ser o endereço, aonde ele vai apontar
+para uma area de memoria aonde de fato tem os valores de dia mes e ano, mas a variavel que tem dentro deka
+é o endereço de memoria aonde foi isntanciado o objeto
+
+a atribuição de cima, sao de tipos primitivos, um inteiro a um inteiro
+ja quando faço d2 = d1; ele cria outro endereço em memoria com rotulo d2 e copia o mesmo
+endereço de memoria de d1, foi feita uma atribuição do endereço de d1, agora d2 aponta pro mesmo
+objeto em memoria, isso é uma atribuição feita por referencia, aonde duas variaveis apontam para o mesmo
+local em memoria, se d1 alterar x valor desse espaço, d2 ira ver essa alteração e pode modificar tbm
+
+se eu instanciar d2 ele vai apontar para outro objeto em memoria e nao vai mais alterar e nem ver as alterações de d1
