@@ -366,3 +366,11 @@ objeto em memoria, isso é uma atribuição feita por referencia, aonde duas var
 local em memoria, se d1 alterar x valor desse espaço, d2 ira ver essa alteração e pode modificar tbm
 
 se eu instanciar d2 ele vai apontar para outro objeto em memoria e nao vai mais alterar e nem ver as alterações de d1
+quando voce tem um objeto que não é apontado por ninguem, ele vai ser excluido da memoria atraves do coletor lixo java
+pois quando ele nao é referenciado por nenhuma variavel, o java joga fora
+entao quando voce trabalha com tipos primitivos a associação é por valor
+e em objetos é por referencia, aonde elas apontam para o mesmo objeto em memoria
+
+se eu passo um objeto como parametro pra um metodo, esse objeto tbm é passado por referencia
+nao passa um clone do objeto, mas uma referencia, e se dentro desse metodo eu mexer nesses dados
+quando esse metodo terminar, quem mandou esse objeto vai perceber uma mudança
