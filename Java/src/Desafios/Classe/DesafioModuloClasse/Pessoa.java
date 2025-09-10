@@ -14,7 +14,7 @@ public class Pessoa {
 
    double comer (Comida comida){
 
-     return  peso += comida.peso;
+     return  this.peso += comida.peso;
 
     }
 
