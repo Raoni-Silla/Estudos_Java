@@ -12,7 +12,7 @@ public class Pessoa {
 
     }
 
-   double comer (Comida comida){
+   double comer (@org.jetbrains.annotations.NotNull Comida comida){
 
      return  this.peso += comida.peso;
 

@@ -400,3 +400,31 @@ temos erro de tempo de execução, ele compila mas na hora de rodar nao vai
 
 nao posso acessar atributo nem metodo de um objeto nulo, que nao aponta pra nenhum
 valor da memoria
+
+
+capitulo novo array:
+
+array tem um tamanho estatico, fixo, no momento de criação tem que dizer seu tamanho
+é uma estrutura unidimensional dividido em x partes, tendo que referenciar alguma variavel
+uma vez que eu atribuo um array de tamanho x a uma variavel a, esse tamanho de array nunca vai mudar
+ao nao ser que eu crie um novo array maior que o ultimo, e copie todos os dados do ultimo array para esse novo array
+assim o aumentando e associando denovo a variavel a
+
+estrutura estatica(tam fixo)
+ele é homogeneo, ou seja, se eu dizer que quero um array inteiro, todos os dados guardados la tem que ser inteiros
+array é indexado, ou seja pra acessar cada um dos elementos eu acesso apartir de um numerico inteiro, indice
+sempre começando no 0 (tam - 1)
+o array tbm é um objeto
+tendo atributos e comportamentos
+int [] a = new int[10] <- acabei de criar um array de tipo inteiro
+primeiro eu defino que o vetor é do tipo int, com nome a, chamo o new pra alocar
+espaço na memoria, e defino que o vetor de tipo inteiro [tamanho]
+a[0] = 1;
+como eu armazenei tipos primitivos nao posso usar notação ponto
+foreach: é uma estrutura de controle muito usada em controle de arrays e coleçoes
+O for-each foi projetado para apenas ler os elementos de um array ou coleção, e não para modificá-los.
+Embora tecnicamente seja possível fazer como você fez (alterar o array original dentro do laço),
+isso não é uma boa prática e pode levar a resultados inesperados, como você percebeu.
+
+fim dos estudos 16:40 -> for each parei
+
