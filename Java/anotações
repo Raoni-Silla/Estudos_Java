@@ -471,3 +471,32 @@ vamos supor que ele passou em todos os elementos, ele exclui todos os nomes com 
 e depois usa o equals para comparar com oque eu to buscando, pra comparar de forma mais profunda
 sempre que eu implementar um equals tenho que usar o hashcode
 
+instanceof
+
+objeto instanceof Usuarios
+
+o objeto passado é uma instancia de Usuario?
+
+collections, visão geral:
+mais pra frente vamos ver o STREAMapi, mas por enquanto vamos ver as bases
+
+diferente do array, as collection tem tamanho variavel, e cresce conforme os objetos adicionados
+vantagem gigantesca ao array por exemplo
+posso ter colections com dados misturados, nao sendo tao homogeneo como array
+embora as boas praticas diz que temos que ter colletctions de mesmo tipo
+as colections nao suporta tipo primitivo, tendo que usar um array ou um Wrapper(tipo primitivo envolto de um objeto)
+
+temos algumas collections
+collections são uma coleção de coisas dentro de uma estrutura, dependendo do tipo de coleções usadas abaixo
+set:
+nao ordenado
+nao indexado: nao temo como acessar pelo set o elemento pelo indice
+nao aceita repeticao:ou seja nao conseguimos colocar dois elementos dentro de um set que sao iguais
+list:
+indexado: consigo acessar os elementos por indice
+aceita repetição: posso por dados repetidos
+ordenado
+map:
+chave/valor (cpf,nome)
+chave nao aceita repetição
+valor aceita repetição, como se fosse set na chave e list no valor
