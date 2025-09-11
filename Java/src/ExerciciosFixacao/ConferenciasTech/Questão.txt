@@ -1,0 +1,141 @@
+Cenário
+
+Você foi contratado para desenvolver um sistema de linha de comando (via terminal) para gerenciar os eventos e participantes de uma grande conferência de tecnologia, a "DevSummit 2025".
+
+O sistema deve permitir criar eventos, inscrever participantes, listar quem está em cada evento e garantir que as regras de negócio (como capacidade máxima e unicidade de participantes) sejam respeitadas.
+
+Requisitos e Passos
+
+Parte 1: A Modelagem (Classes e Objetos)
+
+Você precisará criar duas classes principais para representar as entidades do seu sistema.
+
+1. Classe Participante:
+
+    Atributos (Membros de Instância):
+
+        nome (String)
+
+        email (String) - Este será o identificador único de um participante.
+
+        idade (int)
+
+        idParticipante (int) - Um número único para cada participante.
+
+    Atributo de Classe (Membro Estático):
+
+        proximoId (static int) - Use esta variável estática para gerar um idParticipante único e sequencial para cada novo participante criado. A cada novo participante instanciado, você incrementa esta variável. (Isso revisa membros de classe vs. instância).
+
+    Construtor:
+
+        Crie um construtor que receba nome, email e idade. Dentro dele, atribua os valores e gere o idParticipante usando a variável estática proximoId. Use a palavra-chave this.
+
+    equals e hashCode (Requisito Crítico):
+
+        Sobrescreva os métodos equals e hashCode. A regra de negócio é: dois participantes são considerados iguais se eles tiverem o mesmo endereço de e-mail. Isso é fundamental para evitar inscrições duplicadas.
+
+2. Classe Evento:
+
+    Atributos:
+
+        nome (String)
+
+        local (String)
+
+        capacidadeMaxima (int)
+
+        participantesInscritos (Set<Participante>) - Use um Set! Isso vai garantir, com a ajuda do equals e hashCode que você implementou, que um mesmo participante não possa se inscrever duas vezes no mesmo evento. (Revisa Collections).
+
+    Construtor:
+
+        Crie um construtor que receba o nome, o local e a capacidade máxima do evento.
+
+    Métodos (Comportamentos):
+
+        inscreverParticipante(Participante p): Um método que retorna um boolean. Ele deve:
+
+            Verificar se o evento ainda não atingiu a capacidadeMaxima.
+
+            Tentar adicionar o participante ao Set. O método add do Set já retorna true se a inserção foi bem-sucedida (ou seja, o participante não estava lá antes) e false caso contrário.
+
+            Retorne true se a inscrição foi um sucesso, false caso contrário (evento lotado ou participante já inscrito).
+
+        getVagasDisponiveis(): Retorna um int com o número de vagas restantes.
+
+        listarParticipantes(): Imprime no console os detalhes de todos os participantes inscritos. Use um laço for-each.
+
+Parte 2: O Gerenciador (Lógica Principal)
+
+Crie uma classe GerenciadorEventos que conterá o método main.
+
+1. Estrutura de Dados Principal:
+
+    Dentro da classe, mas fora do main, crie uma List<Evento> para armazenar todos os eventos criados no sistema. Use uma List (como ArrayList) porque a ordem pode ser importante e podemos ter eventos com o mesmo nome em locais diferentes.
+
+2. Lógica de Interação com o Usuário:
+
+    main:
+
+        Instancie o Scanner para ler a entrada do usuário.
+
+        Crie um laço de repetição principal (um while ou do-while) que exibirá um menu de opções e só terminará quando o usuário digitar a opção para sair.
+
+        Use uma estrutura switch para tratar a opção escolhida pelo usuário.
+
+    Menu de Opções:
+
+        Criar Evento: Peça ao usuário nome, local e capacidade. Crie um novo objeto Evento e adicione-o à sua List de eventos.
+
+        Inscrever Participante em Evento:
+
+            Mostre a lista de eventos disponíveis (iterando sobre a List com um for clássico e mostrando o índice).
+
+            Peça ao usuário para escolher um evento pelo índice.
+
+            Peça os dados do participante (nome, email, idade).
+
+            Crie um novo objeto Participante.
+
+            Chame o método inscreverParticipante() do objeto Evento escolhido.
+
+            Dê um feedback ao usuário se a inscrição foi bem-sucedida ou não. (Isso testa Arrays/Listas, Objetos, Métodos, e passagem por referência).
+
+        Listar Participantes de um Evento:
+
+            Peça ao usuário para escolher um evento.
+
+            Chame o método listarParticipantes() do evento. Use printf para formatar a saída de forma organizada em colunas (Nome, Email, ID).
+
+        Exibir Vagas Disponíveis:
+
+            Peça ao usuário para escolher um evento e mostre o resultado do método getVagasDisponiveis().
+
+        Sair.
+
+Checklist de Conceitos Revisados neste Exercício:
+
+    Fundamentos: Variáveis, tipos primitivos, Scanner, System.out.println/printf, operadores, if/else, switch, for, for-each, while.
+
+    Strings: Comparação com .equals() (implicitamente dentro da lógica do equals do Participante).
+
+    POO:
+
+        Criação de Múltiplas Classes (Participante, Evento, GerenciadorEventos).
+
+        Atributos e Métodos.
+
+        Construtores e uso do this.
+
+        Membros de Classe vs. Instância (static) com o contador proximoId.
+
+        Sobrescrita de equals() e hashCode() (conceito chave).
+
+        Valor vs. Referência (ao passar o objeto Participante para o método de inscrição).
+
+    Estruturas de Dados:
+
+        Arrays/Listas (ArrayList) para gerenciar os eventos.
+
+        Coleções (Set / HashSet) para gerenciar participantes e garantir unicidade.
+
+Este desafio irá forçá-lo a pensar não só em como escrever o código, mas em como estruturar uma solução para um problema, que é a habilidade mais importante para um desenvolvedor. Bom trabalho!
