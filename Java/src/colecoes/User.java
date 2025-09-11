@@ -16,7 +16,7 @@ public class User {
         return "meu nome é " + this.nome;
     }
 
-    @Override
+   @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
