@@ -500,3 +500,24 @@ map:
 chave/valor (cpf,nome)
 chave nao aceita repetição
 valor aceita repetição, como se fosse set na chave e list no valor
+queue:
+implementa fila (fifo)
+stack:
+implementa a pilha
+lifo
+se eu quiser adicionar um elemento a qualquer tipo de estrutura de dados acima eu uso add
+size pra pegar o tamanho, tendo muitos metodos comuns a diversas collections
+
+Set:
+pode ser homogeno (versao melhor)
+versao heterogeneo (versao nao ideal)
+nao aceita duplicados
+pode ser ordenado
+nao da pra acessar os elementos por indice
+set -> HashSet
+size () pra isso e lenght pra objetos
+list:
+melhor ser homogeneo
+aceita obj duplicado
+é ordenado
+é indexado
