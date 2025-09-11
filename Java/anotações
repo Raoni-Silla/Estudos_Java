@@ -428,3 +428,46 @@ isso não é uma boa prática e pode levar a resultados inesperados, como você 
 
 fim dos estudos 16:40 -> for each parei
 
+quinta, setembro 11, 2025
+
+lembrar de usar vetor.length pro laço, é uma forma mais correta de se usar
+pra passar por todos os itens do vetor
+
+entendendo equals e hashcode:
+
+quando se tem um objeto do tipo produto
+Produto p1 = new Produto();
+la na memoria, vou ter uma variavel p1 que vai estar associada e um endereço de memoria e aponta pro objeto instanciado
+vamos supor que p1 so tem um atributo e vc cria outro produto p2 da mesma forma
+ai vc faz p2.nome = "caneta", exatamente igual ao de cima, porem que aponta pra outro objeto da memoria
+tendo os mesmos valores nos atributo
+
+quandi eu faço 2 == 2 é um resultado que da verdadeiro
+
+p1 == p2 é uma expressão false, pq p1 ele aponta pra um endereço de memoria x e p2 aponta pro endereço de memoria y
+significa que essa igualdade, igual igual, estamos comparando endereços de memoria
+equals ta disponivel em todos os objetos em java
+
+equals
+
+se eu fazer p1.equals(p2); <-falsa, pq o endereço de memoria é diferente, se eu quiser implementar o equals eu crio essa função
+e defino o criterio de igualdade
+
+alem do equals tem outra função que eu uso pra implementar
+equals vem junto de outra função chamada hashcode
+o java tem um conjunto que dentro desse conjunto tem um elemento hashset
+o hashcode retorna int, e equals retorna true ou false
+
+se eu tenho um conjunto com varios objetos dentro, e esses conjuntos são baseados em um tipo usuario
+ai eu tenho usuarios [ana, bia, lia, cid, luna, luca, lilo] pode ter outros milhares de clientes nesse conjunto
+ai se eu quero procurar um elemento chamado bia, obviamente ele ta dentro desse conjunto mas eu nao sei aonde ta
+pra eu comparar que um usuario é igual ao outro, eu preciso de um nome e um email. o equals é mais lento
+ele compara realmente se um objeto é igual ao outro, e se eu tiver 100 mil usuarios, eu preciso chamar 100 mil vezes
+o equals, mas tendo o hashcode, muito mais rapido e separa os elementos que nao sao iguais, pra te dar apenas objetos que tem
+a possibilidade de serem iguais
+vamos supor que usemos a quantidade de letras do nome pra fazer uma busca mais rapida, se eu selecionar kiko que tem 4 letras
+tendo 100.00 elementos nesse conjunto, ele so vai usar o equals dps de separar todos com hashcode igual
+vamos supor que ele passou em todos os elementos, ele exclui todos os nomes com menos de 4 letras
+e depois usa o equals para comparar com oque eu to buscando, pra comparar de forma mais profunda
+sempre que eu implementar um equals tenho que usar o hashcode
+

@@ -10,9 +10,9 @@ public class DesafioArray {
 
         System.out.println("digite quantas notas deseja informar: ");
         int informados = cin.nextInt();
-        double notas [] = new double[informados];
+        double [] notas  = new double[informados];
 
-        for (int i = 0; i < informados; i++){
+        for (int i = 0; i < notas.length; i++){
 
             System.out.printf("Digite a nota [%d]: ", i + 1);
             notas[i] = cin.nextDouble();
