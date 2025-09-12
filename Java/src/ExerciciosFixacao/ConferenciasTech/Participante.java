@@ -30,11 +30,6 @@ public class Participante {
 
             return verificador;
 
-
         }return false;
-
-
-        // nao aprendi como fazer hashcode pratica
-
     }
 }

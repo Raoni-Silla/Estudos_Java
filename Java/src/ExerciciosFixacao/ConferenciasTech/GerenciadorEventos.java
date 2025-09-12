@@ -23,9 +23,11 @@ public class GerenciadorEventos {
 
             System.out.println("=================================");
             System.out.println("menu inicial");
-            System.out.println("-------------------------------");
+            System.out.println("---------------------------------");
             System.out.println("1.Criar evento");
             System.out.println("2.Inscrever participantes em evento");
+            System.out.println("3.Listar participantes de um evento");
+            System.out.println("4.Exibir vagas de um evento");
 
             opcao = cin.nextLine();
 
@@ -46,12 +48,59 @@ public class GerenciadorEventos {
                     System.out.println("=====================================");
                     break;
                 case "2":
-                    System.out.println("=======================================");
+                    System.out.println("\n=======================================");
                     System.out.println("Eventos abertos a inscrição: ");
                     System.out.println(eventos.size()); // ele ta contabilizando os eventos na lista
                     for (int i = 0; i < eventos.size(); i++){
-                        System.out.printf("Evento [%d] %s",i +1,eventos.get(i).nome);
+                        System.out.printf("Evento [%d] %s\n",i +1,eventos.get(i).nome );
                     }
+                    System.out.println("================================================");
+                    System.out.println("Selecione o evento que você quer se inscrever:");
+                    int optSwit = cin.nextInt();
+                    cin.nextLine();
+                    optSwit -= 1;
+                    System.out.println("insira os dados do participante abaixo: ");
+                    System.out.println("nome: ");
+                    String nomepart = cin.nextLine();
+                    System.out.println("email: ");
+                    String emailpart = cin.nextLine();
+                    System.out.println("idade: ");
+                    int idadepart = cin.nextInt();
+                    Participante participante = new Participante(nomepart,emailpart,idadepart);
+                    System.out.println("processando inscrição.......");
+                    boolean ver = eventos.get(optSwit).inscreverParticipante(participante);
+                    if (ver) {
+
+                        System.out.printf("Parabéns, você %s foi inscrito com sucesso no evento \n", nomepart);
+                    }
+                    break;
+
+                case "3":
+                    System.out.println("--------Eventos------- ");
+                    System.out.println(eventos.size()); // ele ta contabilizando os eventos na lista
+                    for (int i = 0; i < eventos.size(); i++){
+                        System.out.printf("Evento [%d] %s\n",i +1,eventos.get(i).nome );
+                    }
+                    System.out.println("================================================");
+                    System.out.println("Selecione o evento que você deseja verificar os inscritos: ");
+                    int optSwit3 = cin.nextInt();
+                    cin.nextLine();
+                    optSwit3 -= 1;
+                    eventos.get(optSwit3).listarParticipantes();
+                    break;
+                case "4":
+                    System.out.println("--------Eventos------- ");
+                    System.out.println(eventos.size()); // ele ta contabilizando os eventos na lista
+                    for (int i = 0; i < eventos.size(); i++){
+                        System.out.printf("Evento [%d] %s\n",i +1,eventos.get(i).nome );
+                    }
+                    System.out.println("================================================");
+                    System.out.println("Selecione o evento que você deseja verificar as vagas disponiveis: ");
+                    int optSwit4 = cin.nextInt();
+                    cin.nextLine();
+                    optSwit4 -= 1;
+                    int qntd = eventos.get(optSwit4).getVagasDisponiveis();
+                    System.out.println("as vagas disponiveis pro evento "+ eventos.get(optSwit4).nome + " são de: " + qntd);
 
 // ele ta dando null 2.
             }

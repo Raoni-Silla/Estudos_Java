@@ -23,8 +23,9 @@ public class User {
         return Objects.equals(nome, user.nome);
     }
 
+
     @Override
     public int hashCode() {
-        return Objects.hashCode(nome);
+        return this.nome.toLowerCase().trim().length();
     }
 }

@@ -1,5 +1,7 @@
 package ExerciciosFixacao.ConferenciasTech;
 
+import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 public class Evento {
@@ -13,6 +15,8 @@ public class Evento {
     Evento (String nome, String local, int capacidadeMax){
         this.capacidadeMax = capacidadeMax;
         this.local = local;
+        this.nome = nome;
+        this.participantesInscritos = new HashSet<>(); // inicializo o set de participanetes
     }
 
    boolean inscreverParticipante(Participante p){
@@ -21,11 +25,12 @@ public class Evento {
              participantesInscritos.add(p);
 
             System.out.println("participante inscrito com sucesso");
-            System.out.println(participantesInscritos);
+
             return true;
 
 
         }else {
+            System.out.println("ERROR:");
             System.out.println("participante não inscrito");
             System.out.println("Evento lotado");
             return false;
@@ -41,7 +46,19 @@ public class Evento {
 
         System.out.println("os participantes inscritos são: ");
         for (Participante p: participantesInscritos){
-            System.out.println(p);
+            System.out.printf(" nome: %s | idade: %d | email: %s \n",p.nome,p.idade,p.email);
         }
    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Evento evento = (Evento) o;
+        return capacidadeMax == evento.capacidadeMax && Objects.equals(nome, evento.nome) && Objects.equals(local, evento.local) && Objects.equals(participantesInscritos, evento.participantesInscritos);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome, local, capacidadeMax, participantesInscritos);
+    }
 }
