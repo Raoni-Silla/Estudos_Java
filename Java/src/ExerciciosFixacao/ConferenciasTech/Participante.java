@@ -10,12 +10,11 @@ public class Participante {
 
     //constructor
     Participante(String nome, String email, int idade){
-        //referencio que as variaves this pertecem ao atributo e nao sao parametros
         this.nome = nome;
         this.email = email;
         this.idade = idade;
-        this.idParticipante = proximoid + 1;
-
+        proximoid++; // Incrementa o contador da CLASSE
+        this.idParticipante = proximoid; // Atribui o novo valor
     }
 
     @Override
