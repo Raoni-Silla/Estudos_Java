@@ -523,3 +523,26 @@ aceita obj duplicado
 é indexado
 fila e mapa;
 hash;
+
+sexta, setembro  12, 13:38:
+
+quando eu penso em uma aplicação grande
+essa aplicação é um conjunto de classes q eu vou definir
+vou definir varias classes dentro de pacotes diferentes
+interagindo entre si
+uma dependedno da outra
+pra um projeto tao grande, voce normalmente precisa reusar codigos
+como se fosse reusar uma parte do codigo ja existente
+em cenarios reais vc cria um objeto e uma classe com fucionalidade real pra usar em outras classes
+composição:é quando eu tenho um objeto mais complexo e em vez de implementar td dentro de um objeto
+eu quebro em objeto menores
+um onjeto composto por outros onjetos
+se eu tenho um objeto do tipo carro
+e esse caro tem relação com o objeto motor
+um carro tem um motor, 1 pra 1
+se eu tenho um objeto compra e tenho a classe item
+eu tenho a relação de uma compra ter varios itens 1 pra n
+necessario a ver relacionamentos entre as classes
+um ligamento entre as classes signfica que isso é seu sistema
+voce so n pode ter um alto acoplamento entre as classes
+pois se tiver muitas ligações isso pode grar um efeito em cascata mt grande
