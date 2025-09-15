@@ -574,3 +574,6 @@ Composição é usar outras classes como
 atributo de uma classe X,
 criando um objeto da classe Y dentro de X
 e reutilizando seus métodos depois
+
+relação um pra n
+
