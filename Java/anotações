@@ -577,3 +577,8 @@ e reutilizando seus métodos depois
 
 relação um pra n
 
+entao a relação de um pra n, é a relação de um pra muitos
+se eu tiver uma biblioteca por exemplo
+eu crio uma classe livros
+e adiciono um arraylist do tipo livros na biblioteca
+assim o java ja associa que uma biblioteca tem muitos livros
