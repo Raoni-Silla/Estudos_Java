@@ -570,5 +570,7 @@ uma compra pode ter varios itens (1 pra muitos)
 nao fazer as classes dependerem demais entre si
 quanto mais relacionamentos entre as classes, mais dificl é de manter o sistema
 
-
-
+Composição é usar outras classes como
+atributo de uma classe X,
+criando um objeto da classe Y dentro de X
+e reutilizando seus métodos depois
