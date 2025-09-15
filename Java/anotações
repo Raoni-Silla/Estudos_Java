@@ -546,3 +546,29 @@ necessario a ver relacionamentos entre as classes
 um ligamento entre as classes signfica que isso é seu sistema
 voce so n pode ter um alto acoplamento entre as classes
 pois se tiver muitas ligações isso pode grar um efeito em cascata mt grande
+
+
+segunda, 15 setembro 10:56
+
+Reuso via composição
+eu tenho uma aplicação, que tem classes dependentes de outras
+que tem uma porta de entrada (main), e apartir do main ele chama cada classe
+algo muito natural é querer reusar codigo
+como calculo de imposto, vocẽ nao quer escrever a logica do calculo toda vez que for usar
+voce quer reusar ela de forma mais eficaz, voce cria um objeto e uma classe com funcionalidades
+que voce vai reusar no seu sistema
+
+composição:
+é uma forma de quebrar o objeto em outros objetos menores
+carro, é um sistema complexo, pra isso quebramos ele em partes
+portas, rodas, freio, o carro é um objeto agregador que usa outras classes
+pra se constituir, sendo composto de outros objetos
+tendo o carro, ele tem o motor, cada carro tem um motor 1 pra 1
+ja se fosse uma classe compra e uma classe itens
+uma compra pode ter varios itens (1 pra muitos)
+
+nao fazer as classes dependerem demais entre si
+quanto mais relacionamentos entre as classes, mais dificl é de manter o sistema
+
+
+
