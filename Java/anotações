@@ -630,7 +630,11 @@ tenho uma classe x que tem ligação de muitos com uma classe y
 dentro da classe x eu crio um array list de y, ou seja, apartir daquele isntante
 x tem varios y(com metodos e atributos cada), uma lista de y
 
+n pra n
 
+a relação de muitos pra muitos é composta de forma
+criando um array list de x de y, e criando um array list de y em x
+ou seja x tem varios y e y tem varios x
 
 
 
