@@ -19,4 +19,22 @@ public class ALuno {
         this.cursos.add(curso);
         curso.alunos.add(this);
     }
+
+   public String toString(){
+       return nome;
+    }
+
+    Curso obterCursoNome (String nome){
+        Curso procura = null;
+
+        for (Curso curso: this.cursos){
+            if (curso.nome.equalsIgnoreCase(nome)){
+                return curso;
+            }
+
+        }
+
+        return  null;
+    }
+
 }

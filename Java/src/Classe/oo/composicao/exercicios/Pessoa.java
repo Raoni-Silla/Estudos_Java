@@ -1,5 +1,7 @@
 package Classe.oo.composicao.exercicios;
 
+import TreinoOrganizacaoPacotes.Pessoa.Aluno;
+
 public class Pessoa {
 
     String nome;
@@ -22,8 +24,4 @@ public class Pessoa {
             System.out.printf("O numero de registro dela: %s\n", cnh.nRegistro);
             System.out.printf("você é habilitado nas categoras: %s",cnh.cat);
         }
-    }
-
-
-
-}
+    }}
