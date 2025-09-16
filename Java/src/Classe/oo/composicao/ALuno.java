@@ -4,7 +4,10 @@ import java.util.ArrayList;
 
 public class ALuno {
     final String nome;
-    ArrayList<Curso> cursos =new ArrayList<>();
+    final ArrayList<Curso> cursos =new ArrayList<>();
+
+    //quando é dito que a lista é final, uma constante, ele só nao vai permitir mudar no endereço de memoria pra onde a lista a ponta
+    //sendo constante apenas o endereço da lista, mas nao seu conteudo
 
     ALuno(String nome){
         this.nome = nome;
