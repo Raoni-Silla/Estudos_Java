@@ -587,3 +587,41 @@ assim o java ja associa que uma biblioteca tem muitos livros
 
 terça,setembro 16,10:24:
 n pra n
+
+entao revisando 14:46
+
+um aplicativo são compostas por classes
+que ficam dentro de pacotes e interagem entre si
+tendo um ponto de entrada(main), uma classe chamando a outra
+
+é necessario reusar algumas partes de codigo, reusando metodos e classes
+com funcionalidades reusaveis em outras partes do sistema
+
+tecnica de composição
+quando se tem um objeto mais complexo e se quebra ele em partes menores
+tenho um carro por exemplo, e pro carro crio o sftw de monitoramento para cada parte dele
+e obviamente nao tera uma unica classe que tera tudo do carro de ponta a ponta
+a classe carro sera agregadora, tendo outra classe portas, classe rodas, classe motor
+
+carro tem um motor, isso é relação 1:1
+compra 1 : n produto, esse n podendo ser um array ou collections, preferivel a collection por ter tamanho nao definido
+tio n : n sobrinho
+uma relação de composição, um objeto é composto por outros objetos
+
+tomar cuidado para não hiper sociabilizar as classes, tornando as altamente acopladas
+pois quanto mais relações entre as classes tiverem, uma mudança gerara mudança em varias partes do sistema
+
+porem é necessario as classes se comunicarem para existir um app
+entao apartir do main tem que existir relacionamento entre as classes
+
+relacionamento um pra um
+
+é um relacionamento reuso, porque atraves da relação de uma classe com outra posso associar
+elas e reutilizar metodos
+como carro e motor
+uma classe motor, com seus atributos e metodos, se eu instanciar essa classe na classe carro
+o carro passa a se conectar com motor, e a cada carro criado ele tera o seu proprio motor
+com acesso a todos os atributos e metodos da classe motor
+
+
+
