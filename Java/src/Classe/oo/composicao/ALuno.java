@@ -3,6 +3,7 @@ package Classe.oo.composicao;
 import java.util.ArrayList;
 
 public class ALuno {
+    // aluno tem um nome e uma lista de cursos
     final String nome;
     final ArrayList<Curso> cursos =new ArrayList<>();
 
