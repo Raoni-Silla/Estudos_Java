@@ -623,5 +623,14 @@ uma classe motor, com seus atributos e metodos, se eu instanciar essa classe na 
 o carro passa a se conectar com motor, e a cada carro criado ele tera o seu proprio motor
 com acesso a todos os atributos e metodos da classe motor
 
+1 pra n
+
+ja no relacionamento de um pra muitos, uma forma de instanciar isso em java é
+tenho uma classe x que tem ligação de muitos com uma classe y
+dentro da classe x eu crio um array list de y, ou seja, apartir daquele isntante
+x tem varios y(com metodos e atributos cada), uma lista de y
+
+
+
 
 
