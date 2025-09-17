@@ -1002,3 +1002,8 @@ outro exemplo, pode ser no metodo,
 um metodo q receba um civic, eu posso passar uma ferrari pra la ? n
 mas eu posso criar um parametro mais generico, recebendo um carro
 nao mais um civic, podendo passar todos os tipos de carro
+
+abstração é quando simplifico algo do mundo real e colocar dentro do sftw
+espelhar o mundo real em sftw
+nem tudo que esta no mundo real da pra por no sftw
+nem tudo do sftw se aplica na vida real
