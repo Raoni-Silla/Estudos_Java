@@ -825,3 +825,40 @@ quando voce tem um alto grau de dependencias entre as coisas significa uma baixa
 parte de encapsulamento
 quanto menos eu expor pro usuario, menor a chance de ter problema nos relacionamentos
 das coisas
+
+o encapsulamento é uma capsula
+envolve a capsula
+é um objeto agrupador que agrupa atributos e metodos de um objeto
+e o fato de agrupar me da a maior chance de conseguir encapsular as coisas
+colocando o dado perto do metodo, é possivel que aquele dado n precise ser mais
+visto pelo resto do sistema, garantindo a integridade daquele dado e conseguindo uma
+segurança maior
+
+modificadores de acesso
+private o mais privado possivel
+package(default)
+protected
+public
+
+private e o public
+qnd eu defino uma classe e crio um atributo dentro da classe do tipo privado
+criando um atributo privado, ele so pode ser acessado dentro da classe
+
+nao conseguindo acessar ele em outras classes
+
+eu defino um metodo visivel que acessa o atributo privado, apartir de outra classe
+acessando o metodo publico pra acessar o dado, so podendo ser acessado na classe
+
+agora o extremo oposto, se eu crio uma classe ou metodo publico, qlqr lugar do meu
+sistema pode acessar esse metodo
+
+package
+se eu tenho um pacote a e outro b
+tendo duas classes em cada
+com um atributo protected, ao atributo package ele só é assecivel a classes
+que estao dentro de um msm pacote
+o nivel pacote só permite vc acessar classes que estao dentro do mesmo pacote
+por padrao as classes vem nivel package
+um atributo protected é visivel no pacote, na classe e é transmitido por herança
+pra outro pacote
+
