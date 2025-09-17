@@ -649,4 +649,103 @@ como parametro, acessa a lista de alunos que tem dentro do objeto curso,
 e adiciona o proprio objeto que chamou o parametro
 
 
+eu começo criando meu desafio pela classe produto
+package Classe.oo.composicao.DesafioRelacionamentos;
 
+public class Produto {
+    final String name;
+    final double price;
+
+    Produto (String name, double price){
+        this.name = name;
+        this.price = price;
+    }
+
+
+} aonde nessa classe temos string nome, definida como final pro nome do meu produto
+nunca mudar, e seu preço tbm nunca mudar, crio um construtor produto e diferencio
+os atributos do objeto com os parametros passados para construção desse objeto
+depois vou pra classe item que tem um relacionamento de produto 1 : 1 item
+package Classe.oo.composicao.DesafioRelacionamentos;
+
+public class Item {
+    final Produto produto;
+    final int qntd;
+
+    Item (Produto produto, int qntd){
+        this.produto = new Produto(produto.name, produto.price);
+        this.qntd = qntd;
+    }
+}
+aqui eu crio um objeto produto como atributo da classe item, e crio tbm a qntd que vai
+ser comprada desse produto
+pra criação de uma instancia apartir da classe item, eu uso o construtor item
+aonde ele recebe um produto e a qntd como parametro
+dentro do construtor eu incializei o produto do objeto classe apartir dos atributos do produto passado
+como parametro e depois vou pra classe compra onde fica nossa regra de negocio
+package Classe.oo.composicao.DesafioRelacionamentos;
+
+import java.util.ArrayList;
+
+public class Compra {
+    final ArrayList <Item> itens = new ArrayList<>();
+
+
+    void adicionarItem (Produto p, int qntd){
+        Item it = new Item(p,qntd);
+        itens.add(it);
+        System.out.println("item adicionado com sucesso!!");
+    } nessa função eu crio um objeto da classe item e inicializo ele com os parametros
+    passados no metodo, ou seja, crio um objeto item, que recebe os parametros passados a eke
+    inicializa eles na memoria atraves do construtor, depois do objeto item criado com o produto
+    e qntd eu insiro entao ele na lista e depois retorno uma mensagem de sucesso
+
+    double getValorTotal (){
+        double total = 0;
+
+        for (Item it : itens){
+
+            total += it.qntd * it.produto.price;
+
+        } aqui eu somo o valor total dos itens que o cliente quer comprar, se
+        ele comprar uma bala de 2 reais e comprar 3 balas ele multiplica o 2 * 3 e
+        guarda no total, retornando essa variavel
+
+        return total;
+    }
+
+}
+compra tem uma relalação de n:1 com item ou seja, uma compra pode ter varios itens
+entao eu crio uma lista de itens dentro da classe compra
+package Classe.oo.composicao.DesafioRelacionamentos;
+
+import java.util.ArrayList;
+
+public class Cliente {
+    final String nome;
+    final ArrayList <Compra> compras = new ArrayList<>();
+
+
+    Cliente (String nome){
+        this.nome = nome;
+    }diferencio atributo e parametro
+
+
+    void adicionarCompra (Compra compra){
+        this.compras.add(compra);
+    } digo que this(o objeto pessoa que chamar) vai abrir a lista de compras dele
+    e adicionar a nova compra passada como parametro
+
+    double getvalorTotalCli (){
+
+        double soma = 0;
+
+        for (Compra cmp : compras){
+            soma += cmp.getValorTotal();
+        } aqui eu somo o valor todas de todos os itens do usuario
+
+        return soma;
+    }
+}
+a classe cliente tem uma ligação de um cliente pode fazer varias compras, entao tem
+uma lista de compras nos atributos de cliente, alem de seu nome
