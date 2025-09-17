@@ -967,3 +967,38 @@ e complementar com algumas coisas, mas quando n faço nada, e so digo q algo her
 classe, eu recebo por padrão os comportamentos
 
 extends diz que uma classe herda de outra classe
+
+
+polimorfismo(multiplas formas):
+temos dois tipos
+estatico(sobrecarga) e dinamico
+
+imagine que eu tenho uma classe, e dentro dela, podemos criar metodos com o mesmo
+nome, divergindo apenas na sua assinatura, a qntd dos parametros influencia, tipo tbm
+qnd eu tenho varios metodos com o mesmo nome, eu sobrecarrego aquele nome
+
+opa()
+opa(--)
+eu tenho varios metodos com o mesmo nome com a assinatura dele diferente
+é um polimorfismo estatico, pq eu escrevo ele, multiplas formas diferentes
+de usar o metodo opa, estatico pq eu escrevi esse metodo
+
+o outro tipo, é dinamico
+pra eu ter um dinamico, um pre requisito pra isso acontecer, eu preciso
+ter herança
+
+carro -> civic
+carro -> ferrari
+Nome da classe
+Civic c = new Civic(); ->construtor, exatamente o mesmo nome
+Carro c = new Civic(); ou seja, eu instanciei um carro especifico e atribui a uma classe
+mais generica,
+polimorfisco acontece quandi eu instancio uma variavel c, e posso atribuir uma ferrari
+sendo ele do tipo generico carro, podendo tomar a forma de outros objetos e formas desde
+q seja subclasses da classe pai que foi instanciada
+do tipo mais especifico pro tipo mais generico, sendo ao contrario nao verdadeiro
+
+outro exemplo, pode ser no metodo,
+um metodo q receba um civic, eu posso passar uma ferrari pra la ? n
+mas eu posso criar um parametro mais generico, recebendo um carro
+nao mais um civic, podendo passar todos os tipos de carro
