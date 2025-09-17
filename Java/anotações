@@ -910,3 +910,33 @@ na composição eu tenho uma ref pra aquilo que vou usar
 dentro de carro tenho um onjeto motor criado por exemplo
 
 no caso de herança é um outro mecanismo pra reutilizar um codigo
+exemplo herança
+eu crio uma classe mais generica chamada carro
+crio outra mais especifica chamado civic e civic herda comportamentos de carro
+animal (mais generico) e apartir do momento que vou descendo na hierarquia vai ficandp
+mais especifico
+animal
+é um mamimefro
+é um mamifero aquatico
+é um mamifero terreste
+quanto mais generico é o conceito, menos coisa ela deve fazer, encontrar comportamentos
+que sao comuns a todos os animais
+sendo a classe mais baixa da arvore recebendo todos os comportamentos das classes de cima
+quanto mais especifico eu vou ficando, mais comportamentos eu vou agregando de todos o pais
+
+superclasse (classe mais generica) quanto mais a cima na hierarquia menos comprotamento
+comportamento precisa estar presente em todas as outras subclasses
+
+subclasse
++especifica
+
+uma classe pode no momento ser uma super classe ou subclasse
+
+hierarquia nem toda gera herança
+soldado
+cabo
+sgt
+sub
+capitao
+aqui temos uma hierarquia, mas nao uma que gere herança, nem tudo que representa
+é um eu vou querer mapear com herança
