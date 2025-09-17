@@ -791,3 +791,37 @@ paradigmas, como js,python
 paragima é como eu organizo minha mente para aplicar isso no codigo
 tendo cada paradigma seus principios, e se vc seguir os principios seu
 codigo vai ter uma qualidade melhor
+
+Principios de POO:
+
+1 encapsulamento
+o encapsulamento é que a classe e o objeto, diz que parte da complexidade do objeto
+tem que estar escondida pro mundo exterior
+como um carro, tem pedais, volante, banco, vc interage com td isso
+porem vc nao sabe oque tem no motor, porem consegue usar o carro atraves da
+interface de comunicação do carro, n precisando conhecer os detalhes internos de
+um objeto pra usar ele
+2 herança
+reuso de codigo, um tipo de reuso enquanto na composição tem relação de tem um, quando
+voce relaciona um carro, vc tem um é-um, celta é um carro, civic é um carro
+3 polimorfismo
+capacidade de se ter e usar um conceito generico e colocar coisas especificas
+posso criar no meu sistema um atributo animal e associar animais a esse atributo
+tipos de animais, pra entender isso preciso saber de herança
+4 abstração
+quando eu vou desenvolver o sistema eu observo o mundo real e simnplifico sua dificuldade
+escrevendo um sftw de acordo com oque foi pedido, nem tudo q tem no mundo real
+vai estar presente no meu sftw
+
+o encapsulamento
+na vida real tem diversas aplicações
+como encapsular a parte sensivel do pc, processador
+ram, hd, voce nao precisa saber como o so controla o processo
+pra usar eles, vc só usa atraves de interfaces de comunicação
+algo estar privado em java significa que esta escondido
+direção esta publica, marcha esta publica porem o motor ta privado
+nao precisando ter acesso ou entender como ele funciona, vc sp acessa oque é publico
+quando voce tem um alto grau de dependencias entre as coisas significa uma baixa
+parte de encapsulamento
+quanto menos eu expor pro usuario, menor a chance de ter problema nos relacionamentos
+das coisas
