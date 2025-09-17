@@ -940,3 +940,30 @@ sub
 capitao
 aqui temos uma hierarquia, mas nao uma que gere herança, nem tudo que representa
 é um eu vou querer mapear com herança
+alguns padroes te ajudam a substituir composição por herança, pq composição fica
+mais flexivel que herança um desses padroes mais famosos é o decorator
+
+isso n ocorre em todas as linguagens, pois algumas linguagens tem heranças multiplas
+
+uma classe em java só pode herdar de uma classe, posso ter outras classes herdando de uma
+mesma classe
+
+uma classe só herda de uma classe
+
+algumas linguagem permitem heranças multiplas, aonde uma unica classe pode herdar
+de outras classes
+
+isso ocorre em c++ exemplo
+
+receber por padrão comportamentos e atributos sem precisar definir eles na sua classe
+
+eu tenho uma classe que herda a classe de cima, atributos e metodos
+por padrão acabo recebendo esses atributos e comportamentos
+eventualmente vou ter atributos ou comportamentos que nao vou querer receber
+de herança exatamente como foi definido na classe pai, so q vamos supor se eu quero
+mudar ou especificar esse metodo, eu posso reescrever esse metodo
+é possivel eu reescrever esse metodo na subclasse e apontar pra implementação original
+e complementar com algumas coisas, mas quando n faço nada, e so digo q algo herda de outra
+classe, eu recebo por padrão os comportamentos
+
+extends diz que uma classe herda de outra classe
