@@ -78,7 +78,7 @@ Depois, abra o projeto em sua IDE Java de preferência (IntelliJ, Eclipse, VS Co
 **Raoní Silla**
 
 Estudante de Análise e Desenvolvimento de Sistemas focado em construir uma carreira em DevSecOps, unindo desenvolvimento de software e segurança da informação.
-
+Atualmente atuando como estágiario no Cepein | Fema
 Entre em contato e vamos nos conectar!
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/raoni-mendes-silla-/)
