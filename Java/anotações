@@ -523,9 +523,9 @@ aceita obj duplicado
 é indexado
 fila e mapa;
 hash;
-
+------------------------------
 sexta, setembro  12, 13:38:
-
+-----------------------------
 quando eu penso em uma aplicação grande
 essa aplicação é um conjunto de classes q eu vou definir
 vou definir varias classes dentro de pacotes diferentes
@@ -547,9 +547,9 @@ um ligamento entre as classes signfica que isso é seu sistema
 voce so n pode ter um alto acoplamento entre as classes
 pois se tiver muitas ligações isso pode grar um efeito em cascata mt grande
 
-
-segunda, 15 setembro 10:56
-
+                     ------------------------------
+                      segunda, 15 setembro 10:56
+                     ------------------------------
 Reuso via composição
 eu tenho uma aplicação, que tem classes dependentes de outras
 que tem uma porta de entrada (main), e apartir do main ele chama cada classe
@@ -584,8 +584,9 @@ e adiciono um arraylist do tipo livros na biblioteca
 assim o java ja associa que uma biblioteca tem muitos livros
 
 
-
+--------------------------------
 terça,setembro 16,10:24:
+--------------------------------
 n pra n
 
 entao revisando 14:46
@@ -635,8 +636,9 @@ n pra n
 a relação de muitos pra muitos é composta de forma
 criando um array list de x de y, e criando um array list de y em x
 ou seja x tem varios y e y tem varios x
-
+---------------------------------
 quarta, setembro 17, 11:26:
+---------------------------------
 void adicionarCurso (Curso curso){
     this.cursos.add(curso);
     curso.alunos.add(this); // <-- AQUI!
@@ -749,3 +751,43 @@ public class Cliente {
 }
 a classe cliente tem uma ligação de um cliente pode fazer varias compras, entao tem
 uma lista de compras nos atributos de cliente, alem de seu nome
+
+Paradigmas de programação:
+
+formas criadas de como estruturar os pensaemtos e ideias para pegar algo do
+mundo real e transformar isso em sftw
+nao estruturados, tipo o go to, aonde vc tinha um bloco de codigl
+e coloca go to e ele ia pra outro bloco, e depois pra outro
+programação macarronica, ou seja não estruturado
+procedural:
+define um procedimento, um conjunto de sentenças agrupadas(função) e ali coloco
+uma sequencia de passos, dijkstra cria o paradigma procedural, lida com dados mutaveis
+globais, funções
+funcional
+é um paradigma q se da bem com processamentos paralelos , pois trabalha muito
+com constantes, embora o java seja centrada em oo, o funcional começou a ser introdu
+zido em java
+diferença do procedural pra oo
+no procedural o foco é a função, sendo a mesma q altera os dados
+ja oo tem o foco no dado, aonde a classe define uma estrutura de dados
+aonde o objeto instanciado, o foco é o dado, o tem tem comportamentos
+
+procedural vs oo
+ator principal do procedural é a função, crio funções que recebm paremtros e mudam valores
+ja na oo o ator principal é o objeto, eu tenho um objeto onde apartir dele
+eu mexo em atributos e comportamentos
+
+formatarData (nascimento) eu tenho uma função que repasso o dado pra ela
+ja na oo
+eu tenho um objeto
+o dado, aonde dentro dele eu tenho um metodo associado a esse dado
+nascimento.formatarData();
+classes definem tipos
+em java eu tenho que criar funções(metodos dentro de classe)
+ja no procedural eu crio funções soltas
+
+a maioria das linguagens são ditas multiparadigmas, pq trabalham cm todos esses
+paradigmas, como js,python
+paragima é como eu organizo minha mente para aplicar isso no codigo
+tendo cada paradigma seus principios, e se vc seguir os principios seu
+codigo vai ter uma qualidade melhor
