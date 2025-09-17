@@ -23,6 +23,5 @@ public class Sistema {
        double total = c1.getvalorTotalCli();
 
         System.out.printf("cliente: %s |Valor total das listas de compras: %f", c1.nome, total);
-
     }
 }
