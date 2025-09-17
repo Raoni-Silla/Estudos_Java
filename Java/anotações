@@ -636,5 +636,17 @@ a relação de muitos pra muitos é composta de forma
 criando um array list de x de y, e criando um array list de y em x
 ou seja x tem varios y e y tem varios x
 
+quarta, setembro 17, 11:26:
+void adicionarCurso (Curso curso){
+    this.cursos.add(curso);
+    curso.alunos.add(this); // <-- AQUI!
+}
+então o this se referencia ao objeto que esta chamando o metodo
+e passando os parametros, o cursos abre a classe curso dentro da
+classe aluno , e adiciona o novo curso que foi dado como parametro
+pro metodo, ai depois o curso chama o proprio objeto instanciado
+como parametro, acessa a lista de alunos que tem dentro do objeto curso,
+e adiciona o proprio objeto que chamou o parametro
+
 
 
