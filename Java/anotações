@@ -794,71 +794,92 @@ codigo vai ter uma qualidade melhor
 
 Principios de POO:
 
-1 encapsulamento
-o encapsulamento é que a classe e o objeto, diz que parte da complexidade do objeto
-tem que estar escondida pro mundo exterior
-como um carro, tem pedais, volante, banco, vc interage com td isso
-porem vc nao sabe oque tem no motor, porem consegue usar o carro atraves da
-interface de comunicação do carro, n precisando conhecer os detalhes internos de
-um objeto pra usar ele
-2 herança
-reuso de codigo, um tipo de reuso enquanto na composição tem relação de tem um, quando
-voce relaciona um carro, vc tem um é-um, celta é um carro, civic é um carro
-3 polimorfismo
-capacidade de se ter e usar um conceito generico e colocar coisas especificas
-posso criar no meu sistema um atributo animal e associar animais a esse atributo
-tipos de animais, pra entender isso preciso saber de herança
-4 abstração
-quando eu vou desenvolver o sistema eu observo o mundo real e simnplifico sua dificuldade
-escrevendo um sftw de acordo com oque foi pedido, nem tudo q tem no mundo real
-vai estar presente no meu sftw
+Princípios de POO (Versão Corrigida)
 
-o encapsulamento
-na vida real tem diversas aplicações
-como encapsular a parte sensivel do pc, processador
-ram, hd, voce nao precisa saber como o so controla o processo
-pra usar eles, vc só usa atraves de interfaces de comunicação
-algo estar privado em java significa que esta escondido
-direção esta publica, marcha esta publica porem o motor ta privado
-nao precisando ter acesso ou entender como ele funciona, vc sp acessa oque é publico
-quando voce tem um alto grau de dependencias entre as coisas significa uma baixa
-parte de encapsulamento
-quanto menos eu expor pro usuario, menor a chance de ter problema nos relacionamentos
-das coisas
+1. Encapsulamento
 
-o encapsulamento é uma capsula
-envolve a capsula
-é um objeto agrupador que agrupa atributos e metodos de um objeto
-e o fato de agrupar me da a maior chance de conseguir encapsular as coisas
-colocando o dado perto do metodo, é possivel que aquele dado n precise ser mais
-visto pelo resto do sistema, garantindo a integridade daquele dado e conseguindo uma
-segurança maior
+O encapsulamento diz que parte da complexidade de um objeto deve estar escondida
+para o mundo exterior. Como em um carro: ele tem pedais, volante e banco.
+Você interage com tudo isso, porém, não sabe o que há no motor,
+mas consegue usar o carro através da sua interface de comunicação,
+não precisando conhecer os detalhes internos de um objeto para usá-lo.
 
-modificadores de acesso
-private o mais privado possivel
-package(default)
-protected
-public
+2. Herança
 
-private e o public
-qnd eu defino uma classe e crio um atributo dentro da classe do tipo privado
-criando um atributo privado, ele so pode ser acessado dentro da classe
+É um tipo de reuso de código. Enquanto na composição a relação é de "tem um",
+na herança a relação é de "é um": um Celta é um carro, um Civic é um carro.
 
-nao conseguindo acessar ele em outras classes
+3. Polimorfismo
 
-eu defino um metodo visivel que acessa o atributo privado, apartir de outra classe
-acessando o metodo publico pra acessar o dado, so podendo ser acessado na classe
+É a capacidade de usar um conceito genérico para tratar de coisas específicas.
+Posso criar no meu sistema, por exemplo, um atributo do tipo Animal e associar
+diferentes tipos de animais a esse atributo. Para entender isso, é preciso
+saber de Herança.
 
-agora o extremo oposto, se eu crio uma classe ou metodo publico, qlqr lugar do meu
-sistema pode acessar esse metodo
+4. Abstração
 
-package
-se eu tenho um pacote a e outro b
-tendo duas classes em cada
-com um atributo protected, ao atributo package ele só é assecivel a classes
-que estao dentro de um msm pacote
-o nivel pacote só permite vc acessar classes que estao dentro do mesmo pacote
-por padrao as classes vem nivel package
-um atributo protected é visivel no pacote, na classe e é transmitido por herança
-pra outro pacote
+Quando vou desenvolver um sistema, observo o mundo real e simplifico sua
+complexidade, escrevendo um software de acordo com o que foi pedido.
+Nem tudo que existe no mundo real estará presente no meu software.
 
+
+
+A Filosofia do Encapsulamento
+
+O encapsulamento esconde a complexidade e expõe a funcionalidade.
+Na vida real, ele tem diversas aplicações, como encapsular as partes
+sensíveis de um PC: processador, RAM, HD. Você não precisa saber como
+o Sistema Operacional (SO) controla os processos para usá-los;
+você apenas os utiliza através de interfaces de comunicação.
+
+Algo estar private em Java significa que está escondido.
+Em um carro, a direção e a marcha estão públicas,
+porém o motor está privado. Não é preciso ter acesso ou
+entender como ele funciona; você só acessa o que é público.
+
+Encapsulamento e Dependências
+
+Quando se tem um alto grau de dependência entre as coisas, isso
+significa um baixo nível de encapsulamento. Quanto menos eu
+exponho para o usuário (outras partes do código),
+menor a chance de haver problemas nos relacionamentos.
+
+O encapsulamento é como uma cápsula. Ele agrupa os atributos e
+métodos de um objeto. O fato de agrupá-los me dá a chance de
+encapsular melhor as coisas. Ao colocar o dado perto do
+método que o utiliza, é possível que aquele dado não precise
+mais ser visto pelo resto do sistema, garantindo sua integridade e
+obtendo uma segurança maior.
+
+Modificadores de Acesso
+
+    private (o mais privado possível)
+
+    package (padrão/default)
+
+    protected
+
+    public
+
+private e public
+
+Quando eu defino uma classe e crio um atributo do tipo private,
+ele só pode ser acessado de dentro da própria classe, não sendo possível
+acessá-lo em outras classes.
+
+Para permitir a interação, eu defino um método público (visível)
+que, por sua vez, acessa o atributo privado. Assim, outra classe
+pode chamar o método público para interagir com o dado, que permanece protegido.
+
+Agora, no extremo oposto, se eu crio uma classe ou método public,
+qualquer lugar do meu sistema pode acessá-lo.
+
+package e protected
+
+Um membro com acesso package (padrão, sem modificador) só é acessível por
+classes que estão dentro do mesmo pacote. Por padrão, se nenhum modificador
+for especificado, o acesso é de nível package.
+
+Um membro protected é visível na própria classe, em todo o pacote e
+também é transmitido por herança para subclasses, mesmo que elas estejam em
+outros pacotes.
