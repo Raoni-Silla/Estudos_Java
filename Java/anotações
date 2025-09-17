@@ -883,3 +883,30 @@ for especificado, o acesso é de nível package.
 Um membro protected é visível na própria classe, em todo o pacote e
 também é transmitido por herança para subclasses, mesmo que elas estejam em
 outros pacotes.
+
+Herança:
+
+outra forma de reuso, começamos o capitulo falando de composição, aonde uma
+classe colabora com a outra relaçoes n pra n, 1 pra n, 1 pra 1, uni e bi
+direcionais, porem o reuso via composição sempre sera mais flexivel que a herança
+por via de regra se reusa codigo apartir de composição (priorizado)
+
+usar herança pode ajudar, mas usar de forma exagerada ou ter muitas hierarquias n
+é bom
+
+composição tem um
+carro tem um motor
+carro tem portas
+casa tem cozinha
+herança é
+civic é um carro
+gato é um animal
+maçã é uma fruta
+
+por padrão definimos se vai ser composição ou herança atraves dessas palavras
+sendo mais encontrada composição do q herança no dia a dia
+
+na composição eu tenho uma ref pra aquilo que vou usar
+dentro de carro tenho um onjeto motor criado por exemplo
+
+no caso de herança é um outro mecanismo pra reutilizar um codigo
