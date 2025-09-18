@@ -9,9 +9,8 @@ public class PlataformaCursosApp {
         Scanner cin = new Scanner(System.in);
         ArrayList <Instrutor> instrutores = new ArrayList<>();
 
-        int opt = 0;
+        int opt;
         int sair = 1;
-        Instrutor instrutor1 = new Instrutor("eduardo");
 
         while (sair != 0) {
 
@@ -38,7 +37,7 @@ public class PlataformaCursosApp {
                     System.out.println("Instrutor cadastrado com sucesso!!");
                      break;
                 case 2:
-                    System.out.println("||||||||||||||||||||||||||||||||||||");
+                    System.out.println("|/||||||||||||||||||||||||||||||||||");
                     System.out.println("Digite o nome do curso: ");
                     String nomeCurs = cin.nextLine();
                     System.out.println("Professores cadastrados: ");
@@ -51,18 +50,26 @@ public class PlataformaCursosApp {
                     String nomeProf = cin.nextLine();
                     for (Instrutor ints : instrutores){
 
-                        if (ints.nome.equalsIgnoreCase(nomeProf.toString())){
+                        if (ints.nome.equalsIgnoreCase(nomeProf)){
 
                             Curso curso = new Curso(nomeCurs,ints);
                             System.out.println("Curso "+ nomeCurs + " cadstrado com sucesso");
                             System.out.println("Sera monitorado por: " + nomeProf  );
-                            break;
-                        }else System.out.println("nome de professor não encontrado");
+
+                        }else {System.out.println("nome de professor não encontrado");}
 
                     }
 
 
                     break;
+                case 3:
+                    System.out.println("Digite o nome da aula: ");
+                    String nomeAul = cin.nextLine();
+                    System.out.println("Digite a duração da aula: ");
+                    int durAul = cin.nextInt();
+                    cin.nextLine();
+                    Aula aula = new Aula(nomeAul,durAul);
+                    System.out.println("Digite o nome do curso: ");
 
 
                 default:
@@ -73,6 +80,9 @@ public class PlataformaCursosApp {
             }
 
 
+
+            System.out.println("Deseja sair? (1-nao / 0-sim)");
+            sair = cin.nextInt();
         }
         cin.close();
     }
