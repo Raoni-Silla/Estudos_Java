@@ -1,4 +1,4 @@
-package OOheranca;
+package Classe.oo.composicao.OOheranca;
 
 public class Jogo {
 

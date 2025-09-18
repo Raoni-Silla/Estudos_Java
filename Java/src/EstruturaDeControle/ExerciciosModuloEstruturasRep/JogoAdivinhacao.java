@@ -1,4 +1,4 @@
-package Estrututra_De_Controle.ExerciciosModuloEstruturasRep;
+package EstruturaDeControle.ExerciciosModuloEstruturasRep;
 import java.util.Random; // chama a biblioteca random
 import java.util.Scanner;
 

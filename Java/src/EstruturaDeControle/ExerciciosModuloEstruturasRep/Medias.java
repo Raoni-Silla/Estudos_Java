@@ -1,4 +1,4 @@
-package Estrututra_De_Controle.ExerciciosModuloEstruturasRep;
+package EstruturaDeControle.ExerciciosModuloEstruturasRep;
 
 import javax.swing.*;
 import java.util.Scanner;
