@@ -16,8 +16,9 @@ public class Instrutor {
 
     void adicionarCurso (Curso curso){
 
-        cursos.add(curso);
+        this.cursos.add(curso);
 
     }
+
 
 }

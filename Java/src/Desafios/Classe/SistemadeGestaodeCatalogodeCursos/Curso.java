@@ -5,9 +5,9 @@ import java.util.ArrayList;
 public class Curso {
 
     String titulo;
-    Instrutor instrutor;
-    ArrayList <Aula> aulas = new ArrayList<>();
-    ArrayList <Aluno> alunos = new ArrayList<>();
+    final Instrutor instrutor;
+    final ArrayList <Aula> aulas = new ArrayList<>();
+    final ArrayList <Aluno> alunos = new ArrayList<>();
     nivelDificuldade nivel;
 
 
@@ -21,14 +21,14 @@ public class Curso {
 
     void adicionarAulas (Aula aula){
 
-        aulas.add(aula);
+        this.aulas.add(aula);
 
     }
 
     void matricularAluno (Aluno aluno){
 
-        alunos.add(aluno);
-
+        this.alunos.add(aluno);
+        aluno.cursosMatriculado.add(this);
     }
 
 
