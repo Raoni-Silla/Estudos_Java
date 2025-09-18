@@ -1011,3 +1011,23 @@ faz parte como desenvolvedor, perguntar questioner e interrogar o cliente pra en
 sua necessidade
 
 Enum outro tipo de estrutura alem da classe q posso ter em java
+
+
+antes de criar um enum eu poderia passar uma string como parametro
+a desvantagem disso é saber exatamente o tipo de dado q vc quer passar
+precisa mapear e n torna o codigo simples
+|
+\/
+boolean andar (String direcao){
+
+        if ("norte".equalsIgnoreCase(direcao)){
+            y++;
+        }
+        return true;
+    }
+
+    como eu posso substituir esse parametro pra algo mais interessante
+    usar uma enumeração serve pra quando vc tem uma qntd definida de possibilidades
+    dias da semana, meses do ano, qndt determinada de opcçoes
+    norte, sul, leste e oeste
+    da pra criar um enum que represente isso
