@@ -2,6 +2,10 @@ package Classe.oo.composicao.OOheranca;
 
 public class Heroi extends Jogador {
 
+    Heroi (int x, int y){
+        super(x,y);
+    }
+
     boolean atacar (Jogador jogador){
 
 

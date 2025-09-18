@@ -1,9 +1,15 @@
 package Classe.oo.composicao.OOheranca;
 
 public class Jogador {
-     int life = 100;
+    int life = 100;
     int x;
     int y; //posição do jogador
+
+    Jogador (int x, int y){
+        this.x = x;
+        this.y = y;
+    }
+
 
 
     boolean atacar (Jogador jogador){

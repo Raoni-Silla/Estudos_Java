@@ -1034,3 +1034,29 @@ boolean andar (String direcao){
     dias da semana, meses do ano, qndt determinada de opcçoes
     norte, sul, leste e oeste
     da pra criar um enum que represente isso
+
+
+    nós podemos definir mais de um construtor dentro de uma classe.
+    Ele recebe parâmetros, diferenciando sua assinatura.
+
+    Dentro de um construtor, quando se usa um this como método,
+    posso chamar um construtor através de outro construtor.
+    O que não pode acontecer é, a partir do último construtor,
+    chamar o primeiro construtor de novo, pois senão vira um ciclo
+    sem nunca criar o objeto. Então, um desses construtores tem que
+    terminar a construção.
+
+    Tendo duas classes, uma subclasse e superclasse,
+    dentro da subclasse eu defino 2 construtores: um padrão e
+    outro normal. Vamos supor que, a partir do construtor padrão,
+    eu chamei o construtor da classe atual. Pelo menos um desses
+    construtores vai chamar um construtor da classe pai com super.
+
+    super é a referência do objeto que representa a classe pai.
+    Também posso chamá-lo como um método. A partir do momento que eu
+    zero os construtores da subclasse, ele chama um construtor da superclasse.
+
+    Quando eu tenho uma classe, ela vem com um padrão, com uma única
+    chamada dentro dele, um construtor padrão, que é chamar o construtor
+    padrão da classe pai. E se na classe pai não tiver um construtor padrão?
+    Aí você precisa chamar o construtor de forma explícita.
