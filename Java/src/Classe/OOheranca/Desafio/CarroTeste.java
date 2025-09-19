@@ -1,4 +1,4 @@
-package Classe.oo.composicao.OOheranca.Desafio;
+package Classe.OOheranca.Desafio;
 
 public class CarroTeste {
 

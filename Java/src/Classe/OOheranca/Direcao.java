@@ -1,4 +1,4 @@
-package Classe.oo.composicao.OOheranca;
+package Classe.OOheranca;
 
 public enum Direcao {
 

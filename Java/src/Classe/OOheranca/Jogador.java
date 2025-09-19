@@ -1,4 +1,4 @@
-package Classe.oo.composicao.OOheranca;
+package Classe.OOheranca;
 
 public class Jogador {
     int life = 100;
