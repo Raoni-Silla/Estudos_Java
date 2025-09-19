@@ -8,6 +8,7 @@ public class PlataformaCursosApp {
     public static void main(String[] args) {
         Scanner cin = new Scanner(System.in);
         ArrayList <Instrutor> instrutores = new ArrayList<>();
+        ArrayList <Curso> cursosList = new ArrayList<>();
 
         int opt;
         int sair = 1;
@@ -39,7 +40,7 @@ public class PlataformaCursosApp {
                 case 2:
                     System.out.println("|/||||||||||||||||||||||||||||||||||");
                     System.out.println("Digite o nome do curso: ");
-                    String nomeCurs = cin.nextLine();
+                    String nomeCurs1 = cin.nextLine();
                     System.out.println("Professores cadastrados: ");
                     int i = 0;
                     for (Instrutor ints : instrutores){
@@ -52,15 +53,14 @@ public class PlataformaCursosApp {
 
                         if (ints.nome.equalsIgnoreCase(nomeProf)){
 
-                            Curso curso = new Curso(nomeCurs,ints);
-                            System.out.println("Curso "+ nomeCurs + " cadstrado com sucesso");
+                            Curso curso = new Curso(nomeCurs1,ints);
+                            System.out.println("Curso "+ nomeCurs1 + " cadstrado com sucesso");
                             System.out.println("Sera monitorado por: " + nomeProf  );
+                            cursosList.add(curso);
 
                         }else {System.out.println("nome de professor não encontrado");}
 
                     }
-
-
                     break;
                 case 3:
                     System.out.println("Digite o nome da aula: ");
@@ -69,7 +69,32 @@ public class PlataformaCursosApp {
                     int durAul = cin.nextInt();
                     cin.nextLine();
                     Aula aula = new Aula(nomeAul,durAul);
-                    System.out.println("Digite o nome do curso: ");
+                    System.out.println("Cursos disponiveis: ");
+                    int id = 0;
+
+                    for (Curso curs : cursosList){
+                        System.out.println((id + 1) + " " + curs.titulo);
+                        id++;
+
+                    }
+                    System.out.println("digite o nome do curso desejado para adicionar a aula: ");
+                    String nomeCurs = cin.nextLine();
+
+                    for (Curso curs : cursosList){
+                        if (curs.titulo.equalsIgnoreCase(nomeCurs)){
+
+                            curs.adicionarAulas(aula);
+                            System.out.println("Aula cadastrada com sucesso!!");
+                            System.out.println("Aula " + aula.titulo + " cadastrada com sucesso no curso " + curs.titulo);
+
+                        } else {
+                            System.out.println("ERROR: digite um nome dentro da lista de cursos acima!!");
+                            System.out.println("Curso não encontrado");
+                        }
+
+                    }break;
+
+
 
 
                 default:
@@ -78,8 +103,6 @@ public class PlataformaCursosApp {
 
 
             }
-
-
 
             System.out.println("Deseja sair? (1-nao / 0-sim)");
             sair = cin.nextInt();
