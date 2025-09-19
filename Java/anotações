@@ -1067,9 +1067,28 @@ boolean andar (String direcao){
     padrão, as classes que estao dentro de um mesmo pacote, tem um nivel de comunica
     ção maior do que outras classes que estao fora desse pacote
 
+
+  Sexta, setembro 19, 12:00:
+
     estando dentro de um mesmo pacote, uma classe a, consegue ver default, protected
     public de uma classe b, menos o private
 
     ja duas classes que nao estao dentro de um pacote, supondo que uma classe a
     gerou por herança uma classe b, essa classe b tem acesso as informações protected
     de a, vendo protected(recebe por herança) e public
+
+    quando eu sobreescrevo um metodo, eu n posso diminuir seu nivel de visibilade
+    ou mantenho ou aumento seu nivel
+
+    uma classe só pode ser do tipo public ou package
+
+    getters/setters
+    quando eu crio atributos dentro de uma classe, via de regra quando sao atributos
+    variaveis, eu crio get e set pra acessar essas variaveis private
+
+       get e set te ajudam no encapsulamento do projeto, pegando atributos privados e permitindo
+       os modificar apartir de uma validação que ocorre em metodos dentro da propria classe
+       nao deixando o usuario saber de toda a complexidade do sistema
+
+       set = modificiar um elemento
+       get = pegar um elemento
