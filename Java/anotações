@@ -1060,3 +1060,16 @@ boolean andar (String direcao){
     chamada dentro dele, um construtor padrão, que é chamar o construtor
     padrão da classe pai. E se na classe pai não tiver um construtor padrão?
     Aí você precisa chamar o construtor de forma explícita.
+
+    quando eu coloco classes juntas dentro de um pacote, isso tem um significado
+    importante do ponto de vista de encapsulamento, signfica que a uma comunicação
+    mais intima entre essas classes, se eu tenho um package rh, acreditase que por
+    padrão, as classes que estao dentro de um mesmo pacote, tem um nivel de comunica
+    ção maior do que outras classes que estao fora desse pacote
+
+    estando dentro de um mesmo pacote, uma classe a, consegue ver default, protected
+    public de uma classe b, menos o private
+
+    ja duas classes que nao estao dentro de um pacote, supondo que uma classe a
+    gerou por herança uma classe b, essa classe b tem acesso as informações protected
+    de a, vendo protected(recebe por herança) e public
