@@ -4,6 +4,10 @@ public class Feijao {
 
     private double peso;
 
+    public Feijao (double peso){
+        setPeso(peso);
+    }
+
     public double getPeso() {
         return peso;
     }
