@@ -1104,3 +1104,86 @@ Enum: É uma lista de VALORES fixos.
 
 Interface: É uma lista de AÇÕES obrigatórias.
 É sobre "o que algo FAZ" (ex: um carro FAZ a ação de acelerar).
+
+classe abstrata:
+
+classe concreta <---------------------> interface
+tenho um conceito abstrato chamado mouse, e um conceito concreto que é o mouse mesmo fisico
+embora ele atenda a requisitos abstratos'
+uma classe concreta é uma classe aonde todos os metodos tem corpo
+
+uma interface é uma estrutura que tem metodos, mas n define o corpo do metodo
+a interface tem 0 dos metodos implementados, ficando pra ser modificado em cada classe
+que implementa a interface, sendo modificada individualmente
+
+classe abstrata, ela mescla as duas classes, podendo ter todos os metodos definidios
+alguns sim e outros não, ou n ter nenhum metodo concreto
+
+uma classe abstrata n pode ser instanciada
+
+public abstract class pessoa {
+apartir do momento que uso a palavra abtract eu n posso mais instanciar um objeto
+}
+}
+
+quero criar uma classe abstrata qnd tenho herança. n faz sentido criar uma classe abstrata
+que n vai ser herdada
+
+o conceito cachorro é algo abstrato, ja um cachorro especifico é algo concreto
+
+inicio do curso do guanabara POO
+
+======================================================================================
+aula 1 :
+origem da poo
+tem o objetivo de aproximar o mundo digital do mundo real
+antigamente se programava em baixo nivel, todas as intruções eram dadas
+ao pc da forma q ele entendia, binario,decimal e etc
+depende da programação dos computadores
+
+essa modalidade de linguagem de maquina era muito dificil e trabalhoso
+
+depois surgiu as linguagens de alto nivel (programação linear)
+de cima pra baixo, sem desvios e sem rotinas internas
+dava instrução de cima pra baixo com se fosse uma lista de compras
+
+programação estruturada. permitia pequenos pedaçõs de programação linear,
+tomar caminhos diferentes
+
+precisou se criar de programa modular, permitia criar pequenos modulos estruturados
+que podem compor sistemas maiores e maiores
+
+surgiu outro paradigma, que surgiu com base no modular, o poo
+
+então tudo começa nas linguagens de baixo nivel
+
+quem criou poo?
+aln kay, n era um dev, ele é formado em matematica e biologia
+ele gostava de relacionar as duas areas
+gostava de educar
+principalmente crianças
+
+ele foi trabalhar na xerox, ele estava envolvido em diversas criações tecnologicas
+
+uma das criações dele foi o dynabook
+teria uma tela, um teclado, e apartir da iteratividade as crianças poderiam aprender
+o alan key, tbm é considerado um dos pais do notebook
+todos os conceitos que ele criou são muito importantes
+uma das tecnologias que ele teve que criar ora usar o dyna, é uma linguagem de programação
+ele cria o smalltalk, primeira linguagem de programação orientada a objetos
+
+smalltalk ja tinha classe, objeto, atributos e metodos
+
+vantagens:
+no padrão são 6
+comern
+c-confiável (isolamento entre as partes, gera sftw seguro, ao alterar
+uma parte, nenhuma outra é afetada)
+o-oportuno (ao dividir tudo em partes, varias partes podem ser desenvolvidas
+em paralelo)
+m-manutenivel (atualizar um sftw é mais facil, uma pequena modificação vai
+beneficiar todas as pertes que usarem o objeto)
+e-extensivel(sftw n é estatico, deve crescer pra se manter util)
+r-reutilizavel(podemos usar objetos de um sistema que criamos em outro objeto futuro)
+n-natural (uma coisa natural é algo mais facil de entender,
++funcionalidade -implementação)
