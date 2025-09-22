@@ -1096,3 +1096,11 @@ boolean andar (String direcao){
 
 
 segunda, setembro 22, 13:43
+
+public abstract, é um metodo que n tem corpo
+todos os metodos dentro de uma interface sao metodos abstratos
+Enum: É uma lista de VALORES fixos.
+É sobre "o que algo É" (ex: o dia É SEXTA).
+
+Interface: É uma lista de AÇÕES obrigatórias.
+É sobre "o que algo FAZ" (ex: um carro FAZ a ação de acelerar).
