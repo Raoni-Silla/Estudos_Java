@@ -1188,3 +1188,26 @@ r-reutilizavel(podemos usar objetos de um sistema que criamos em outro objeto fu
 n-natural (uma coisa natural é algo mais facil de entender,
 +funcionalidade -implementação)
 aula 3:
+
+mudando a visibilidade
+
+linguagem de modelagem unificada
+uml (preciso estudar diagrama de classes)
+caneta é um objeto, na hora de criar um molde pra caneta
+se cria uma uml
+retangulo (classe)
+no topo do retangulo se coloca o nome da classe
+----------------------------
+           caneta
+----------------------------
+caracteriscticas (atributos)
+----------------------------
+           metodos
+----------------------------
+
+são 3 modificadores de visibilidade em java:
+indica o nivel de acesso aos componentes internos de uma classe
+podendo utilizar 3 simbolos pra isso + - #
++ public
+- private
+# protected
