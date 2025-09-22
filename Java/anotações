@@ -1092,3 +1092,5 @@ boolean andar (String direcao){
 
        set = modificiar um elemento
        get = pegar um elemento
+
+
