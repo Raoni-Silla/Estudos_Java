@@ -6,15 +6,15 @@ public class Jantar {
         Pessoa p1 = new Pessoa(99.9);
         System.out.println(p1.getPeso());
 
-        Arroz arroz = new Arroz(0.25);
+        Comida arroz = new Arroz(0.25);
 
-        Feijao feijao = new Feijao(0.20);
+        Comida feijao = new Feijao(0.2);
 
-        Sorvete sorvete = new Sorvete(0.10);
+        Comida sorvete = new Sorvete(0.2);
 
         p1.comer(arroz);
-        p1.comerFeijao(feijao);
-        p1.comerSor(sorvete);
+        p1.comer(feijao);
+        p1.comer(sorvete);
 
         System.out.println(p1.getPeso());
 
