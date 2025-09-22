@@ -28,5 +28,12 @@ public class CarroTeste {
             civic.dxlr8();
             civic.dxlr8();
             System.out.println("Velocidade do Civic após frear: " + civic.velAtual + " km/h"); // Esperado: 5
+
+
+            mercedes.ligarTurbo();
+            mercedes.xlr8();
+
+            System.out.println(mercedes.velAtual);
         }
     }
+

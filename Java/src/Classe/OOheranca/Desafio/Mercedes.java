@@ -1,6 +1,6 @@
 package Classe.OOheranca.Desafio;
 
-public class Mercedes extends Carro{
+public class Mercedes extends Carro implements Esportivo{
     // aqui a sub classe herda todos os metodos e atributos da super classe
     //com uma diferença, a aceleração foi modificada pra essa instancia
 
@@ -16,5 +16,14 @@ public class Mercedes extends Carro{
         super (velMax);
     }
 
+    @Override
+    public void ligarTurbo() {
+        this.velAtual = 40;
+    }
 
+    @Override
+    public void desligarTurbo() {
+
+        this.velAtual = 15;
+    }
 }
