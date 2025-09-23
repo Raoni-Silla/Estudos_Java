@@ -74,6 +74,11 @@ public class ContaCorrente {
             if (value <= 0) {
                 System.out.println("impossivel depositar");
                 System.out.println("valor negativo ou nulo");
+
+            }else {
+                double total = this.getSaldo();
+                total += value;
+                this.saldo = value;
             }
         }else System.out.println("conta desativada");
     }
