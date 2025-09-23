@@ -2,7 +2,7 @@ package GuanabaraPOO.Banco;
 
 import java.util.ArrayList;
 
-public class currentAccount {
+public class CurrentAccount {
 
     private Owner owner;
     private int idAccount = 1;
@@ -11,7 +11,7 @@ public class currentAccount {
     private boolean status;
     private ArrayList <Integer> ids = new ArrayList<>();
 
-    currentAccount(Owner owner, String type){
+    CurrentAccount(Owner owner, String type){
         setOwner(owner);
         setType(type);
         ids.add(idAccount);
