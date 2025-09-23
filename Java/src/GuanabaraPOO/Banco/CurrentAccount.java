@@ -1,27 +1,76 @@
 package GuanabaraPOO.Banco;
 
-import java.util.ArrayList;
-
 public class CurrentAccount {
 
+
+    private static int contadorDeContas = 1;
+
     private Owner owner;
-    private int idAccount = 1;
-    private double saldo = 0;
-    public String type;
+    private int idAccount;
+    private double saldo;
+    private String type;
     private boolean status;
-    private ArrayList <Integer> ids = new ArrayList<>();
 
-    CurrentAccount(Owner owner, String type){
-        setOwner(owner);
-        setType(type);
-        ids.add(idAccount);
-        this.idAccount = calcId ();
+
+    CurrentAccount(Owner owner, String type) {
+        this.setOwner(owner);
+        this.setType(type);
+        this.saldo = 0;
+        this.status = false;
+
+       //Lógica de ID simplificada usando o contador estático.
+        this.idAccount = contadorDeContas;
+        contadorDeContas++;
     }
 
-    private int calcId() {
-        int lastId = ids.getLast();
-        return this.idAccount + lastId;
+
+
+    public void openAccount() {
+        this.setStatus(true);
+        System.out.println("Conta aberta com sucesso! ID: " + this.getIdAccount());
     }
+
+    public void closeAccount() {
+        if (this.saldo > 0) {
+            System.out.println("Erro: A conta possui saldo. Saque o valor antes de fechar.");
+        } else if (this.saldo < 0) {
+            System.out.println("Erro: A conta possui débitos pendentes.");
+        } else {
+            this.setStatus(false);
+            System.out.println("Conta fechada com sucesso.");
+        }
+    }
+
+    public void depositar(double value) {
+        if (!this.isStatus()) {
+            System.out.println("Impossível depositar: a conta está fechada.");
+            return;
+        }
+
+        if (value <= 0) {
+            System.out.println("Valor de depósito inválido (deve ser maior que zero).");
+        } else {
+            this.saldo += value;
+            System.out.println("Depósito de R$" + value + " realizado. Novo saldo: R$" + this.getSaldo());
+        }
+    }
+
+    public void sacar(double value) {
+        if (!this.isStatus()) {
+            System.out.println("Impossível sacar: a conta está fechada.");
+            return;
+        }
+
+
+        if (this.getSaldo() >= value) {
+            this.saldo -= value;
+            System.out.println("Saque de R$" + value + " realizado. Novo saldo: R$" + this.getSaldo());
+        } else {
+            System.out.println("Saldo insuficiente para realizar o saque.");
+        }
+    }
+
+
 
 
     public Owner getOwner() {
@@ -29,13 +78,12 @@ public class CurrentAccount {
     }
 
     public void setOwner(Owner owner) {
-        this.owner = new Owner(owner.name, owner.age);
+        this.owner = owner;
     }
 
     public int getIdAccount() {
         return idAccount;
     }
-
 
     public String getType() {
         return type;
@@ -49,7 +97,7 @@ public class CurrentAccount {
         return status;
     }
 
-    public void setStatus(boolean status) {
+    private void setStatus(boolean status) {
         this.status = status;
     }
 
@@ -57,53 +105,8 @@ public class CurrentAccount {
         return saldo;
     }
 
-    public void setSaldo(double saldo) {
 
-        if (saldo < 0){
-            System.out.println("saldo invalido");
-        }else this.saldo = saldo;
-
-    }
-
-
-    public void openAccount (){
-        this.status = true;
-        System.out.println("Conta aberta, no nome de "+ getOwner().getName());
-    }
-
-    public void closeAccount (){
-
-        this.status = false;
-        System.out.println("Conta fechada..");
-
-    }
-
-    public void depositar (double value){
-        if (this.status == true) {
-            if (value <= 0) {
-                System.out.println("impossivel depositar");
-                System.out.println("valor negativo ou nulo");
-
-            }else {
-                double total = this.getSaldo();
-                total += value;
-                this.saldo = value;
-            }
-        }else System.out.println("conta desativada");
-    }
-
-    public void sacarDh (double value){
-
-        if (this.status == true) {
-
-            if (saldo > 0) {
-
-                 this.saldo -= value;
-
-            }else System.out.println("sem saldo para saque");
-
-        }else System.out.println("conta fechada");
-
-
+    private void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 }

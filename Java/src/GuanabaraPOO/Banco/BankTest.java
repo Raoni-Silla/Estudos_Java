@@ -41,7 +41,7 @@ public class BankTest {
 
             System.out.println("faça seu primeiro saque: ");
             double valueSaq = cin.nextDouble();
-            account.sacarDh(valueSaq);
+            account.sacar(valueSaq);
 
             System.out.println("SALDO ATUAL: " + account.getSaldo());
 

@@ -1,8 +1,8 @@
 package GuanabaraPOO.Banco;
 
 public class Owner {
-    String name;
-    int age;
+      String name;
+      int age;
 
 
     Owner(String nome, int idade){
