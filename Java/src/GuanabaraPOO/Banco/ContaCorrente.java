@@ -82,4 +82,19 @@ public class ContaCorrente {
             }
         }else System.out.println("conta desativada");
     }
+
+    public double sacarDh (double value){
+
+        if (this.status == true) {
+
+            if (saldo > 0) {
+
+                return this.saldo - value;
+
+            }else System.out.println("sem saldo para saque");
+
+        }else System.out.println("conta fechada");
+
+        return 0;
+    }
 }
