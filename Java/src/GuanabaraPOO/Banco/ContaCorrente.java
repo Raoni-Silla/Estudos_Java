@@ -2,10 +2,11 @@ package GuanabaraPOO.Banco;
 
 public class ContaCorrente {
 
-    private Owner owner;
-    final String idAccount;
-    String type;
-    boolean status;
+    public Owner owner;
+    final private String idAccount;
+    private double saldo;
+    public String type;
+    private boolean status;
 
     ContaCorrente (Owner owner, String idAccount, String type, Owner owner1){
         setOwner(owner);
@@ -41,5 +42,17 @@ public class ContaCorrente {
 
     public void setStatus(boolean status) {
         this.status = status;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+
+        if (saldo < 0){
+            System.out.println("saldo invalido");
+        }else this.saldo = saldo;
+
     }
 }
