@@ -6,6 +6,6 @@ public class CanetaTeste {
         Caneta c1 = new Caneta("Bic", 0.15);
         System.out.println(c1.getPoint());
         System.out.println(c1.getModel());
-
+        c1.status();
     }
 }

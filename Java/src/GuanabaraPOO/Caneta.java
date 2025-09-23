@@ -29,6 +29,11 @@ public class Caneta {
 
     }
 
+    public void status (){
+        System.out.println("Detalhes tecnicos:");
+        System.out.printf("modelo %s", this.getModel());
+        System.out.printf("\nponta %.2f", this.getPoint());
+    }
 
 
 }
