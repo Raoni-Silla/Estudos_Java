@@ -1214,3 +1214,44 @@ podendo utilizar 3 simbolos pra isso + - #
 
 terça, setembro 23, 11:06:
 
+Metodos especiais:
+e = nova estante();
+
+atributos da estante:
+cor
+tipo da madeira
+tamanho
+prateleira
+portas
+modelo
+--------------------
+abrir();
+fechar();
+colocar();
+retirar();
+
+t = e.totDoc = ele acessa o atributo atraves da notação ponto do objeto instancionado
+
+metodos acessores:
+dão acesso a uma determinada coisa
+getters ( metodo que vc pega algo, acessa algo, alguma informação)
+serve pra ser mais confiavel a manipulação de dados
+
+voce usa os metodos getter e setters para acessar e modificar atributos do objeto
+sejam eles privados ou não, tudo passaria no get e no set antes de chegar no final
+
+vc nao deixxa o objeto acessar direto o dado, sim chama uma função, que seria uma pessoa
+que tem acesso a chegar nesses dados, ele pergunta pra essa pessoa, e solicita a execução
+de um determinado metodo
+
+existem formas de dar acesso a um determinado atributo, sem dar acesso direto ao determinado
+atributo
+metodos acessores (getters consegue acessar atributos mantendo a segurança dos dados)
+metodos modificadores(setters)
+nao permite que os usuarios acessem os atributos de forma livre, e sim de uma
+forma segura e controlada, vc passa algo pro metodo, dentro do metodo ele tem
+acesso a modificação dos dados
+
+setter precisa de um parametro para funcionar
+precisa receber um documento, para por o documento na estante
+ter get e set de cada atributos
