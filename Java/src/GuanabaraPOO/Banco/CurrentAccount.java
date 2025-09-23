@@ -6,7 +6,7 @@ public class CurrentAccount {
 
     private Owner owner;
     private int idAccount = 1;
-    private double saldo;
+    private double saldo = 0;
     public String type;
     private boolean status;
     private ArrayList <Integer> ids = new ArrayList<>();
@@ -92,18 +92,18 @@ public class CurrentAccount {
         }else System.out.println("conta desativada");
     }
 
-    public double sacarDh (double value){
+    public void sacarDh (double value){
 
         if (this.status == true) {
 
             if (saldo > 0) {
 
-                return this.saldo - value;
+                 this.saldo -= value;
 
             }else System.out.println("sem saldo para saque");
 
         }else System.out.println("conta fechada");
 
-        return 0;
+
     }
 }
