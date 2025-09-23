@@ -1255,3 +1255,15 @@ acesso a modificação dos dados
 setter precisa de um parametro para funcionar
 precisa receber um documento, para por o documento na estante
 ter get e set de cada atributos
+
+
+metodo construct
+ele serve pra criar e alocar espaço em memoria de forma a criar um objeto
+com padroes definidos, Alocar espaço na memória para o novo objeto
+
+Inicializar atributos com
+valores padrão
+ou personalizados
+Executar lógica
+de configuração necessária para o
+objeto funcionar corretamente
