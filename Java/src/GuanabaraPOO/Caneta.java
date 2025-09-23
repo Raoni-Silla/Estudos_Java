@@ -23,7 +23,10 @@ public class Caneta {
     }
 
     public void setPoint (double p){
-        this.point = p;
+        if (p >= 0 && p <= 0.50){
+            this.point = p;
+        }
+
     }
 
 
