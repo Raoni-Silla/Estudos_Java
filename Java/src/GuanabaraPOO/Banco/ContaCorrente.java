@@ -1,17 +1,26 @@
 package GuanabaraPOO.Banco;
 
+import java.util.ArrayList;
+
 public class ContaCorrente {
 
     private Owner owner;
-    final private String idAccount;
+    private int idAccount = 1;
     private double saldo;
     public String type;
     private boolean status;
+    private ArrayList <Integer> ids = new ArrayList<>();
 
-    ContaCorrente (Owner owner, String idAccount, String type, Owner owner1){
+    ContaCorrente (Owner owner, String type){
         setOwner(owner);
         setType(type);
-        this.idAccount = idAccount;
+        ids.add(idAccount);
+        this.idAccount = calcId ();
+    }
+
+    private int calcId() {
+        int lastId = ids.getLast();
+        return this.idAccount + lastId;
     }
 
 
@@ -23,7 +32,7 @@ public class ContaCorrente {
         this.owner = new Owner(owner.name, owner.age);
     }
 
-    public String getIdAccount() {
+    public int getIdAccount() {
         return idAccount;
     }
 
