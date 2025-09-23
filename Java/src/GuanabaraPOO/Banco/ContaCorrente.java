@@ -2,7 +2,7 @@ package GuanabaraPOO.Banco;
 
 public class ContaCorrente {
 
-    public Owner owner;
+    private Owner owner;
     final private String idAccount;
     private double saldo;
     public String type;
@@ -54,5 +54,27 @@ public class ContaCorrente {
             System.out.println("saldo invalido");
         }else this.saldo = saldo;
 
+    }
+
+
+    public void openAccount (){
+        this.status = true;
+        System.out.println("Conta aberta, no nome de "+ getOwner().getName());
+    }
+
+    public void closeAccount (){
+
+        this.status = false;
+        System.out.println("Conta fechada..");
+
+    }
+
+    public void depositar (double value){
+        if (this.status == true) {
+            if (value <= 0) {
+                System.out.println("impossivel depositar");
+                System.out.println("valor negativo ou nulo");
+            }
+        }else System.out.println("conta desativada");
     }
 }
