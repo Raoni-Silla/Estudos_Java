@@ -1291,3 +1291,8 @@ que o som é 100, n ele tem que chamar o metodo publico aumentar volume
 passa o volume, dentro da classe publica se faz as validações necessarias
 usando get e setters, ai sim aumentando o volume
 deixando tudo mais seguro
+
+o private, ele diz que aqueles atributos ou metodo só podem ser acessados
+apartir daquela classe
+public qualquer classe pode acessar os atributos e metodos publics e utilizar ela
+
