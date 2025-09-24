@@ -1,6 +1,7 @@
 package GuanabaraPOO.UEC;
 
-public class Lutador {
+public class Lutador implements LutadorInterface {
+
      private String nome;
      private String nacionalidade;
      private int idade;
@@ -12,13 +13,20 @@ public class Lutador {
      private int empates;
 
 
-     Lutador (String nome, String nacionalidade, int idade,double altura, double peso, String categorias ){
-         this.nome = nome;
-         this.nacionalidade = nacionalidade;
-         this.idade = idade;
-         this.altura = altura;
-         this.peso = peso;
-         this.categorias = categorias;
+     Lutador (String nome,
+              String nacionalidade,
+              int idade,
+              double altura,
+              double peso){
+
+         setNome(nome);
+         setNacionalidade(nacionalidade);
+         setAltura(altura);
+         setIdade(idade);
+         setPeso(peso);
+
+         //feita automaticamente
+         //this.categorias = categorias;
      }
 
      // apresenta o lutador
@@ -72,14 +80,24 @@ public class Lutador {
     }
 
     public void setPeso(double peso) {
-        this.peso = peso;
+         this.peso = peso;
+         setCategorias();
     }
 
     public String getCategorias() {
         return categorias;
     }
 
-    public void setCategorias(String categorias) {
+    private void setCategorias() {
+         if ( this.peso < 52.2){
+             this.categorias = "invalido";
+         } else if (this.peso <= 70.3) {
+             this.categorias = "leve";
+         } else if (this.peso <= 83.9 ) {
+             this.categorias = "Médio";
+         } else if (this.peso <= 120.2) {
+             this.categorias = "pesado";
+         }else this.categorias = "invalido";
         this.categorias = categorias;
     }
 

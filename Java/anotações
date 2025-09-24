@@ -1296,3 +1296,6 @@ o private, ele diz que aqueles atributos ou metodo só podem ser acessados
 apartir daquela classe
 public qualquer classe pode acessar os atributos e metodos publics e utilizar ela
 
+todos os atributos vão ter visibilidade privada, pois estão incapsulados
+eles só vão poder ser modificados apartir dos metodos publicos disponibilizados pela
+classe
