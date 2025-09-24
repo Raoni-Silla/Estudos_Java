@@ -1267,3 +1267,19 @@ ou personalizados
 Executar lógica
 de configuração necessária para o
 objeto funcionar corretamente
+
+Quarta, setembro 24, 11:07:
+
+encapsulamento
+ele ajuda a proteger a integridade e funcionamento dos dados e metodos
+ajuda a padronizar o sistema, vc n precisa saber da complexidade de um sistema
+pra usa-lo, pois muitas vzs vc pode mexer e acabar interferindo em partes sensiveis
+e alterando tudo, protege o codigo do usuario e o usuario do codigo
+um codigo encapsulado usa interfaces e moldes padrão
+
+Encapsular não é obrigatorio, mas uma boa pratica para produzir classes mais eficientes
+
+vantagens:
+tornar mudanças invisiveis
+facilitar reutilização do codigo
+reduzir efeitos colaterais
