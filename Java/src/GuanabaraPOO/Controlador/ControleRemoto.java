@@ -26,10 +26,10 @@ public class ControleRemoto implements Controlador {
 
     @Override
     public void abrirMenu() {
-        System.out.println("está ligado?" + isLigado());
-        System.out.println("volume" + getVolume());
+        System.out.println("está ligado? " + isLigado());
+        System.out.println("volume " + getVolume());
         for (int i = 0; i < getVolume(); i += 10){
-            System.out.println("|");
+            System.out.print("|");
         }
         System.out.println("esta reproduzindo? " + isTocando());
     }

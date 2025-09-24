@@ -1283,3 +1283,11 @@ vantagens:
 tornar mudanças invisiveis
 facilitar reutilização do codigo
 reduzir efeitos colaterais
+
+quando eu uso getters e setters privados, eu forço
+o usuario a utilizar meu codigo apenas pelos metodos
+da interface, n tem como algum usuario chegar e settar
+que o som é 100, n ele tem que chamar o metodo publico aumentar volume
+passa o volume, dentro da classe publica se faz as validações necessarias
+usando get e setters, ai sim aumentando o volume
+deixando tudo mais seguro
