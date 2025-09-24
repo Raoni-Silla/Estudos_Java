@@ -1,4 +1,4 @@
-package GuanabaraPOO.UEC;
+package GuanabaraPOO.UFC;
 
 public interface LutadorInterface {
     // apresenta o lutador

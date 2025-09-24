@@ -1,4 +1,4 @@
-package GuanabaraPOO.UEC;
+package GuanabaraPOO.UFC;
 
 public class Lutador implements LutadorInterface {
 
@@ -14,31 +14,61 @@ public class Lutador implements LutadorInterface {
 
 
      Lutador (String nome,
-              String nacionalidade,
-              int idade,
-              double altura,
-              double peso){
+                 String nacionalidade
+                ,int idade
+                ,double altura
+                ,double peso
+                ,int vitorias
+                ,int derrotas
+                ,int empates){
 
          setNome(nome);
          setNacionalidade(nacionalidade);
          setAltura(altura);
          setIdade(idade);
          setPeso(peso);
+         setVitorias(vitorias);
+         setDerrotas(derrotas);
+         setEmpates(empates);
 
          //feita automaticamente
          //this.categorias = categorias;
      }
 
      // apresenta o lutador
-     public void apresentar (){}
+     public void apresentar (){
+         System.out.println("Apresentando o lutador: ");
+         System.out.println("Nome: " + getNome());
+         System.out.println("Idade: " + getIdade());
+         System.out.println("Origem: " + getNacionalidade());
+         System.out.println("Altura: " + getAltura() + " m");
+         System.out.println("Peso: " + getPeso() + "kg");
+         System.out.println("Seu cartel pessoal: ");
+         System.out.println("Wins: " + getVitorias());
+         System.out.println("Loses: " + getDerrotas());
+         System.out.println("Empates: " + getEmpates());
+     }
 
      //dados menores do lutador
-     public void status (){}
+     public void status (){
+         System.out.println(getNome());
+         System.out.println(getIdade());
+         System.out.println(getNacionalidade());
+         System.out.println(getVitorias());
+         System.out.println(getEmpates());
+         System.out.println(getDerrotas());
+     }
 
      //oque um lutador pode fazer na luta:
-     public void ganharLuta (){}
-     public void perderLuta (){}
-     public void empatarLuta (){}
+     public void ganharLuta (){
+         setVitorias(getVitorias() + 1);
+     }
+     public void perderLuta (){
+         setDerrotas(getDerrotas() + 1);
+     }
+     public void empatarLuta (){
+         setEmpates(getEmpates() + 1);
+     }
 
 
 
