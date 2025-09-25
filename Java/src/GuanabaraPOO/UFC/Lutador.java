@@ -2,16 +2,9 @@ package GuanabaraPOO.UFC;
 
 public class Lutador implements LutadorInterface {
 
-     private String nome;
-     private String nacionalidade;
-     private int idade;
-     private double altura;
-     private double peso;
-     private String categorias;
-     private int vitorias;
-     private int derrotas;
-     private int empates;
-
+     private String nome, nacionalidade, categorias;
+     private int idade, vitorias, derrotas, empates;
+     private double altura, peso;
 
      Lutador (String nome,
                  String nacionalidade
