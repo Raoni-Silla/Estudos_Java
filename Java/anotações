@@ -1310,5 +1310,17 @@ que essa interface incluir vai precisar aplicar esses metodos abstratos
 que foram definido na interface, porem de forma individual pode ser feita
 a maneira de funcionamento desses metodos
 
+encapsulamento em poo, é quando eu escondo toda a complexidade do meu projeto,
+disponibilizando apenas os metodos necessarios para que o usuario utilize meu
+codigo de forma segura, permitindo que mudanças futuras sejam mais faceis de
+fazer e tornando o codigo mais seguro, pq uma vez q o usuario precisa usar um
+getter ou setters pra acessar meus atributos privados e dentro desses getters
+e setters tenho varias validações, fica mais seguro
+
 nao preciso seguir a risca os getters e setters, posso adaptalos aos meus ecercicios
+
+uma agregação é quando um objeto tem um outro ombjeto, reuso via composição
+
+é melhor atribuir valor a um objeto dentro de um construtor apartir dos metodos
+setters, pois la eles tem melhor validação
 
