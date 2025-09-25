@@ -17,11 +17,13 @@ public class Lutas {
             this.setAprovado(true);
             this.desafiado = l1;
             this.desafiante = l2;
+            System.out.println("Luta marcada");
 
         }else {
             this.setAprovado(false);
             this.desafiado = null;
             this.desafiante = null;
+            System.out.println("Luta não marcada");
         }
 
 
@@ -36,7 +38,7 @@ public class Lutas {
             Random gerador = new Random();
             this.desafiado.apresentar();
             this.desafiante.apresentar();
-            int vencedor = gerador.nextInt(0,2);
+            int vencedor = gerador.nextInt(0,3);
             switch (vencedor){
                 case 0:
                     System.out.println("Empate");
