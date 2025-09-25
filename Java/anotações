@@ -1301,3 +1301,11 @@ eles só vão poder ser modificados apartir dos metodos publicos disponibilizado
 classe
 
 quinta, setembro 25, 14:52
+
+uma interface em java então, eu crio quando eu tenho metodos que n sei
+como vou implementar, mas sei que vou precisar implementar eles, quando
+eu coloco que uma classe inclui uma interface, eu preciso colocar todos
+os metodos abstratos que estão dentro dela, na classe, e pra cada classe
+que essa interface incluir vai precisar aplicar esses metodos abstratos
+que foram definido na interface, porem de forma individual pode ser feita
+a maneira de funcionamento desses metodos
