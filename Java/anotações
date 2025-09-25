@@ -1333,4 +1333,8 @@ ou seja um objeto lutador passa a ser um atributo da classe luta
 e pra instanciar um objeto luta eu preciso passar um lutador para o
 construtor
 
+1 lutador pode participar de varias lutas
+uma luta pode ter varios lutadores
+
+
 
