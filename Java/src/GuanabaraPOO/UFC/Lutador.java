@@ -6,27 +6,27 @@ public class Lutador implements LutadorInterface {
      private int idade, vitorias, derrotas, empates;
      private double altura, peso;
 
-     Lutador (String nome,
-                 String nacionalidade
-                ,int idade
-                ,double altura
-                ,double peso
-                ,int vitorias
-                ,int derrotas
-                ,int empates){
+    Lutador (String nome,
+             String nacionalidade
+            ,int idade
+            ,double altura
+            ,double peso
+            ,int vitorias
+            ,int derrotas
+            ,int empates){
 
-         setNome(nome);
-         setNacionalidade(nacionalidade);
-         setAltura(altura);
-         setIdade(idade);
-         setPeso(peso);
-         setVitorias(vitorias);
-         setDerrotas(derrotas);
-         setEmpates(empates);
+        setNome(nome);
+        setNacionalidade(nacionalidade);
+        setAltura(altura);
+        setIdade(idade);
+        setPeso(peso);
+        setVitorias(vitorias);
+        setDerrotas(derrotas);
+        setEmpates(empates);
 
-         //feita automaticamente
-         //this.categorias = categorias;
-     }
+        //feita automaticamente
+        //this.categorias = categorias;
+    }
 
      // apresenta o lutador
      public void apresentar (){
