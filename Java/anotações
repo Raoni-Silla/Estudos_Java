@@ -1324,3 +1324,13 @@ uma agregação é quando um objeto tem um outro ombjeto, reuso via composição
 é melhor atribuir valor a um objeto dentro de um construtor apartir dos metodos
 setters, pois la eles tem melhor validação
 
+eu consigo ligar uma classe com a outra
+existem varias formas de relacionamento
+mas veremos agora a agregação
+
+ou seja, consigo criar um objeto lutador dentro da classe luta
+ou seja um objeto lutador passa a ser um atributo da classe luta
+e pra instanciar um objeto luta eu preciso passar um lutador para o
+construtor
+
+
