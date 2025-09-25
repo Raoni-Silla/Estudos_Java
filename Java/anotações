@@ -1299,3 +1299,5 @@ public qualquer classe pode acessar os atributos e metodos publics e utilizar el
 todos os atributos vão ter visibilidade privada, pois estão incapsulados
 eles só vão poder ser modificados apartir dos metodos publicos disponibilizados pela
 classe
+
+quinta, setembro 25, 14:52
