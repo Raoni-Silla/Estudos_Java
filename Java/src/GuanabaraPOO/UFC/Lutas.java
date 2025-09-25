@@ -7,9 +7,18 @@ public class Lutas {
     private int rounds;
     private boolean aprovado;
 
-    public void marcarLuta(Lutador l1){
+    public void marcarLuta(Lutador l1,Lutador l2){
+
+
+        if (l1.getCategorias().equalsIgnoreCase(l2.getCategorias())){
+
+
+
+        }
 
         this.desafiado = l1;
+        this.desafiante = l2;
+
 
 
     }
