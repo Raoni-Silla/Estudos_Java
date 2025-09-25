@@ -45,8 +45,7 @@ public class Lutador implements LutadorInterface {
      //dados menores do lutador
      public void status (){
          System.out.println(getNome());
-         System.out.println(getIdade());
-         System.out.println(getNacionalidade());
+         System.out.println(getCategorias());
          System.out.println(getVitorias());
          System.out.println(getEmpates());
          System.out.println(getDerrotas());
@@ -121,7 +120,6 @@ public class Lutador implements LutadorInterface {
          } else if (this.peso <= 120.2) {
              this.categorias = "pesado";
          }else this.categorias = "invalido";
-        this.categorias = categorias;
     }
 
     public int getVitorias() {
