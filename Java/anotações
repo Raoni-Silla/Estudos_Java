@@ -1309,3 +1309,6 @@ os metodos abstratos que estão dentro dela, na classe, e pra cada classe
 que essa interface incluir vai precisar aplicar esses metodos abstratos
 que foram definido na interface, porem de forma individual pode ser feita
 a maneira de funcionamento desses metodos
+
+nao preciso seguir a risca os getters e setters, posso adaptalos aos meus ecercicios
+

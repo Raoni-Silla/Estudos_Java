@@ -2,13 +2,13 @@ package GuanabaraPOO.UFC;
 
 public interface LutadorInterface {
     // apresenta o lutador
-    public void apresentar ();
+     void apresentar ();
 
     //dados menores do lutador
-    public void status ();
+     void status ();
 
     //oque um lutador pode fazer na luta:
-    public void ganharLuta ();
-    public void perderLuta ();
-    public void empatarLuta ();
+     void ganharLuta ();
+     void perderLuta ();
+     void empatarLuta ();
 }
