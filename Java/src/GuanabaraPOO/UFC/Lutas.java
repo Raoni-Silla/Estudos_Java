@@ -38,7 +38,7 @@ public class Lutas {
             Random gerador = new Random();
             this.desafiado.apresentar();
             this.desafiante.apresentar();
-            int vencedor = gerador.nextInt(0,3);
+            int vencedor = gerador.nextInt(3);
             switch (vencedor){
                 case 0:
                     System.out.println("Empate");
