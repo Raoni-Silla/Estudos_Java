@@ -33,17 +33,30 @@ public class Livro implements Publicacao {
 
     @Override
     public void abrir() {
+        if (aberto == true) {
+            System.out.println("Aberta!");
+        }
 
     }
 
     @Override
     public void fechar() {
 
+        if (aberto == true) {
+            System.out.println("Fechada!");
+            aberto = false;
+        }
+
     }
 
     @Override
     public void folhear(int p) {
-        this.pagAtual = p;
+        if (p > totalPag) {
+            this.pagAtual = p;
+        }else  {
+            this.pagAtual = p - totalPag;
+        }
+
 
     }
 
