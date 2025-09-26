@@ -15,6 +15,13 @@ public class Livro {
         setTotalPag(totalPag);
     }
 
+    public void detalhes(){
+        System.out.println("Titulo: "+getTitulo());
+        System.out.println("Autor: "+getAutor());
+        System.out.println("Total Pag: "+getTotalPag());
+        System.out.println("Aberto: "+isAberto());
+    }
+
     public Pessoa getLeitor() {
         return leitor;
     }
