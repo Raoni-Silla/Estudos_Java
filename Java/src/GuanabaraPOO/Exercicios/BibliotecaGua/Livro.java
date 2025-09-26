@@ -15,13 +15,16 @@ public class Livro implements Publicacao {
         setTotalPag(totalPag);
     }
 
-    public void detalhes(){
-        System.out.println("Titulo: "+getTitulo());
-        System.out.println("Autor: "+getAutor());
-        System.out.println("Total Pag: "+getTotalPag());
-        System.out.println("Aberto: "+isAberto());
+    @Override
+    public String toString() {
+        return "Livro{" +
+                "titulo='" + titulo + '\'' +
+                ", autor='" + autor + '\'' +
+                ", totalPag='" + totalPag + '\'' +
+                ", aberto=" + aberto +
+                ", leitor=" + leitor +
+                '}';
     }
-
 
     @Override
     public void abrir() {
