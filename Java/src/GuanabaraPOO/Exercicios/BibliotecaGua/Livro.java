@@ -4,7 +4,8 @@ public class Livro implements Publicacao {
 
     private String titulo;
     private String autor;
-    private String totalPag;
+    private int totalPag;
+    private int pagAtual;
     private boolean aberto;
     private Pessoa leitor;
 
@@ -37,18 +38,19 @@ public class Livro implements Publicacao {
     }
 
     @Override
-    public void folhear() {
+    public void folhear(int p) {
+        this.pagAtual = p;
 
     }
 
     @Override
     public void avancarPag() {
-
+        this.pagAtual++;
     }
 
     @Override
     public void voltarPag() {
-
+        this.pagAtual--;
     }
 
     public Pessoa getLeitor() {
