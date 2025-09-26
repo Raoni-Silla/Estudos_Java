@@ -1,6 +1,6 @@
 package GuanabaraPOO.Exercicios.BibliotecaGua;
 
-public class Livro {
+public class Livro implements Publicacao {
 
     private String titulo;
     private String autor;
@@ -20,6 +20,32 @@ public class Livro {
         System.out.println("Autor: "+getAutor());
         System.out.println("Total Pag: "+getTotalPag());
         System.out.println("Aberto: "+isAberto());
+    }
+
+
+    @Override
+    public void abrir() {
+
+    }
+
+    @Override
+    public void fechar() {
+
+    }
+
+    @Override
+    public void folhear() {
+
+    }
+
+    @Override
+    public void avancarPag() {
+
+    }
+
+    @Override
+    public void voltarPag() {
+
     }
 
     public Pessoa getLeitor() {
@@ -61,4 +87,6 @@ public class Livro {
     public void setAberto(boolean aberto) {
         this.aberto = aberto;
     }
+
+
 }
