@@ -14,6 +14,9 @@ public class Livro implements Publicacao {
         setTitulo(titulo);
         setAutor(autor);
         setTotalPag(totalPag);
+        setAberto(false);
+        setPagAtual(0);
+
     }
 
     @Override
@@ -51,6 +54,15 @@ public class Livro implements Publicacao {
     @Override
     public void voltarPag() {
         this.pagAtual--;
+    }
+
+
+    public int getPagAtual() {
+        return pagAtual;
+    }
+
+    public void setPagAtual(int pagAtual) {
+        this.pagAtual = pagAtual;
     }
 
     public Pessoa getLeitor() {
