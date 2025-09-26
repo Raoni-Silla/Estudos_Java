@@ -10,12 +10,13 @@ public class Livro implements Publicacao {
     private Pessoa leitor;
 
 
-    Livro(String titulo, String autor, int totalPag){
+    Livro(String titulo, String autor, int totalPag, Pessoa leitor) {
         setTitulo(titulo);
         setAutor(autor);
         setTotalPag(totalPag);
         setAberto(false);
         setPagAtual(0);
+        setLeitor(leitor);
 
     }
 
@@ -26,7 +27,7 @@ public class Livro implements Publicacao {
                 ", autor='" + autor + '\'' +
                 ", totalPag='" + totalPag + '\'' +
                 ", aberto=" + aberto +
-                ", leitor=" + leitor +
+                ", leitor=" + leitor.getNome() +
                 '}';
     }
 
