@@ -1,4 +1,4 @@
-package GuanabaraPOO.Exercicios;
+package GuanabaraPOO.Exercicios.BibliotecaGua;
 
 public class Pessoa {
     private String nome;
