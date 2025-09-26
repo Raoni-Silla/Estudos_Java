@@ -10,7 +10,7 @@ public class Livro implements Publicacao {
     private Pessoa leitor;
 
 
-    Livro(String titulo, String autor, String totalPag){
+    Livro(String titulo, String autor, int totalPag){
         setTitulo(titulo);
         setAutor(autor);
         setTotalPag(totalPag);
@@ -77,11 +77,11 @@ public class Livro implements Publicacao {
         this.titulo = titulo;
     }
 
-    public String getTotalPag() {
+    public int getTotalPag() {
         return totalPag;
     }
 
-    public void setTotalPag(String totalPag) {
+    public void setTotalPag(int totalPag) {
         this.totalPag = totalPag;
     }
 
