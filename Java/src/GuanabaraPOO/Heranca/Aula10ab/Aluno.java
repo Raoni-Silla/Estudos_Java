@@ -20,6 +20,7 @@ public class Aluno extends Pessoa{
 
     public void cancelarMatricula(){
 
+        System.out.println("Matricula cancelada");
     }
 
     public String getCurso() {
