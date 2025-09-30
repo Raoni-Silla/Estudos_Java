@@ -1407,3 +1407,14 @@ sendo obrigatoriamente folha(sem filhos), uma classe esteril
 
 metodo final
 nao pode ser sobrescrito por suas subclasses, ele é obrigatoriamente herdado
+
+
+Polimorfismo:
+
+muitas formas
+permite que um mesmo nome represente varios comportamentos diferentes
+o mesmo nome, só que podemos executar isso de varias maneiras
+
+assinatura do metodo:
+quantidade e tipos de parametros
+
