@@ -1418,3 +1418,10 @@ o mesmo nome, só que podemos executar isso de varias maneiras
 assinatura do metodo:
 quantidade e tipos de parametros
 
+tipos de polimorfismo:
+polimorfismo de sobreposição:
+@Override
+chamar o mesmo metodo, com mesmo nome e ela poder agir de diferentes formas
+acontece quando substituimos um metodo de uma superclasse em uma subclasse com a mesma
+assinatura
+polimorfismo de sobrecarga:
