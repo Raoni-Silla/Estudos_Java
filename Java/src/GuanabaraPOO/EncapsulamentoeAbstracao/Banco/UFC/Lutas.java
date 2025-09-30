@@ -1,4 +1,4 @@
-package GuanabaraPOO.UFC;
+package GuanabaraPOO.EncapsulamentoeAbstracao.Banco.UFC;
 
 import java.util.Random;
 

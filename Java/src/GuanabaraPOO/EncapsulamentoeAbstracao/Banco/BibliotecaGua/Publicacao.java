@@ -1,4 +1,4 @@
-package GuanabaraPOO.Exercicios.BibliotecaGua;
+package GuanabaraPOO.EncapsulamentoeAbstracao.Banco.BibliotecaGua;
 
 public interface Publicacao {
 

@@ -1,4 +1,4 @@
-package GuanabaraPOO.Controlador;
+package GuanabaraPOO.EncapsulamentoeAbstracao.Banco.Controlador;
 
 public interface Controlador {
     //metodos abstratos, n vai ser desenvolvido

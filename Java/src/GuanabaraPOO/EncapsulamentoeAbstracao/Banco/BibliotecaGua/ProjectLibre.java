@@ -1,4 +1,4 @@
-package GuanabaraPOO.Exercicios.BibliotecaGua;
+package GuanabaraPOO.EncapsulamentoeAbstracao.Banco.BibliotecaGua;
 
 public class ProjectLibre {
     public static void main(String[] args) {

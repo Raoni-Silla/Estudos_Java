@@ -1,4 +1,4 @@
-package GuanabaraPOO.UFC;
+package GuanabaraPOO.EncapsulamentoeAbstracao.Banco.UFC;
 
 public class UFC {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package GuanabaraPOO.Banco;
+package GuanabaraPOO.EncapsulamentoeAbstracao.Banco;
 
 import javax.swing.*;
 import java.util.Scanner;
