@@ -1,0 +1,24 @@
+package GuanabaraPOO.Heranca.Aula012b;
+
+public class Mamifero extends Animal {
+
+    private String corPelo;
+
+    @Override
+    public void emitirSom() {
+        System.out.println("Mamifero emitir som");
+
+    }
+
+    @Override
+    public void locomover() {
+        System.out.println("Mamifero locomover correndo");
+
+    }
+
+    @Override
+    public void alimentar() {
+        System.out.println("Mamifero mamando");
+
+    }
+}
