@@ -1349,3 +1349,5 @@ uma subclasse pode puxar caracteristicas e comportamentos de superclasses(classe
 vc tem uma classe mais generica que vai ser pai de outras classes mais especificas
 voce aprimora os conceitos (fica mais especifico) a cada subclasse
 
+*depois dar uma revisada em relação bidirecional*
+
