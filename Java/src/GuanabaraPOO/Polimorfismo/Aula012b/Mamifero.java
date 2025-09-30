@@ -30,5 +30,5 @@ public class Mamifero extends Animal {
         this.corPelo = corPelo;
     }
 
-    public abstract void Locomover();
+
 }
