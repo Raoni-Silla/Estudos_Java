@@ -7,7 +7,8 @@ public class Funcionario extends Pessoa{
 
     public void mudarTrabalho()
     {
-        this.trabalhando = true;
+
+        this.trabalhando = ! this.trabalhando;
     }
 
     public Funcionario(String nome, int idade, String sexo, String setor)

@@ -14,7 +14,7 @@ public class PTeste {
     public static void main(String[] args) {
         Pessoa p1 = new Pessoa("carlos",19 ,"m");
         Aluno p2 = new Aluno("pedro",10 ,"m", 2411550917L, "ads");
-        Professor p3 = new Professor("begosso",60 ,"m");
+        Professor p3 = new Professor("begosso",60 ,"m", "tecnologia", 2.500);
         Funcionario p4 = new Funcionario("jonas", 19, "m", "limpeza");
     }
 }

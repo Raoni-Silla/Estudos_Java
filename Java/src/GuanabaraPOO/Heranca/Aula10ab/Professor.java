@@ -4,13 +4,16 @@ public class Professor extends Pessoa{
     private String especialidade;
     private double salario;
 
-    Professor(String nome, int idade, String sexo) {
+    Professor(String nome, int idade, String sexo, String especialidade, double salario) {
         super(nome, idade, sexo);
+        setEspecialidade(especialidade);
+        setSalario(salario);
     }
 
 
     public void receberAumento (){
 
+        this.setSalario(this.getSalario() + 0.5);
 
 
     }
