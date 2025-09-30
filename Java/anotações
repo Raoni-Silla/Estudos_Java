@@ -1363,3 +1363,30 @@ as classes que nao tem filhas sao chamadas de folhas
 toda subclasse herda todos os conteudos de suas ancestrais
 as filhas de uma subclasse são descendentes de uma superclasse raiz
 no caso contrario as subclasses são os ancestrais
+subindo a arvore é generalização e descendo é especificação
+
+
+tipos de herança:
+herança de implementação
+herança pobre, mais simples
+herança para diferença
+herança mais complexa
+
+temos uma classe pessoa generica com atributos e metodos
+nome, idade e sexo
+fazeraniversario()
+
+visitante, aluno e professor são pessoas?, sim
+entao eles herdam tudo que pessoa tem
+diferindo apenas nas especificações dentro da classe
+
+o visitante possui apenas os metodos e atributos herdados,
+nao vai implementar mais nenhum atributo nem metodo (herança pobre)
+
+oque ocorre entre aluno e pessoa (herança de implementação)
+
+vamos adicionar nessa arvore duas especializações de aluno
+bolsista e tecnico
+os dois tipos tem as mesmas caracteristicas de aluno
+bolsista acrescenta valor da bolsa e pagar mensalidade (sobreescreve um metodo)
+tecnico registro profissional e praticar(_)
