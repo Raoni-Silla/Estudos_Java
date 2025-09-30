@@ -1358,3 +1358,8 @@ super classe
 
 arvore de heranças, como navegar por ela?
 
+as classes que nao tem filhas sao chamadas de folhas
+
+toda subclasse herda todos os conteudos de suas ancestrais
+as filhas de uma subclasse são descendentes de uma superclasse raiz
+no caso contrario as subclasses são os ancestrais
