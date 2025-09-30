@@ -1,26 +1,23 @@
-package GuanabaraPOO.Heranca.Aula012b;
+package GuanabaraPOO.Polimorfismo.Aula012b;
 
-public class Peixe extends Animal {
+public class Reptil extends Animal {
 
     private String corEscama;
 
     @Override
     public void emitirSom() {
-        System.out.println("Peixe emitir som");
+        System.out.println("Som de Reptil");
     }
 
     @Override
     public void locomover() {
-        System.out.println("Peixe locomover nadando");
+        System.out.println("rastejo");
+
     }
 
     @Override
     public void alimentar() {
-        System.out.println("Peixe alimentando");
-    }
-
-    public void soltarBolha () {
-        System.out.println("Peixe soltar bolha");
+        System.out.println("alimentando reptil");
     }
 
     public String getCorEscama() {

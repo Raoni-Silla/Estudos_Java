@@ -1,4 +1,4 @@
-package GuanabaraPOO.Heranca.Aula012b;
+package GuanabaraPOO.Polimorfismo.Aula012b;
 
 public class Ave extends Animal {
 
