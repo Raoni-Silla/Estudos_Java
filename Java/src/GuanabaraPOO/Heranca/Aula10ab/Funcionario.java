@@ -13,6 +13,7 @@ public class Funcionario extends Pessoa{
     public Funcionario(String nome, int idade, String sexo, String setor)
     {
         super(nome, idade, sexo);
+        setSetor(setor);
     }
 
     public String getSetor() {
