@@ -12,5 +12,13 @@ public class TesteClasse {
         m1.alimentar();
         m1.locomover();
         m1.emitirSom();
+
+        Canguru c1 = new Canguru();
+        Cachorro c2 = new Cachorro();
+        Arara a2 = new Arara();
+        Cobra co = new Cobra();
+        Tartaruga tartaruga = new Tartaruga();
+        GoldFish gf = new GoldFish();
+
     }
 }

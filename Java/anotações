@@ -1424,4 +1424,7 @@ polimorfismo de sobreposição:
 chamar o mesmo metodo, com mesmo nome e ela poder agir de diferentes formas
 acontece quando substituimos um metodo de uma superclasse em uma subclasse com a mesma
 assinatura
+consigo chamar metodos de mesmo nome que respondem de formas diferentes
+sobreescrevendo eles a cada nova classe que herda os metodos a de cima
+
 polimorfismo de sobrecarga:

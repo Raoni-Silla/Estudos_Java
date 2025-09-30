@@ -29,4 +29,6 @@ public class Mamifero extends Animal {
     public void setCorPelo(String corPelo) {
         this.corPelo = corPelo;
     }
+
+    public abstract void Locomover();
 }
