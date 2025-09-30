@@ -19,5 +19,10 @@ public class PTeste {
         System.out.println(p1.toString());
         System.out.println(p2.toString());
         System.out.println(p3.toString());
+
+        p1.fazerAniversario();
+        p2.fazerAniversario();
+        p3.fazerAniversario();
+        //todos podem usar o metodo fazer aniversario pois é comum a superclasse
     }
 }
