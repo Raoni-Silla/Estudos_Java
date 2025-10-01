@@ -1,15 +1,18 @@
-package GuanabaraPOO.DesafioPoo.Video;
+package GuanabaraPOO.DesafioPoo.VideoPack;
 
 public class Video implements AcoesVideo {
     private String titulo;
-    private String avaliacao;
+    private int estrela;
     private int views;
     private int curtidas;
     private boolean reproduzindo;
 
-    Video(String titulo) {
+    public Video(String titulo) {
         setTitulo(titulo);
         setReproduzindo(false);
+        setViews(0);
+        setCurtidas(0);
+        setEstrela(1);
     }
 
 
@@ -22,12 +25,12 @@ public class Video implements AcoesVideo {
         this.titulo = titulo;
     }
 
-    public String getAvaliacao() {
-        return avaliacao;
+    public int getEstrela() {
+        return estrela;
     }
 
-    public void setAvaliacao(String avaliacao) {
-        this.avaliacao = avaliacao;
+    public void setEstrela(int estrela) {
+        this.estrela = estrela;
     }
 
     public int getViews() {
@@ -67,5 +70,16 @@ public class Video implements AcoesVideo {
     @Override
     public void like() {
         setCurtidas(getCurtidas() + 1);
+    }
+
+    @Override
+    public String toString() {
+        return "Video{" +
+                "titulo = '" + getTitulo() + '\'' +
+                ", estrela = " + getEstrela() +
+                ", views = " + getViews() +
+                ", curtidas = " + getCurtidas() +
+                ", reproduzindo = " + isReproduzindo() +
+                '}';
     }
 }

@@ -6,5 +6,12 @@ public abstract class Pessoa {
     protected String sexo;
     protected double exp;
 
+    public Pessoa(String nome, int idade, String sexo, double exp) {
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
+        this.exp = 0;
+    }
+
     protected abstract void ganharExp() ;
 }

@@ -1,4 +1,4 @@
-package GuanabaraPOO.DesafioPoo.Video;
+package GuanabaraPOO.DesafioPoo.VideoPack;
 
 public interface AcoesVideo {
     public void play();
