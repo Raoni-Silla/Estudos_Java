@@ -1447,4 +1447,12 @@ implementar essa interface
 
 pra cada metodo abstrato da interface, eu aplico esse metodo de formas
 diferentes em cada classe
+associar um metodo a uma variavel?
+eu posso instanciar um objeto do tipo de uma interface?
+  Calculo soma = (a,b)->{return a+b;};
+  defino a logica do metodo implementado na interface
+  o java sabe que se eu atribuir uma lambda, essa lambda vai ter que bater
+  com o unico metodo que eu defini na interface
+
+  eu passo dois parametros a e b
 
