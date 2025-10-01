@@ -1,4 +1,4 @@
-package GuanabaraPOO.Polimorfismo.Aula012b;
+package GuanabaraPOO.Polimorfismo.Sobreposicao;
 
 public class TesteClasse {
     public static void main(String[] args) {

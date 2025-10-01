@@ -1,4 +1,4 @@
-package GuanabaraPOO.Polimorfismo.Aula012b;
+package GuanabaraPOO.Polimorfismo.Sobreposicao;
 
 public class Canguru extends Mamifero{
 

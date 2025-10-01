@@ -1,4 +1,4 @@
-package GuanabaraPOO.Polimorfismo.Aula012b;
+package GuanabaraPOO.Polimorfismo.Sobreposicao;
 
 public class Cachorro extends Mamifero{
     @Override
