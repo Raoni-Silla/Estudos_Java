@@ -1480,3 +1480,14 @@ interface funcionais definidadas pelo java bynaryoperator
 
 representa uma operação que representa dois operandos e depois produz um resultado
 do mesmo tipo que os operandos
+
+posso usar uma interface funcional ja definida pelo java
+
+soma = (a,b)->{return a+b;}; aqui eu to atribuindo que a variavel soma
+do tipo da minha interface, vai receber e vai implementar dentro dela
+essa logica da função?, entao dentro de soma sempre vai ser essa logica
+de a + b?, entao sempre que eu chamar o nome do metodo q ta dentro da
+interface, ele vai em soma e verifica a logica q eu implementei com as
+lambdas e me retorna o valor?
+
+for each:
