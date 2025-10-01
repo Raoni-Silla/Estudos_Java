@@ -11,7 +11,10 @@ public class CalculoTeste2 {
         // java entende que tem uma unica sentença de codigo e que ele
         // vai ser implicitamente retornado
         //nao posso ter mais de uma linha de codigo quando nao tem chaves
+        //evita criar uma classe que implemente interfaces, escrevendo de maneira
+        //mais otimizada
         System.out.println(soma.executar(1,2));
 
     }
 }
+

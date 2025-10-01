@@ -1456,3 +1456,27 @@ eu posso instanciar um objeto do tipo de uma interface?
 
   eu passo dois parametros a e b
 
+ eu so posso ter um metodo dentro das interfaces em lambda?
+
+  interface funcional
+  @functionalinterface
+  ela força eu ter apenas um unico metodo, associado as lambdas
+  quando eu crio uma função usando lambda eu preciso associar essa funcao a uma interface
+  como o java vai saber qual funcao eu to falando se tem mais de uma funcao dentro da interface
+  a anottation barra isso, deixa eu ter apenas um metodo
+
+  apartir das interfaces funcionais eu consigo criar as lambdas
+  a annotation valida, e verifica se é uma interface funcional
+
+  uma interface funcional tem apenas um unico metodo
+
+  preciso ter um metodo abstrato dentro da interface, pro java identificar
+  que esse faz parte da lambda expression
+
+  casos que posso ter outros metodos em uma interface funcional é se ela tem corpo
+  ou se ela é static
+
+interface funcionais definidadas pelo java bynaryoperator
+
+representa uma operação que representa dois operandos e depois produz um resultado
+do mesmo tipo que os operandos
