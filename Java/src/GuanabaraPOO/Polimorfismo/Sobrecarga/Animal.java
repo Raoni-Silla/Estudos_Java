@@ -5,9 +5,7 @@ public abstract class Animal {
     protected double peso;
     protected String membros;
 
-    public void emitirSom(){
-        System.out.println("Emitindo Som de animal");
-    }
+    public abstract void emitirSom();
 
     public int getIdade() {
         return idade;
