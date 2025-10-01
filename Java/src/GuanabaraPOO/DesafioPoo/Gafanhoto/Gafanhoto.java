@@ -6,7 +6,10 @@ public class Gafanhoto extends Pessoa {
     private int totAssistido;
 
 
-    Gafanhoto(String login) {
+    public Gafanhoto(String nome, String sexo, int idade, String login) {
+        //o primeiro construtor a ser chamado é o construtor do metodo pai
+        //para garantir que a parte pessoa de gafanhoto seja feita primeiro
+        super(nome,idade,sexo);
         setLogin(login);
         setTotAssistido(0);
     }
@@ -35,5 +38,14 @@ public class Gafanhoto extends Pessoa {
     @Override
     protected void ganharExp() {
 
+    }
+
+    @Override
+    public String toString() {
+        return "Gafanhoto{" +
+                "login='" + login + '\'' +
+                ", totAssistido=" + totAssistido +
+                ", nome='" + nome + '\'' +
+                '}';
     }
 }
