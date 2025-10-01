@@ -1428,7 +1428,9 @@ consigo chamar metodos de mesmo nome que respondem de formas diferentes
 sobreescrevendo eles a cada nova classe que herda os metodos a de cima
 mesma assinatura em classes diferentes, uma vez em cada classe, e em
 classes diferentes com a mesma assinatura
+classes diferentes, mesma assinatura
 polimorfismo de sobrecarga:
+mesma classe, assinaturas diferentes
 é quando voce sobrecarrega o mesmo nome, com assinaturas diferentes dentro
 de uma mesma classe
 se eu uso um metodo reagir, e nela mudo apenas sua assinatura 4 vezes
