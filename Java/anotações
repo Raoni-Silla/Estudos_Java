@@ -1409,6 +1409,8 @@ metodo final
 nao pode ser sobrescrito por suas subclasses, ele é obrigatoriamente herdado
 
 
+quarta, outubro 1
+
 Polimorfismo:
 
 muitas formas
@@ -1438,4 +1440,11 @@ tenho um polimorfismo por sobrecarga
 entao polimorfismo de sobrecarga eu reescreco o metodo na classe
 mudando apenas sua assinatura
 
+Lambdas:
+
+se eu defino uma interface eu espero que vai ter uma classe que vai
+implementar essa interface
+
+pra cada metodo abstrato da interface, eu aplico esse metodo de formas
+diferentes em cada classe
 
