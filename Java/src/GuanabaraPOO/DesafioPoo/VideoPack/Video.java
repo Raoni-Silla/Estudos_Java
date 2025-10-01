@@ -12,7 +12,7 @@ public class Video implements AcoesVideo {
         setReproduzindo(false);
         setViews(0);
         setCurtidas(0);
-        setEstrela(1);
+        this.estrela = 1;
     }
 
 
@@ -30,7 +30,9 @@ public class Video implements AcoesVideo {
     }
 
     public void setEstrela(int estrela) {
-        this.estrela = estrela;
+        int newStar;
+        newStar = (int)((this.estrela + estrela) / this.views);
+        this.estrela = newStar;
     }
 
     public int getViews() {
