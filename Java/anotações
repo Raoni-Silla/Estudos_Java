@@ -1435,4 +1435,7 @@ mesma classe, assinaturas diferentes
 de uma mesma classe
 se eu uso um metodo reagir, e nela mudo apenas sua assinatura 4 vezes
 tenho um polimorfismo por sobrecarga
+entao polimorfismo de sobrecarga eu reescreco o metodo na classe
+mudando apenas sua assinatura
+
 

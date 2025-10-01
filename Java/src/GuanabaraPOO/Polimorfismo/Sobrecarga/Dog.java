@@ -25,12 +25,6 @@ public class Dog extends Lobo {
 
 
     }
-    public void reagir (int idade, float peso){
-
-
-
-    }
-
     public void reagir (boolean dono){
 
         if(dono){

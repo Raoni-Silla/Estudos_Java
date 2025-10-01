@@ -6,6 +6,12 @@ public class Aula13 {
        // Animal x = new Animal();
         Lobo m = new Lobo();
         m.emitirSom();
+        Dog d = new Dog();
+        d.emitirSom();
+        d.reagir(false);
+        d.reagir("vai apanhar");
+        d.reagir(19,20);
+
 
 
     }
