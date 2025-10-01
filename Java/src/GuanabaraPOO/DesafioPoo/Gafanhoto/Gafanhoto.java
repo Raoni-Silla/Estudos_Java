@@ -11,6 +11,10 @@ public class Gafanhoto extends Pessoa {
     }
 
 
+    public void viuMaisUm() {
+        setTotAssistido(getTotAssistido() + 1);
+    }
+
     public String getLogin() {
         return login;
     }
