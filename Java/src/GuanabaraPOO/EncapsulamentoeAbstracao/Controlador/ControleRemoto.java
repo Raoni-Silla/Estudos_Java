@@ -1,4 +1,4 @@
-package GuanabaraPOO.EncapsulamentoeAbstracao.Banco.Controlador;
+package GuanabaraPOO.EncapsulamentoeAbstracao.Controlador;
 
 public class ControleRemoto implements Controlador {
 

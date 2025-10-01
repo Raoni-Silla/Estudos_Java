@@ -1,4 +1,4 @@
-package GuanabaraPOO.EncapsulamentoeAbstracao.Banco.UFC;
+package GuanabaraPOO.EncapsulamentoeAbstracao.UFC;
 
 public class Lutador implements LutadorInterface {
 

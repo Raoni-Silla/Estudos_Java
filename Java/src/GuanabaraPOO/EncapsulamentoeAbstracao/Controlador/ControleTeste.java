@@ -1,4 +1,4 @@
-package GuanabaraPOO.EncapsulamentoeAbstracao.Banco.Controlador;
+package GuanabaraPOO.EncapsulamentoeAbstracao.Controlador;
 
 public class ControleTeste {
     public static void main(String[] args) {

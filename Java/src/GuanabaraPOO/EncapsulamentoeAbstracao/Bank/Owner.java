@@ -1,4 +1,4 @@
-package GuanabaraPOO.EncapsulamentoeAbstracao.Banco;
+package GuanabaraPOO.EncapsulamentoeAbstracao.Bank;
 
 public class Owner {
       String name;

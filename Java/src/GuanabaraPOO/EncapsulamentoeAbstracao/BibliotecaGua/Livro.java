@@ -1,4 +1,4 @@
-package GuanabaraPOO.EncapsulamentoeAbstracao.Banco.BibliotecaGua;
+package GuanabaraPOO.EncapsulamentoeAbstracao.BibliotecaGua;
 
 public class Livro implements Publicacao {
 
