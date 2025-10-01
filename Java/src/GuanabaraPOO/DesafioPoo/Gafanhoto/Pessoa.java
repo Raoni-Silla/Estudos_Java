@@ -14,4 +14,14 @@ public abstract class Pessoa {
     }
 
     protected abstract void ganharExp() ;
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", sexo='" + sexo + '\'' +
+                ", exp=" + exp +
+                '}';
+    }
 }

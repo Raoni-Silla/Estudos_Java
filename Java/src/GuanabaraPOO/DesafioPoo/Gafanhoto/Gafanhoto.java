@@ -45,7 +45,8 @@ public class Gafanhoto extends Pessoa {
         return "Gafanhoto{" +
                 "login='" + login + '\'' +
                 ", totAssistido=" + totAssistido +
-                ", nome='" + nome + '\'' +
+                //super to string chama os dados
+                ", User:'" + super.toString() + '\'' +
                 '}';
     }
 }
