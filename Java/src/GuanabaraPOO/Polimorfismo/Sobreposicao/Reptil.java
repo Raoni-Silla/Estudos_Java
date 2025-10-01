@@ -10,7 +10,7 @@ public class Reptil extends Animal {
     }
 
     @Override
-    public void locomover() {
+    public void Locomover() {
         System.out.println("rastejo");
 
     }

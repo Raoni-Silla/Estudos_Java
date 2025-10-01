@@ -1,6 +1,6 @@
 package GuanabaraPOO.Polimorfismo.Sobrecarga;
 
-public class Lobo extends Mamifero{
+public class Lobo extends Mamiferos{
 
 
     @Override

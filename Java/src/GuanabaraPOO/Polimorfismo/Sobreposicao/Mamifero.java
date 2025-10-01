@@ -11,7 +11,7 @@ public class Mamifero extends Animal {
     }
 
     @Override
-    public void locomover() {
+    public void Locomover() {
         System.out.println("Mamifero locomover correndo");
 
     }
@@ -29,6 +29,7 @@ public class Mamifero extends Animal {
     public void setCorPelo(String corPelo) {
         this.corPelo = corPelo;
     }
+
 
 
 }

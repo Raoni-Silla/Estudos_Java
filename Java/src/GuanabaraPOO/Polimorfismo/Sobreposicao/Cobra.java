@@ -2,7 +2,7 @@ package GuanabaraPOO.Polimorfismo.Sobreposicao;
 
 public class Cobra extends Reptil{
     @Override
-    public void locomover(){
+    public void Locomover(){
         System.out.println("Locomover rastejando...");
     }
     public void EmitirSom(){

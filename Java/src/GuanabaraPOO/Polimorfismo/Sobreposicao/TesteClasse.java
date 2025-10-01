@@ -10,7 +10,7 @@ public class TesteClasse {
         m1.setCorPelo("Marrom");
         m1.setPeso("90 kgs");
         m1.alimentar();
-        m1.locomover();
+        m1.Locomover();
         m1.emitirSom();
 
         Canguru c1 = new Canguru();

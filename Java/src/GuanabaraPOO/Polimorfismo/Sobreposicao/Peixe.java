@@ -10,7 +10,7 @@ public class Peixe extends Animal {
     }
 
     @Override
-    public void locomover() {
+    public void Locomover() {
         System.out.println("Peixe locomover nadando");
     }
 

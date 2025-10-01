@@ -8,7 +8,7 @@ public abstract class Animal {
 
 
     public abstract void emitirSom();
-    public abstract void locomover();
+    public abstract void Locomover();
     public abstract void alimentar();
 
 

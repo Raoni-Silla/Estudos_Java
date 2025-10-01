@@ -10,7 +10,7 @@ public class Ave extends Animal {
     }
 
     @Override
-    public void locomover() {
+    public void Locomover() {
         System.out.println("Voando");
 
     }

@@ -1,6 +1,6 @@
 package GuanabaraPOO.Polimorfismo.Sobrecarga;
 
-public class Mamifero extends Animal{
+public class Mamiferos extends Animal{
 
     protected String corPelo;
 
