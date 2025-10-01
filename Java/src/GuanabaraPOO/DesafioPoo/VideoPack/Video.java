@@ -6,13 +6,15 @@ public class Video implements AcoesVideo {
     private int views;
     private int curtidas;
     private boolean reproduzindo;
+    private int somaAvaliacoes;
 
     public Video(String titulo) {
         setTitulo(titulo);
         setReproduzindo(false);
         setViews(0);
         setCurtidas(0);
-        this.estrela = 1;
+        this.estrela = 0;
+        this.somaAvaliacoes = 0;
     }
 
 
@@ -29,10 +31,9 @@ public class Video implements AcoesVideo {
         return estrela;
     }
 
-    public void setEstrela(int estrela) {
-        int newStar;
-        newStar = (int)((this.estrela + estrela) / this.views);
-        this.estrela = newStar;
+    public void novaAvaliacao(int nota) {
+        this.somaAvaliacoes = this.somaAvaliacoes + nota;
+        this.estrela = this.somaAvaliacoes / this.views;
     }
 
     public int getViews() {
