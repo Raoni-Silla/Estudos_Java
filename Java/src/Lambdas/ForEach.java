@@ -28,6 +28,7 @@ public class ForEach {
 
         System.out.println("\nMethod reference");
 
+        //menos flexivel, mas se eu quiser so mostrar oque tem na lista eu faço assim
         lista.forEach(System.out::println);
         //passo uma referencia pra essa função
         //quanto menos codigo eu digitar, acaba que fica menos legivel
