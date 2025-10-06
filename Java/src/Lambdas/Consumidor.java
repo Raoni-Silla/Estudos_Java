@@ -7,7 +7,7 @@ import java.util.function.Consumer;
 public class Consumidor {
     public static void main(String[] args) {
 
-        Consumer<Produto> imprimir = p -> System.out.println("Produto: " + p.getNome());
+        Consumer<Produto> imprimir = p -> System.out.println("Produto: " + p.getNome() + " !!!!");
 
         Produto produto1 = new Produto("caneta", 12.34,0.09);
         Produto produto2 = new Produto("lapis", 12.34,0.09);
@@ -22,6 +22,8 @@ public class Consumidor {
         produtos.add(produto2);
         produtos.add(produto3);
         produtos.add(produto4);
+
+        produtos.forEach(imprimir);
 
     }
 }
