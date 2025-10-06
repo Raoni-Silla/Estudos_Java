@@ -1517,3 +1517,7 @@ ele permite entre tipos do mesmo tipo
 
 IntBynaryOperator
 LongBynaryOperator
+
+composição de funções, funções com pequenas responsabilidades que se encadeiam
+e no fim vc recebe o valor que quer, vc consegue reutilizar as funções de menor tamanho
+usa o andThen para alojar uma function na outra
