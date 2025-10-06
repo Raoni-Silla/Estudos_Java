@@ -1509,3 +1509,11 @@ se eu encadiar uma função depois a saida de uma função tem que ser compative
 com o parametro da proxima função
 
 operador unario é um pouco mais previsivel o encadeamento
+
+boxing primitivo pra classe
+unboxing tira de classe pra primitivo
+
+ele permite entre tipos do mesmo tipo
+
+IntBynaryOperator
+LongBynaryOperator
