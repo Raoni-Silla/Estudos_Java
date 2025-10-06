@@ -26,6 +26,12 @@ public class ForEach {
         //vai se chamar nome, e aponto pra logica que ele vai fazer, que é o sout
 
 
+        System.out.println("Lambda2:");
+
+        lista.forEach(nome -> meuImprimir(nome));
+
+
+
         System.out.println("\nMethod reference");
 
         //menos flexivel, mas se eu quiser so mostrar oque tem na lista eu faço assim
@@ -35,8 +41,14 @@ public class ForEach {
         //chama o foreach atraves da notação ponto
         //vai dar um sout (mostrar no console) e vai printar
 
+        System.out.println("\nMethod reference2");
+
+        //menos flexivel, mas se eu quiser so mostrar oque tem na lista eu faço assim
+        lista.forEach(ForEach::meuImprimir);
         //lista para cada item na lista, imprima na saida do sistema
 
-
+    }
+    static void meuImprimir(String nome){
+        System.out.println("Olá meu nome é " + nome);
     }
 }

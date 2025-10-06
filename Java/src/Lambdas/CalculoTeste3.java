@@ -8,15 +8,15 @@ public class CalculoTeste3 {
 
         //defino o tipo, como double
 
-        //nao: int -> double
-        //double -> Double
+        //nao: int -> Double
+        //sim: double -> Double
         BinaryOperator <Double> soma = (a, b)->{return a+b;};
 
         //o binary operator faz o calculo de dois parametros  de tipos iguais e o
         //tipo de retorno é igual oque eu recebi
         System.out.println(soma.apply(1.0,2.0));
 
-        soma = (x,y) -> x * y; //quando eu omito o par de chaves o
+        soma = (x,y) -> x * y; //quando eu omito o par de chaves o return fica implicito
 
         //o apply seria como o executar na interface calculo
         System.out.println(soma.apply(1.0,2.0));
