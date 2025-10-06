@@ -1521,3 +1521,7 @@ LongBynaryOperator
 composição de funções, funções com pequenas responsabilidades que se encadeiam
 e no fim vc recebe o valor que quer, vc consegue reutilizar as funções de menor tamanho
 usa o andThen para alojar uma function na outra
+
+
+tem o compose pra unir funções, o compose diz que vc deve fazer x coisa antes de executar
+x outra coisa

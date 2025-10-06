@@ -15,6 +15,7 @@ public class Funcao {
 
         System.out.println(funcao.andThen(funcao2).apply(5));
         //resolve primeiro o appply e depois chama o andthen com oque a funcao 2 faz
-
+        //quanto maior a função mais dificil fica a reutilização do codigo
+        //quando se tem micro funções
     }
 }
