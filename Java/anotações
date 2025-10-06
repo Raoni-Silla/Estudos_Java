@@ -1497,3 +1497,15 @@ quinta, outubro 2, 16:16
 estudei pra prova do alex
 
 segunda, outubro 6
+nada -> T Supplier (n recebe nenhum parametro e retorna um valor generico)
+T -> nada Consumer
+T - T -> UnaryOperator
+S -> T Function
+T -> boolean predicate
+
+na function tem que ter mais cuidado
+vamos supor que eu defini uma funçao que recebe uma data e retorna um numero
+se eu encadiar uma função depois a saida de uma função tem que ser compativel
+com o parametro da proxima função
+
+operador unario é um pouco mais previsivel o encadeamento
