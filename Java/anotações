@@ -1535,3 +1535,6 @@ quando eu quero usar uma lambda preciso declarar uma variavel do tipo dessa inte
 e entao eu dou o corpo dessa função abstrata e armazeno o corpo dessa função na variavel
 assim virando uma função ou metodo anonimo, que posso reutilizar esse varias vezes no codigio
 
+Stream api
+stream é um conjunto de dados com alguns recursos a mais
+map, filter, reduce
