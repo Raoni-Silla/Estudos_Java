@@ -1547,3 +1547,21 @@ vai ter determinados momentos que eu n vou precisar usar um if
 ou um laço
 o laço, ou seja a iteração sera resolvido internamente dentro
 da stream
+
+Streams tenho 3 operadores
+built ops
+a forma que vc tem pra criar uma stream, vc pode criar uma stream de diversas formas
+a operação de construção da stream
+int ops
+operação intermediaria sempre retornam nova stream, uma vez que eu criei uma stream
+built (stream) -> int (stream), eu vou encadeando operações intermediarias e no final
+eu posso gerar um tipo de valor diferente da stream, pode gerar alguma coisa que nao seja string
+como tambem pode retornar nada
+terminal ops
+
+posso ter stream ordenadas, ou sequencias nao ordenadas
+temos stream sequencial, onde passa por cada item da lista
+
+e tem o paral stream
+se eu tiver uma lista de 10 elementos, é possivel que intermanete ela possa
+processar esses dados de forma paraleleas
