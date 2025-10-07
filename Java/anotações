@@ -1538,3 +1538,12 @@ assim virando uma função ou metodo anonimo, que posso reutilizar esse varias v
 Stream api
 stream é um conjunto de dados com alguns recursos a mais
 map, filter, reduce
+as interações ou parte do trabalho sera feito de forma interna
+pela stream,
+quando eu faço um algoritimo mais procedural ele vai detalhar
+cada passo, desde o laço, teste e etc
+so que isso passa a ser resolvido de forma interna pela linguagem
+vai ter determinados momentos que eu n vou precisar usar um if
+ou um laço
+o laço, ou seja a iteração sera resolvido internamente dentro
+da stream
