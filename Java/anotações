@@ -1565,3 +1565,4 @@ temos stream sequencial, onde passa por cada item da lista
 e tem o paral stream
 se eu tiver uma lista de 10 elementos, é possivel que intermanete ela possa
 processar esses dados de forma paraleleas
+
