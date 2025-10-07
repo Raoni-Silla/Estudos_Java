@@ -1525,3 +1525,13 @@ usa o andThen para alojar uma function na outra
 
 tem o compose pra unir funções, o compose diz que vc deve fazer x coisa antes de executar
 x outra coisa
+
+terça, outubro 7:
+
+terminei a parte de lambdas e agora vou entrar em stream api
+entao minha definição final de lambdas é, elas funcionam apartir de interfaces
+funcionais, que dentro dessas interfaces tem funções abstratas
+quando eu quero usar uma lambda preciso declarar uma variavel do tipo dessa interface
+e entao eu dou o corpo dessa função abstrata e armazeno o corpo dessa função na variavel
+assim virando uma função ou metodo anonimo, que posso reutilizar esse varias vezes no codigio
+
