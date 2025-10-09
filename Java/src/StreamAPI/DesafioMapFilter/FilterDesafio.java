@@ -9,9 +9,9 @@ import java.util.function.Predicate;
 public class FilterDesafio {
     public static void main(String[] args) {
 
-        Produto prod1 = new Produto("Playstation", 3.500, 0.3, true);
+        Produto prod1 = new Produto("Playstation", 3.500, 0.35, true);
         Produto prod2 = new Produto("Xbox", 2.500, 0.1, true);
-        Produto prod3 = new Produto("Switch", 2.300, 0.4, false);
+        Produto prod3 = new Produto("Switch", 2.300, 0.4, true);
         Produto prod4 = new Produto("Notebook Basico", 1.200, 0.2, true);
         Produto prod5 = new Produto("Apple pod", 3.600, 0.1, false);
         Produto prod6 = new Produto("Iphone 13", 5.500, 0.022, true);
