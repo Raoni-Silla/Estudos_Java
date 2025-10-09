@@ -1676,3 +1676,34 @@ tinha um array de produto que no final foi transformado apenas em uma array de n
 produto
 
 
+filter
+temos um array da seguinte forma
+
+3,2,4,7,8,7,6,1
+eu aplico o filter e ele filtra os dados
+filter eu digo qual criterio vou usar pra filtrar os dados
+aqui no filtro eu defino uma função ou lambida com o criterio de filtro q eu vou usar
+nesse carro usaremos um predicate
+porque o filtro retorna verdadeiro ou falso
+se for verdadeiro o objeto estara na stream final
+filter (n -> n % 2 == 0)
+posso ter uma stream que tem a mesma quantidade de elementos que o primeiro
+posso ter menor quantidade
+ou posso nao ter nenhuma porque nenhum dos resultados é verdadeiro
+2,4,8,6 <- uma nova stream que tem apenas 4 posições que sobreviveram pos filtro
+
+filter ele literalmente filtra os elementos apartir de parametros
+
+stream de 4 posições
+com 4 objetos
+cada objeto tem um preço
+vamos supor que eu quero filtrar todos os produtos caros > 1000
+
+filter(p -> p.getPreco >= 1000)
+
+gera uma nova stream
+
+predicate recebe algo como parametro e retorna true ou false
+com uma unica linha evito um for, um segundo arraylist
+
+
