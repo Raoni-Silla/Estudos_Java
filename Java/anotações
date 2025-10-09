@@ -1642,4 +1642,36 @@ tbm temos paralel stream
 vamos supor que temos uma lista de 10 objetos, e internamente ele crie 10 linhas
 de execução que execute cada objeto de forma mais rapida
 
+Teoria do metodo map #01
+
+uma stream de dados é como se fosse uma lista de dados
+e esses dados são processados a medida que essa stream for consumida
+
+1,2,3,4 ,5,6 <- uma stream de numeros
+
+vamos supor que eu quero uma transformação
+eu uso map e passo uma lambda pra ele
+
+de forma que vai gerar outra stream de mesmo tamanho
+e vou passar uma função pro map que vai mapear uma stream original
+pra nova stream
+
+1,2,3,4 ,5,6 <- uma stream de numeros
+map (e -> e *2) <-lambda expression que vai tranformar os dados, pega cada item da stream
+e transforma dessa forma ai, transforma uma stream de dados em outra stream de dados
+
+a regra é a lambda expressao que vou usar pra transformar
+1,4,6,8,10,12
+nova stream de dados depois de passar pelo map
+quero fazer outra transformaçao posso aplicar outro map?
+pode, o map é uma ops intermediaria
+ela vai gerar outra stream de dados que vai transformar outra stream de mesmo tamanho
+com os dados modificados
+oque eu recebo como parametro, é cada item da stream
+
+vamos supor que eu tenho um array de objetos
+como eu poderia fazer um map que extraia apenas o nome dos objetos
+eu faço um map com a logica de (P -> p.getNome)
+tinha um array de produto que no final foi transformado apenas em uma array de nome de
+produto
 
