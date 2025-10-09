@@ -21,7 +21,7 @@ public class Map {
         marcas.stream()
                 .map(maiscula)
                 .map(primeiraLetra)
-                .map(Utilitarios::grito)
+                .map(Utilitarios::grito) //uso o method reference, chamo a classe utilitario e referencio a função grito
                 .forEach(println);
 
         //posso fazer uma composição em cima de uma coleção de dados
