@@ -1726,3 +1726,7 @@ reduce (3,3)
 reduce (6,4)
 ....
 ifpresent ele ve se aquela variavel tem conteudo
+
+posso chamar o reduce apenas na operação binaria
+ou na operação binaria com o valor inicial
+ou uma mais complexa
