@@ -1707,3 +1707,22 @@ predicate recebe algo como parametro e retorna true ou false
 com uma unica linha evito um for, um segundo arraylist
 
 
+reduce
+flexivel, transforma uma stream de dados em outra coisa completamente diferente
+temos um vetor
+1,2,3,4,5,6,7,8
+quero aplicar o reduce em cima dessa stream de dados
+reduce (acumulador, n que representa os elementos na string)
+o acumuluador é um valor que eu posso dar um valor inicial pra ele
+e pra cada uma das repetições o n recebe o acumulador
+pra cada novo elemento e o acumulador é o valor resultado da função anterior
+transformar uma sequencia de numeros em um valor total
+reduce (0,1)
+1
+reduce (1,2)
+3
+reduce (3,3)
+6
+reduce (6,4)
+....
+ifpresent ele ve se aquela variavel tem conteudo
