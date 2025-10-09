@@ -1,6 +1,5 @@
 package StreamAPI;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
@@ -22,8 +21,10 @@ public class Map {
         marcas.stream()
                 .map(maiscula)
                 .map(primeiraLetra)
-                .map(grito)
+                .map(Utilitarios::grito)
                 .forEach(println);
+
+        //posso fazer uma composição em cima de uma coleção de dados
 
     }
 }
