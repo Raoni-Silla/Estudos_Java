@@ -6,10 +6,11 @@ public class Produto {
     private double desconto;
     private boolean freteGratis;
 
-    Produto (String nome, double preco){
+    Produto (String nome, double preco, double desconto, boolean freteGratis){
         this.nome = nome;
         this.preco = preco;
-        setDesconto(preco);
+        setDesconto(desconto);
+        setFreteGratis(freteGratis);
     }
 
     public String getNome() {
@@ -24,14 +25,8 @@ public class Produto {
         return desconto;
     }
 
-    public void setDesconto(double preco) {
-        if (this.preco > 1.500){
-            this.desconto = 0.3;
-            setFreteGratis(true);
-        }else {
-            this.desconto = 0.1;
-            setFreteGratis(false);
-        }
+    public void setDesconto(double desconto) {
+            this.desconto = desconto;
     }
 
     public boolean isFreteGratis() {
