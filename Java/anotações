@@ -1730,3 +1730,9 @@ ifpresent ele ve se aquela variavel tem conteudo
 posso chamar o reduce apenas na operação binaria
 ou na operação binaria com o valor inicial
 ou uma mais complexa
+
+funçoes match
+algum aluno foi aprovado?, todos os alunos foram aprovados?, nenhum aluno foi aprovado?
+
+qlqr função match é terminadora
+
