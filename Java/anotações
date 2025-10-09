@@ -1605,4 +1605,41 @@ eu só faço st.forEach (sout::println)
 só chamo uma função, passo que quero printar a informação que esta dentro
 da lista
 
+laço interno
+
+Streams
+dentro da api de stream tenho uma serie de 30 metodos de operadores
+tenho uma serie de operadores que me ajudam a trabalhar com a stream
+
+tenho operadores de construção (built ops)
+temos as operações intermediarias (int ops)
+e as operações terminais (terminal ops)
+
+as operações de build é a forma que eu tenho pra criar
+uma stream e depois de criar uma stream eu tenho acesso as informações
+intermediarias
+
+int ops (funçoes pequenas que são encadeadas)
+funções facilmente encadeadas uma atras da outra e depois finalmente
+tenho uma operação terminal
+funções int sempre retornam uma stream
+de forma que todas essas 30 ou mais operações que tenho a minha disposição
+uma operação intermediaria sempre gera outra stream, uma cadeia de dados
+de forma que no final vou ter uma operação terminal
+pode gerar algo diferente de uma stream
+eu crio a stream no primeiro momento, encadeio chamas que no final podem geral algo
+ou tbm podem nao gerar nada
+
+built (stream) -> int (stream) -> int (stream) -> terminal operator (!= stream)
+
+podemos ter stream ordenadas que tem uma sequencia a ser seguida
+
+e as vezes temos sequencias nao ordenadas, pode simplesmente ir gerando valores
+
+temos stream sequencial, sempre um dado por vez sendo processado
+
+tbm temos paralel stream
+vamos supor que temos uma lista de 10 objetos, e internamente ele crie 10 linhas
+de execução que execute cada objeto de forma mais rapida
+
 
