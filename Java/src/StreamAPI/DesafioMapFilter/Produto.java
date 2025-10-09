@@ -9,6 +9,7 @@ public class Produto {
     Produto (String nome, double preco){
         this.nome = nome;
         this.preco = preco;
+        setDesconto(preco);
     }
 
     public String getNome() {
@@ -23,8 +24,14 @@ public class Produto {
         return desconto;
     }
 
-    public void setDesconto(double desconto) {
-        this.desconto = desconto;
+    public void setDesconto(double preco) {
+        if (this.preco > 1.500){
+            this.desconto = 0.3;
+            setFreteGratis(true);
+        }else {
+            this.desconto = 0.1;
+            setFreteGratis(false);
+        }
     }
 
     public boolean isFreteGratis() {
