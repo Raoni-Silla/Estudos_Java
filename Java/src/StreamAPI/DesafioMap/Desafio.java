@@ -37,7 +37,6 @@ import java.util.function.Consumer;
  */
 public class Desafio {
     public static void main(String[] args) {
-
         List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
         Consumer <Object> println = System.out::println;
         numeros.stream().map(Utilitarios::DecToBi).map(Utilitarios::ReverseString).map(Utilitarios::BiToDec).forEach(println);

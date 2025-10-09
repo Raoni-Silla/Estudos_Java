@@ -1,0 +1,37 @@
+package StreamAPI.DesafioMapFilter;
+
+public class Produto {
+    private final String nome;
+    private final double preco;
+    private double desconto;
+    private boolean freteGratis;
+
+    Produto (String nome, double preco){
+        this.nome = nome;
+        this.preco = preco;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public double getDesconto() {
+        return desconto;
+    }
+
+    public void setDesconto(double desconto) {
+        this.desconto = desconto;
+    }
+
+    public boolean isFreteGratis() {
+        return freteGratis;
+    }
+
+    public void setFreteGratis(boolean freteGratis) {
+        this.freteGratis = freteGratis;
+    }
+}
