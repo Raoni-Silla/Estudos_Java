@@ -1572,3 +1572,37 @@ terminal ops
 
 quarta, outubro, 8
 estudei o codigo do begosso
+
+quinta, outubro 9
+
+dentro da stream, se resolve as coisas internamente, a complexidade passa a ser
+embutida, toda linguagem funcional voce foca em partes especificas, e partes do processo
+repetitivo, fica a cargo da linguagem
+
+voce pode ter o metodo padrão atraves do for for (int i = 0; i < t ; i++)
+voce se preocupa com cada detalhe de iteração
+
+no for each simplica ainda mais
+voce apenas passa um nome de uma variavel do mesmo tipo da collection
+e ele pega cada elemento e guarda dentro dessa variavel, um por vez
+e faz a operação que tem dentro dele
+
+for (   String nome: aprovados <- lista)
+
+Voce pode ter o iterator tambem, é uma interface funcional de java
+que te da um iterador que retorna true ou false
+iterador.hasnext <- tem proximo?
+sout (iterador.next) <- pega o proximo elemento e imprime
+
+Stream <tipo> é um conjunto de objetos, a iteração ocorre de forma interna na stream
+sem ter qu explicitamente ter que codificar isso
+
+Stream <String> st = aprovados.stream();
+
+eu transformo minha lista de aprovados em uma stream
+e em vez precisar me preocupar em fazer um for
+eu só faço st.forEach (sout::println)
+só chamo uma função, passo que quero printar a informação que esta dentro
+da lista
+
+
