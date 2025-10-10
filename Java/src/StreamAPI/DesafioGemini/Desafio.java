@@ -14,8 +14,6 @@ public class Desafio {
                 new Funcionario("Fernanda", 2500.0, "Tecnologia", "CLT")
         );
 
-
-
         funcionarios.stream()
                 .filter(Utilitarios::FuncionarioTech)
                 .filter(Utilitarios.FuncionarioClt)
