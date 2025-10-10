@@ -1817,3 +1817,12 @@ posso tentar reproduzir ele em um cenario mais reduzido
 exceções checadas que precisam ser tratadas
 e as nao checadas tenho a liberdade de declarar no metodo e tbm nao preciso tratar
 o erro
+
+tenho a classe exception e algumas outras classes que herdam de exception
+temos a runtimeexception, qualquer classe que herde dela, é uma exceção nao checada
+ou seja, quem chama esse metodo não é obrigado a tratar esse erro
+
+agora de exception pra outras filhas que nao seja runtime, vc tem a obrigação de tratar
+os erros
+
+
