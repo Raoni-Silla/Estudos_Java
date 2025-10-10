@@ -1814,3 +1814,6 @@ a mensagem de erro tem a ver com a stack e pode dar uma mensagem grande
 como eu posso isolar um problema? como faço pra pegar esse erro e isolar?
 posso tentar reproduzir ele em um cenario mais reduzido
 
+exceções checadas que precisam ser tratadas
+e as nao checadas tenho a liberdade de declarar no metodo e tbm nao preciso tratar
+o erro
