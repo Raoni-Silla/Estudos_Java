@@ -1825,4 +1825,21 @@ ou seja, quem chama esse metodo não é obrigado a tratar esse erro
 agora de exception pra outras filhas que nao seja runtime, vc tem a obrigação de tratar
 os erros
 
+apenas exceções que estao de runtime pra baixo nao precisam ser checadas
+
+
+vamos supor que eu tenho uma pilha
+
+m ->1->2->3 aqui eu lanço uma exceção checada, e aqui nesse metodo preciso colocar
+na assinatura do metodo um throw, defino que ele lança uma excecção x
+quando eu faço isso, eu obrigatoriamente no metodo 2 tenho que tratar o erro
+ou posso falar q ele tbm lança a mesma exceção
+throws x
+chegou no metodo 1 e nesse caso n quero lançar pro main, e dentro do metdo 1
+preciso lidar com o erro, e posso usar um try catch -> posso tratar a exception
+ou a exceção x
+
+sempre que eu dependo de um metodo que lança uma exceção checada
+e dentro desse metodo nao quero lidar com ele, tenho que explicitar isso na
+assinatura
 
