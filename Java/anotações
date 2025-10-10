@@ -1843,3 +1843,8 @@ sempre que eu dependo de um metodo que lança uma exceção checada
 e dentro desse metodo nao quero lidar com ele, tenho que explicitar isso na
 assinatura
 
+ quando eu lanço uma exceção nao checada no metodo 3
+ ele passa sem precisar de declarações pro metodo aonde vc for tratar
+ voce nao precisa dizer nada no metodo 1 e 2
+ caminho padrão é trabalhar cm exceções runtime
+
