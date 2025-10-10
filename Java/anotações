@@ -1748,3 +1748,16 @@ pra sinalizar que algo diferente ocorreu
 tenho regras de negocio que diz como minha aplicação funciona e quando uma
 regra é violada eu posso lançar uma exceção
 
+tipos de erros:
+2 tipos de erros
+erros detectados pelo compilador
+erros de compilação, impedem o processo natural
+de ter um arquivo.java -> arquivo.class
+o proprio javac para esse processo
+ele converte o .java em byte code (.class) antes de enviar pra jvm
+um erro mais facil de detectar, nao gera tantos problemas
+erro de compilação ocorre em java porque ele compila o codigo pra byte code
+antes de mandar pra jvm
+linguagens interpretadas, php, js
+o interpretador le diretamente o codigo que vc escreveu
+pq nao temos um processo de compilação
