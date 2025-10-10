@@ -1788,4 +1788,29 @@ exception
 algo que tem como contornar o erro
 
 Pilha de metodos
+java é uma linguagem centrada em classes
+e essas classes tem metodos
+e cada classe depende uma da outra
+e tenho uma porta de entrada o main
+
+imagina que eu tenho um local que eu vou por a pilha de metodos
+como um processo de exceção muda o fluxo normal das coisas
+
+se eu tenho 4 classes
+existe uma relação de dependencia
+
+vamos supor que o metodo 1 no main chama o metodo 2 na classe 2 e assim por em diante
+main -> m1 -> m2 -> m3 -> m4
+m4 -> m3 -> m2 -> m1 -> main
+pilha coloca um metodo depois do outro em execução e depois volta pra quem
+chamou
+um programa começa no metodo main e a pilha sempre sobe e desce com os metodos
+
+tenha paciencia pra ler os erros
+
+por mais que a mensagem de erro esteja clara, não é facil encontrar ela
+a mensagem de erro tem a ver com a stack e pode dar uma mensagem grande
+
+como eu posso isolar um problema? como faço pra pegar esse erro e isolar?
+posso tentar reproduzir ele em um cenario mais reduzido
 

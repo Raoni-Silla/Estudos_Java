@@ -19,6 +19,5 @@ public class Desafio {
                 .filter(Utilitarios.FuncionarioClt)
                 .map(Utilitarios::SalarioNovo)
                 .reduce(Utilitarios.sum).ifPresent(Utilitarios.println);
-
     }
 }
