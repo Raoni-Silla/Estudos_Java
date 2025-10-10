@@ -1736,3 +1736,15 @@ algum aluno foi aprovado?, todos os alunos foram aprovados?, nenhum aluno foi ap
 
 qlqr função match é terminadora
 
+
+Sexta,outubro 10, 12:00
+Tratamento de exceções
+erros de compilação erro que seu condigo nao compila
+erros de sintaxe, ou algo que viola restrições da linguagens
+
+e tem outros erros que so ocorrem em runtime
+e pra isso existem exceções, situações que eu gero dentro do codigo
+pra sinalizar que algo diferente ocorreu
+tenho regras de negocio que diz como minha aplicação funciona e quando uma
+regra é violada eu posso lançar uma exceção
+
