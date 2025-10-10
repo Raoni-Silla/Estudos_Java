@@ -1761,3 +1761,31 @@ antes de mandar pra jvm
 linguagens interpretadas, php, js
 o interpretador le diretamente o codigo que vc escreveu
 pq nao temos um processo de compilação
+existem outros tipos de erros
+tempo de execução (runtime)
+sao erros que ocorrem quando o programa ja foi compilado
+podem ser erros previstos por mim, se eu tentar acessar o bd e nao consigo
+se eu tentar fazer um download de um arquivo sem internet
+vou precisar usar o tratamento de exceção
+se ocorrer um erro posso esperar 30 segundos
+ou posso tentar 3 vezes e exibir uma mensagem pro usuario
+
+temos uma hierarquia de erros
+a mae de todos os erros estao dentro de
+uma classe chamada throuwable
+uma exceção ou um erro ele é lançado
+quando esse erro é lançado e quem chamou esse metodo
+sera responsavel por tratar o erro
+
+temos a throwable class
+e temos duas grandes estruturas de baixo de class
+error e exception
+o error é algo mais serio e critico, normalmente é lançado em algo que nao pode
+ser recuperado, erros que vao realmente parar minha aplicação
+
+exception
+é uma exceção a regra, situações que é possivel tratar o erro
+algo que tem como contornar o erro
+
+Pilha de metodos
+
