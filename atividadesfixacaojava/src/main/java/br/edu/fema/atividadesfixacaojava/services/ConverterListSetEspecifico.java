@@ -8,8 +8,9 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
-public class ConverterListSetEspecifico {
-    public static void main(String[] args) {
+public class ConverterListSetEspecifico implements  Atividade{
+    @Override
+    public void executar() {
         List<Aluno> listaAlunos = AlunoRepository.findAll();
         //linkedhashset deixa os dados na ordem de inserção da mesma forma que tava na lista
         Consumer <Object> println = System.out::println;
