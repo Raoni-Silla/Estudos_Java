@@ -15,3 +15,8 @@ o period between calcula o tempo entre duas datas
 ali eu passo a variavel nascimento, que guarda a data de nascimento do user
 e depois digo pra ele pegar a data atual, ele calcula o tempo e depois pega apenas
 os anos de diferença
+
+IntStream.range(0, listaAlunos.size())
+o IntStream.range (onde começa, onde termina)
+ele pega desde o indice 0 até o tamanho final da minha lista
+e pra cada iteração ele implementa um lambda no foreach

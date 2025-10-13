@@ -8,13 +8,13 @@ import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.IntStream;
 
 public class MapearListAluno implements Atividade  {
             @Override
             public void executar() {
 
                 List<Aluno> listaAlunos = AlunoRepository.findAll();
-                listaAlunos.stream().map(Aluno::getNomeCompleto).forEach(System.out::println);
                 List<Integer> idades = new ArrayList<>();
                 List <LocalDate> DataNascimentos = new ArrayList<>();
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
@@ -26,6 +26,14 @@ public class MapearListAluno implements Atividade  {
                     idades.add(idade);
                 }
 
-                idades.forEach(System.out::println);
+                IntStream.range(0, listaAlunos.size())
+                        .forEach(i -> {
+                            Aluno aluno = listaAlunos.get(i);
+                            Integer idade = idades.get(i);
+                            System.out.printf("Nome: %s, Idade: %d\n", aluno.getNomeCompleto(), idade);
+                        });
+
+                //listaAlunos.stream().map(Aluno::getNomeCompleto);
+                //idades.forEach(System.out::println);
             }
 }

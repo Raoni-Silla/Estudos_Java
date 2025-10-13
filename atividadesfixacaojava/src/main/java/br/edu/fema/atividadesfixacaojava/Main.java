@@ -14,8 +14,11 @@ public class Main {
         Atividade MapearListAluno = new MapearListAluno();
 
 
+        System.out.println("============ConverterListSet01============");
         ConverterListSet01.executar();
+        System.out.println("============ConverterListSet02============");
         ConverterSetList02.executar();
+        System.out.println("============MapearListAluno============");
         MapearListAluno.executar();
         
 
