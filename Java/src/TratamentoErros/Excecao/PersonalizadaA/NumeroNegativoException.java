@@ -7,8 +7,8 @@ public class NumeroNegativoException extends RuntimeException{
         this.nome = nome;
     }
 
-    public String getMensagem (){
+    @Override
+    public String getMessage() {
         return String.format("o atributo %s esta negativo",nome);
     }
-
 }

@@ -1848,3 +1848,34 @@ assinatura
  voce nao precisa dizer nada no metodo 1 e 2
  caminho padrão é trabalhar cm exceções runtime
 
+segunda, outubro 12 + 1
+Throwable
+mãe de todos os erros em java
+é algo que pode ser lançado, um metodo pode lançar excessões
+quando eu lanço um erro interrompo o processo e quem chama o metodo
+pode ser responsavel por tratar o erro
+
+error e exception são filhos da classe de erro throwable
+error é algo critico e serio, algo impossivel de recuperar
+quando meu app fica sem memoria, to usando mais memoria
+que meu app pode prover, o meu app simplesmente para e morre ali
+voce nao se precupa tanto em tratar pq são erros que vao
+parar a execução do seu programa
+
+exception são exceções as regras
+situações que voce pode se recuperar
+
+
+erros de compilação é quando voce nao consegue compilar o codigo
+e erros em runtime, são erros que vc precisa fazer teste
+se preocupar em tratar diversas situações
+são erros mais dificeis de se resolver, tudo que foge as regras
+tem que ser tratados
+
+a pilha de metodos é quando um metodo chama o outro e forma uma pilha
+1 -> 2 -> 3 -> 4
+se ocorre um erro no metodo 4, o java imprime todo o caminho
+até onde esta o erro, porque como do 1 foi pro 4, o metodo sempre
+volta pra quem o chamou, então o 4 volta pro 3
+o 3 pro 2, o 2 pro 1 e o 1 pro main,
+sendo assim tem uma pilha de metodos
