@@ -1893,3 +1893,15 @@ mesmo se o programa falhar de forma inesperada.
 uma exceção pode causar a outra, então um erro em um metodo x, pode causar erros em metodos y
 podem ter uma sequencia de causas
 uma exceção pode gerar outra exceção que gere outra exceção
+
+generics
+eu defino um tipo generico na classe
+uso ele dentro da classe
+e quando for usar elas, eu especifico de que tipo vai ser aquela classe
+todos os locais que tem o tipo generico vão ser substituidos pelo tipo que foi
+definido na instanciação
+
+a ideia do generics é deixar que eles sejam resolvidos depois
+posso resolver o tipo na instanciação
+na herança
+eu posso tanto redefinir o tipo generico ou resolver o tipo dentro da classe herdada
