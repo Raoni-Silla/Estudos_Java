@@ -1879,3 +1879,17 @@ até onde esta o erro, porque como do 1 foi pro 4, o metodo sempre
 volta pra quem o chamou, então o 4 volta pro 3
 o 3 pro 2, o 2 pro 1 e o 1 pro main,
 sendo assim tem uma pilha de metodos
+
+o finally:
+é executado sempre, independentemente de ter ocorrido uma exceção ou não.
+Ele é frequentemente usado para liberar recursos, como fechar arquivos.
+Sua principal função é garantir que ações de limpeza, como fechar arquivos,
+conexões de banco de dados e outros recursos, sejam executadas. Isso previne
+problemas como vazamentos de memória e recursos.
+Quando é executado: Ele é sempre executado, independentemente de uma exceção
+ter sido lançada ou não dentro do bloco try. Isso garante que a limpeza ocorrerá
+mesmo se o programa falhar de forma inesperada.
+
+uma exceção pode causar a outra, então um erro em um metodo x, pode causar erros em metodos y
+podem ter uma sequencia de causas
+uma exceção pode gerar outra exceção que gere outra exceção
