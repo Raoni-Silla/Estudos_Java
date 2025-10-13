@@ -1905,3 +1905,83 @@ a ideia do generics é deixar que eles sejam resolvidos depois
 posso resolver o tipo na instanciação
 na herança
 eu posso tanto redefinir o tipo generico ou resolver o tipo dentro da classe herdada
+
+
+pra usar o treeset eu preciso de um comparable
+tree set ordena sempre do menor pro maior
+sempre que eu tenho um determinado tipo que implementa um comparable
+ele usa disso no treeset
+
+
+O Bloco finally
+
+    Garantia de Execução: É a principal característica do bloco finally.
+    Ele é executado sempre ao final de um bloco try-catch, não importa se:
+
+        O bloco try foi executado com sucesso (sem exceções).
+
+        Uma exceção foi lançada e capturada por um bloco catch.
+
+        Uma exceção foi lançada e não foi capturada.
+
+    Uso Principal: Liberação de recursos para evitar vazamentos
+    (resource leaks). Ações de "limpeza" como:
+
+        Fechar arquivos (file.close()).
+
+        Fechar conexões com banco de dados (connection.close()).
+
+        Fechar conexões de rede (socket.close()).
+
+2. Encadeamento de Exceções (Exception Chaining)
+
+    Conceito: Uma exceção pode ser a causa raiz de outra. Isso cria uma
+    cadeia de causalidade que é extremamente útil para o diagnóstico de
+    problemas (debugging).
+
+    Cenário: Um método de baixo nível (ex: acesso a dados) lança uma
+    SQLException. Um método de serviço que o chamou captura essa exceção e
+    lança uma nova, mais específica para a regra de negócio
+    (ex: FalhaAoSalvarUsuarioException), mas anexa a SQLException original como a "causa". Assim, quem for analisar o erro sabe não só o que deu errado no negócio, mas também por que tecnicamente falhou.
+
+3. Generics (<>)
+
+    Objetivo: Permitir a criação de classes, interfaces e métodos que operam
+    com tipos genéricos, garantindo a segurança de tipo (type safety) em
+    tempo de compilação.
+
+    Funcionamento:
+
+        Definição: Um tipo genérico é declarado com um placeholder
+        (ex: <T>, <E>, <K, V>) na assinatura da classe ou método.
+        Ex: public class Caixa<T> { ... }.
+
+        Utilização: Dentro da classe, o placeholder T é usado como se fosse
+        um tipo normal (ex: private T conteudo;).
+
+        Resolução (Especificação): O tipo concreto é definido quando a classe
+        é instanciada. Onde havia T, o compilador substitui pelo tipo especificado. Ex: Caixa<String> minhaCaixa = new Caixa<>();.
+
+    Formas de Resolução do Tipo:
+
+        Na Instanciação: É a forma mais comum (List<String> lista = new ArrayList<>();).
+
+        Na Herança: Uma subclasse pode resolver o tipo genérico da sua superclasse. Ex: public class CaixaDeString extends Caixa<String> { ... }.
+
+4. TreeSet e a Interface Comparable
+
+    TreeSet: É uma implementação da interface Set que armazena os elementos
+    de forma ordenada.
+
+    O Contrato: Para que o TreeSet consiga ordenar os elementos,
+    ele precisa saber como compará-los. Para isso, os objetos adicionados
+    a ele precisam implementar a interface java.lang.Comparable.
+
+    Comparable: Esta interface define um único método, compareTo(),
+    que estabelece a "ordem natural" dos objetos daquela classe
+    (menor, igual ou maior que outro objeto).
+
+    Consequência: Se você tentar adicionar um objeto de uma classe
+    que não implementa Comparable a um TreeSet, o programa compilará,
+    mas lançará uma ClassCastException em tempo de execução.
+

@@ -7,4 +7,8 @@ public class ListaUtil {
         return lista.get(lista.size()-1);
         //eu pego o ultimo elemento da lista
     }
+    public static <T> Object getUltimo2 (List<T> lista){
+        return lista.get(lista.size()-1);
+        //eu pego o ultimo elemento da lista
+    }
 }
