@@ -1,0 +1,17 @@
+DateTimeFormatter
+DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+ele ensina o date parse, como ele vai formatar a data que vem em forma de
+string pra ele
+o date parse, ele entende por padrao d-m-a, e nao d/m/a
+então eu crio um formatador que vai formatar a data, e passo ele
+como parametro tbm na mudança de string pra local date
+pro java ver o formato e entender como deve formatar as datas
+
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+LocalDate nascimento = LocalDate.parse(aluno.getDataNascimento(), formatter);
+Integer idade = Period.between(nascimento, LocalDate.now()).getYears();
+
+o period between calcula o tempo entre duas datas
+ali eu passo a variavel nascimento, que guarda a data de nascimento do user
+e depois digo pra ele pegar a data atual, ele calcula o tempo e depois pega apenas
+os anos de diferença
