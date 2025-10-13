@@ -1,9 +1,9 @@
 package TratamentoErros.Excecao.PersonalizadaA;
 
-public class NumeroNegativoException extends RuntimeException{
+public class NumeroForaDoIntervaloException extends RuntimeException{
     private String nome;
     //se eu tiver um atributo que nao possa ter um numero negativo
-    NumeroNegativoException (String nome){
+    NumeroForaDoIntervaloException(String nome){
         this.nome = nome;
     }
 
