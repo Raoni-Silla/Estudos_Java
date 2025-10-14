@@ -14,10 +14,11 @@ public class MapearListAluno implements Atividade  {
             public void executar() {
 
                 List<Aluno> listaAlunos = AlunoRepository.findAll();
-                List<Integer> idades = new ArrayList<>();
+                List<Integer> idades;
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
                 List<LocalDate> DatasNascimentos = Utilitarios.extrairDatasNascimento(listaAlunos);
+
                 idades = Utilitarios.calculaIdade(DatasNascimentos);
 
                 IntStream.range(0, listaAlunos.size())

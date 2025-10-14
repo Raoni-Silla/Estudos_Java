@@ -17,16 +17,17 @@ public class FiltrarAluno implements Atividade{
 
         List < Aluno > ListaAlunos = AlunoRepository.findAll();
 
-        LocalDate DataLimite = LocalDate.of(2001,2,15);
-        LocalTime HoraLimite = LocalTime.parse("18:00:00");
 
-        List <Aluno> NascidosPos2001 = ListaAlunos.stream().filter(aluno -> LocalDate.parse(aluno.getDataNascimento(),Utilitarios.formatter).isAfter(DataLimite)).toList();
-        Set  <Aluno> CadastradosPos18hrs = ListaAlunos.stream().filter(aluno -> aluno.getDataHoraCadastro().toLocalTime().isAfter(HoraLimite)).collect(Collectors.toCollection(LinkedHashSet::new));
-        List <Aluno> NaoPossuemCurso = ListaAlunos.stream().filter(aluno -> aluno.getCurso() == null).toList();
-        Set  <Aluno> PossuemCurso = ListaAlunos.stream().filter(aluno -> aluno.getCurso() != null).collect(Collectors.toCollection(LinkedHashSet::new));
-        List <Aluno> MaisDe30Manha = ListaAlunos.stream().filter(aluno -> {LocalDate.parse(aluno.getDataNascimento(), Utilitarios.formatter);
-            return false;
-        } ).toList();
+
+
+
+        List <Aluno> NascidosPos2001 = ListaAlunos.stream().filter(Utilitarios::isNascidosPos2001).toList();
+        Set  <Aluno> CadastradosPos18hrs = ListaAlunos.stream().filter(Utilitarios::isCadastradosPos18hrs).collect(Collectors.toCollection(LinkedHashSet::new));
+        List <Aluno> NaoPossuemCurso = ListaAlunos.stream().filter(Utilitarios::isNaoPossuemCurso).toList();
+        Set  <Aluno> PossuemCurso = ListaAlunos.stream().filter(Utilitarios::isPossuemCurso).collect(Collectors.toCollection(LinkedHashSet::new));
+        List <Aluno> MaisDe30Manha = ListaAlunos.stream().filter(Utilitarios::isverificarPeriodo).filter(Utilitarios::iscalculaIdade30).toList();
+
+
 
 
         //converto a data de nascimento pra local date, pra usar o isafter, pra pegar apenas datas apos a data limite

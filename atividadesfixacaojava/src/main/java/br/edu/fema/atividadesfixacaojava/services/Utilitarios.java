@@ -1,18 +1,52 @@
 package br.edu.fema.atividadesfixacaojava.services;
 
+import br.edu.fema.atividadesfixacaojava.enums.Periodo;
 import br.edu.fema.atividadesfixacaojava.model.Aluno;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 
 public class Utilitarios {
     private  Utilitarios(){}
+
+
     public static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
+
+
+        public static boolean isCadastradosPos18hrs (Aluno aluno){
+            LocalTime HoraLimite = LocalTime.parse("18:00:00");
+          return aluno.getDataHoraCadastro().toLocalTime().isAfter(HoraLimite);
+        }
+
+        public static boolean isNascidosPos2001 (Aluno aluno){
+            LocalDate DataLimite = LocalDate.of(2001,2,15);
+            return LocalDate.parse(aluno.getDataNascimento(),Utilitarios.formatter).isAfter(DataLimite);
+        }
+
+        public static boolean isPossuemCurso (Aluno aluno){
+            return aluno.getCurso() != null;
+        }
+
+        public static boolean isNaoPossuemCurso(Aluno aluno){
+            return aluno.getCurso() == null;
+        }
+
+        public static boolean isverificarPeriodo (Aluno aluno){
+            return aluno.getCurso().getPeriodo().equals(Periodo.MATUTINO);
+        }
+
+        public static boolean iscalculaIdade30 (Aluno aluno){
+            LocalDate data = LocalDate.parse(aluno.getDataNascimento(), formatter);
+            int idade = Period.between(data, LocalDate.now()).getYears();
+            return idade > 30;
+        }
 
         public static List<LocalDate> extrairDatasNascimento(List<Aluno> alunos) {
 
@@ -24,7 +58,6 @@ public class Utilitarios {
                 }
                 return listaDeResultados;
         }
-
 
         public static List<Integer> calculaIdade(List <LocalDate> listaDeDatas){
             List<Integer> listaDeIdades = new ArrayList<>();
