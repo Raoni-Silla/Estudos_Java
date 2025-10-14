@@ -2,6 +2,7 @@ package br.edu.fema.atividadesfixacaojava.services;
 
 import br.edu.fema.atividadesfixacaojava.enums.Periodo;
 import br.edu.fema.atividadesfixacaojava.model.Aluno;
+import com.sun.source.tree.TryTree;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
@@ -43,7 +44,12 @@ public class Utilitarios {
         }
 
         public static boolean isverificarPeriodo (Aluno aluno){
-            return aluno.getCurso().getPeriodo().equals(Periodo.MATUTINO);
+            try {
+                return aluno.getCurso().getPeriodo().equals(Periodo.MATUTINO);
+            }catch (NullPointerException ig){
+                System.out.println("Ocorreu um NullPointerException: " + ig.getMessage());
+            }
+            return false;
         }
 
         public static boolean iscalculaIdade30 (Aluno aluno){

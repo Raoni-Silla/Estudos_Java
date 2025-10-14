@@ -15,7 +15,6 @@ public class MapearListAluno implements Atividade  {
 
                 List<Aluno> listaAlunos = AlunoRepository.findAll();
                 List<Integer> idades;
-                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
                 List<LocalDate> DatasNascimentos = Utilitarios.extrairDatasNascimento(listaAlunos);
 
@@ -25,7 +24,7 @@ public class MapearListAluno implements Atividade  {
                         .forEach(i -> {
                             Aluno aluno = listaAlunos.get(i);
                             Integer idade = idades.get(i);
-                            System.out.printf("Nome: %s, Idade: %d\n", aluno.getNomeCompleto(), idade);
+                            System.out.printf("\nNome: %s, Idade: %d\n", aluno.getNomeCompleto(), idade);
                         });
 
                 //listaAlunos.stream().map(Aluno::getNomeCompleto);
