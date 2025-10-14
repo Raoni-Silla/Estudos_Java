@@ -3,12 +3,7 @@ package br.edu.fema.atividadesfixacaojava.services;
 import br.edu.fema.atividadesfixacaojava.model.Aluno;
 import br.edu.fema.atividadesfixacaojava.repository.AlunoRepository;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class FiltrarAluno implements Atividade{
@@ -27,7 +22,15 @@ public class FiltrarAluno implements Atividade{
         Set  <Aluno> PossuemCurso = ListaAlunos.stream().filter(Utilitarios::isPossuemCurso).collect(Collectors.toCollection(LinkedHashSet::new));
         List <Aluno> MaisDe30Manha = ListaAlunos.stream().filter(Utilitarios::isverificarPeriodo).filter(Utilitarios::iscalculaIdade30).toList();
 
+        Optional <Aluno> primeiroAluno = ListaAlunos.stream().filter(x -> x.getDataHoraCadastro().getYear() == 2021).min(Comparator.comparing(Aluno::getDataHoraCadastro));
 
+        if(primeiroAluno.isPresent()){
+            System.out.println("primeiroAluno: " + primeiroAluno.get().getNomeCompleto());
+        }else {
+            System.out.println("Nenhum Aluno encontrado");
+        }
+
+        List <Aluno> cadastradosMesmoDiaMes = ListaAlunos.stream().filter(Utilitarios::isCadastradosMesmoDiaMes).toList();
 
 
         //converto a data de nascimento pra local date, pra usar o isafter, pra pegar apenas datas apos a data limite

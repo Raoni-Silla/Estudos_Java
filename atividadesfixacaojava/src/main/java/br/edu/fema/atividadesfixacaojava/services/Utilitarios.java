@@ -3,9 +3,7 @@ package br.edu.fema.atividadesfixacaojava.services;
 import br.edu.fema.atividadesfixacaojava.enums.Periodo;
 import br.edu.fema.atividadesfixacaojava.model.Aluno;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.Period;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +14,14 @@ public class Utilitarios {
 
     public static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
+        public static boolean isCadastradosMesmoDiaMes (Aluno aluno){
 
+            Month mesAux = aluno.getDataHoraCadastro().getMonth();
+            int diaAux = aluno.getDataHoraCadastro().getDayOfMonth();
+
+            return aluno.getDataHoraCadastro().getMonth().equals(mesAux) && aluno.getDataHoraCadastro().getDayOfMonth() == diaAux;
+
+        }
 
         public static boolean isCadastradosPos18hrs (Aluno aluno){
             LocalTime HoraLimite = LocalTime.parse("18:00:00");
