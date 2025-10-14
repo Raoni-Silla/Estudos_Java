@@ -44,7 +44,7 @@ public class FiltrarAluno implements Atividade{
         List <Aluno> MaisDe30Manha = ListaAlunos.stream().filter(Utilitarios::isverificarPeriodo).filter(Utilitarios::iscalculaIdade30).toList();
         IntStream.range(0,MaisDe30Manha.size()).forEach(i -> {
             Aluno a = MaisDe30Manha.get(i);
-            System.out.printf("\nNome: %s , Data Nascimento: %s , Periodo: &s",a.getNomeCompleto(),a.getDataNascimento(), a.getCurso().getPeriodo().getDescricao());
+            System.out.printf("\nNome: %s , Data Nascimento: %s , Periodo: %s",a.getNomeCompleto(),a.getDataNascimento(), a.getCurso().getPeriodo().getDescricao());
         });
 
         Optional <Aluno> primeiroAluno = ListaAlunos.stream().filter(x -> x.getDataHoraCadastro().getYear() == 2021).min(Comparator.comparing(Aluno::getDataHoraCadastro));
@@ -55,7 +55,7 @@ public class FiltrarAluno implements Atividade{
             System.out.println("\nNenhum Aluno encontrado");
         }
 
-        List<Aluno> CadastradosMesmoData = ListaAlunos.stream().filter(Utilitarios::isCadastradosMesmoDiaMes).toList();
+        List<Aluno> CadastradosMesmoData = Utilitarios.alunosCadastroMesDataIguais(ListaAlunos);
             System.out.println("\n============Cadastrados no mesmo dia e mês============");
             IntStream.range(0, CadastradosMesmoData.size())
                 .forEach(i -> {
