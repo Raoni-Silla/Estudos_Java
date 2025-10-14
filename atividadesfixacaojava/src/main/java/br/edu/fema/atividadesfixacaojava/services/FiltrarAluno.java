@@ -26,6 +26,7 @@ public class FiltrarAluno implements Atividade{
         for (Aluno a : CadastradosPos18hrs) {
             System.out.printf("\nNome: %s , Hora de cadastro: %s", a.getNomeCompleto(), a.getDataHoraCadastro());
         }
+
         System.out.println("\n============Lista de alunos que não possuem curso============");
         List <Aluno> NaoPossuemCurso = ListaAlunos.stream().filter(Utilitarios::isNaoPossuemCurso).toList();
         IntStream.range(0,NaoPossuemCurso.size()).forEach(i -> {
