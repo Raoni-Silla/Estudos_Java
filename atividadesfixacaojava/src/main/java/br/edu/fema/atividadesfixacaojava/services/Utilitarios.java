@@ -6,6 +6,7 @@ import com.sun.source.tree.TryTree;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,18 +45,15 @@ public class Utilitarios {
         }
 
         public static boolean isverificarPeriodo (Aluno aluno){
-            try {
-                return aluno.getCurso().getPeriodo().equals(Periodo.MATUTINO);
-            }catch (NullPointerException ig){
-                System.out.println("Ocorreu um NullPointerException: " + ig.getMessage());
-            }
-            return false;
+
+            if (aluno.getCurso() == null){
+                return false;
+            }else return aluno.getCurso().getPeriodo().equals(Periodo.MATUTINO);
         }
 
         public static boolean iscalculaIdade30 (Aluno aluno){
             LocalDate data = LocalDate.parse(aluno.getDataNascimento(), formatter);
-            int idade = Period.between(data, LocalDate.now()).getYears();
-            return idade > 30;
+            return ChronoUnit.YEARS.between(data, LocalDate.now()) > 30;
         }
 
         public static List<LocalDate> extrairDatasNascimento(List<Aluno> alunos) {
@@ -73,15 +71,16 @@ public class Utilitarios {
             List<Integer> listaDeIdades = new ArrayList<>();
 
             for (LocalDate data : listaDeDatas) {
-            int idade = calculaIdade(data);
-            listaDeIdades.add(idade);
+            long idade = calculaIdade(data);
+            Integer novaIdade = Integer.parseInt(String.valueOf(idade));
+            listaDeIdades.add(novaIdade);
          }
 
             return listaDeIdades;
     }
 
-    public static int calculaIdade(LocalDate nascimento) {
-        return Period.between(nascimento, LocalDate.now()).getYears();
+    public static long calculaIdade(LocalDate nascimento) {
+            return ChronoUnit.YEARS.between(nascimento, LocalDate.now());
     }
 
     public static void printUtil(Object obj) {

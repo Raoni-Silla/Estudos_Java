@@ -20,3 +20,10 @@ IntStream.range(0, listaAlunos.size())
 o IntStream.range (onde começa, onde termina)
 ele pega desde o indice 0 até o tamanho final da minha lista
 e pra cada iteração ele implementa um lambda no foreach
+
+return ChronoUnit.YEARS.between(data, LocalDate.now()) > 30;
+optei pelo uso do ChronoUnit em vez do periodBetween, porque ele é mais preciso
+ele conta os dias e os anos para comparar, e não apenas os anos, ele retorna os valores
+de forma mais direta, o period between quebra o periodo em dias, meses e anos
+é pra quando quero algo com mais precisão, agora o chrono unit vai me retornar apenas
+o numero de anos exatos que eu pedi
