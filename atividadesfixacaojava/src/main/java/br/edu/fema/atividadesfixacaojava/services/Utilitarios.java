@@ -9,8 +9,6 @@ import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
-
 
 public class Utilitarios {
     private  Utilitarios(){}
