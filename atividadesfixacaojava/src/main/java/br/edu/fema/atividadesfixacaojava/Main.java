@@ -14,6 +14,7 @@ public class Main {
         Atividade OrdenarDataNascimentoC = new OrdenarDataNascimento();
         Atividade obterDatasCadastroComOrdemMista = new DatasCadastroComOrdemMista();
         Atividade SomasEMediasDeListas = new SomasEMediasDeListas();
+        Atividade AgruparAlunosPorCriterios = new AgruparAlunosPorCriterios();
 
 
         System.out.println("============01ConverterListSet01============");
@@ -32,6 +33,7 @@ public class Main {
         obterDatasCadastroComOrdemMista.executar();
         System.out.println("\n============08ListaDeSomatoriosMedias============");
         SomasEMediasDeListas.executar();
+        System.out.println("\n============09AgruparAlunosPorCriterios============");
 
         
 
