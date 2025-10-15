@@ -15,8 +15,6 @@ public class AgruparAlunosPorCriterios implements Atividade {
     public void executar() {
         List<Aluno> listaAlunos = AlunoRepository.findAll();
 
-        System.out.println("===========09-AgruparAlunosPorCriterios============");
-
         System.out.println("\n----------- Beneficiários e não Beneficiários -----------");
         Map<Boolean, List<Aluno>> beneficientesEnaoBeneficientes = listaAlunos.stream()
                 .collect(Collectors.groupingBy(Aluno::getPossuiAlgumTipoDeBeneficio));
