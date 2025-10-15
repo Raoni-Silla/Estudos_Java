@@ -10,6 +10,7 @@ public class Main {
         Atividade ConverterSetList02 = new ConverterListSetEspecifico();
         Atividade MapearListAluno = new MapearListAluno();
         Atividade FiltrarAluno =  new FiltrarAluno();
+        Atividade CompararListAluno = new CompararListAluno();
 
 
         System.out.println("============01ConverterListSet01============");
@@ -20,6 +21,8 @@ public class Main {
         MapearListAluno.executar();
         System.out.println("\n============04FiltrarListAluno============");
         FiltrarAluno.executar();
+        System.out.println("\n============05CompararListAluno============");
+        CompararListAluno.executar();
         
 
     }
