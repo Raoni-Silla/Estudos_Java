@@ -34,6 +34,7 @@ public class Main {
         System.out.println("\n============08ListaDeSomatoriosMedias============");
         SomasEMediasDeListas.executar();
         System.out.println("\n============09AgruparAlunosPorCriterios============");
+        AgruparAlunosPorCriterios.executar();
 
         
 
