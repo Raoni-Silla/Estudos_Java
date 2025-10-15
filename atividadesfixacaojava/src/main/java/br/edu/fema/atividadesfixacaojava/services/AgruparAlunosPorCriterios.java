@@ -10,6 +10,7 @@ import java.time.YearMonth;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
 public class AgruparAlunosPorCriterios implements Atividade {
     @Override
     public void executar() {

@@ -15,6 +15,7 @@ public class Main {
         Atividade obterDatasCadastroComOrdemMista = new DatasCadastroComOrdemMista();
         Atividade SomasEMediasDeListas = new SomasEMediasDeListas();
         Atividade AgruparAlunosPorCriterios = new AgruparAlunosPorCriterios();
+        Atividade ParticionarEAgruparAlunos = new ParticionarEAgruparAlunos();
 
 
         System.out.println("============01ConverterListSet01============");
