@@ -21,36 +21,13 @@ public class Utilitarios {
 
     public static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-    public static List<Aluno> alunosCadastroMesDataIguais(List<Aluno> listaAlunos) {
-        DateTimeFormatter formatadorF = DateTimeFormatter.ofPattern("dd/MM");
 
-        Set<String> datasDuplicadas = listaAlunos.stream()
-                .collect(Collectors.groupingBy(a -> a.getDataHoraCadastro().format(formatadorF),Collectors.counting()
-                )).entrySet()
-                  .stream()
-                  .filter(a -> a.getValue() > 1)
-                  .map(Map.Entry::getKey)
-                  .collect(Collectors.toSet());
-
-        //aqui ele agrupa as datas atraves das datas, ele separa as datas e conta quantos
-        //objetos possuem datas iguais ("17/09" 1), depois ele ordena cada item em par com
-        //o entry set e reinicia a stream, depois faz um filtro atraves dos valores
-        //(CHAVE, VALOR), no caso a data aqui é a chave e o valor é a quantidade de objetos em cada data
-        //ele verifica os pares com valores > 1, depois desse controle, ele modifica a stream
-        //pegando apenas a chave do map,depois transforma essa stream em set
-
-        if (datasDuplicadas.isEmpty()) {
-            return List.of();
-        }
-        //verifica se a lista de datas duplicadas esta vazia, se tiver retorna vazio mesmo
-
+    public static List<Aluno> alunosCadastroMes(List<Aluno> listaAlunos) {
         return listaAlunos.stream()
-                .filter(aluno -> datasDuplicadas.contains(aluno.getDataHoraCadastro().format(formatadorF)))
-                .collect(Collectors.toList());
-
-        //aqui ele filtra, ele pergunta quais datas da stream da lista de alunos tem na lista de alunos
-        //depois transforma isso em um list e retorna o valor
+                .collect(Collectors.groupingBy(a -> MonthDay.from(a.getDataHoraCadastro())))
+                .values().stream().filter(a ->a.size() > 1).flatMap(List::stream).toList();
     }
+
 
         public static boolean isCadastradosPos18hrs (Aluno aluno){
             LocalTime HoraLimite = LocalTime.parse("18:00:00");

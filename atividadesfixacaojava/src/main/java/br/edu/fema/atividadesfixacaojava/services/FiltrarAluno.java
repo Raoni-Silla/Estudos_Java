@@ -55,7 +55,7 @@ public class FiltrarAluno implements Atividade{
             System.out.println("\nNenhum Aluno encontrado");
         }
 
-        List<Aluno> CadastradosMesmoData = Utilitarios.alunosCadastroMesDataIguais(ListaAlunos);
+        List<Aluno> CadastradosMesmoData = Utilitarios.alunosCadastroMes(ListaAlunos);
             System.out.println("\n============Cadastrados no mesmo dia e mês============");
             IntStream.range(0, CadastradosMesmoData.size())
                 .forEach(i -> {
