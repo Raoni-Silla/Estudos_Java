@@ -26,6 +26,14 @@ public class Utilitarios {
         return listaAlunos.stream()
                 .collect(Collectors.groupingBy(a -> MonthDay.from(a.getDataHoraCadastro())))
                 .values().stream().filter(a ->a.size() > 1).flatMap(List::stream).toList();
+
+        //eu crio uma stream de lista de alunos
+        //uso o collect pra agrupar minha lista em chave:dia/mes e valor [lista de alunos]
+        //depois pego apenas o valor
+        //crio outra stream
+        //filtro as listas que tenham mais de 1 membros
+        //uso o flat map para juntar todas as micro listas
+        //em uma lista só
     }
 
 
