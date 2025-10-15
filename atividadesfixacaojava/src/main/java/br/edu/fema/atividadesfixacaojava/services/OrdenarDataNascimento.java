@@ -4,7 +4,6 @@ import br.edu.fema.atividadesfixacaojava.model.Aluno;
 import br.edu.fema.atividadesfixacaojava.repository.AlunoRepository;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.*;
 import java.util.stream.Collectors;
 
