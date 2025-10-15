@@ -19,7 +19,7 @@ public class SomasEMediasDeListas implements Atividade{
         System.out.println("\nDo tipo Double com 2 a 5 valores e somá-los (retorno: Optional<Double>).");
         List<Integer> notas2 = Arrays.asList(1,7,9,10);
         Optional <Double> somatorio2 = notas2.stream().map(Double::valueOf).reduce(Double::sum);
-        somatorio2.ifPresent(aDouble -> System.out.println("\nSoma do segundo array: " + aDouble));
+        somatorio2.ifPresent(a -> System.out.println("\nSoma do segundo array: " + a));
 
         List<Double> media = Arrays.asList(1.5,8.5,10.0,7.0);
         System.out.println("\nDo tipo Double com 2 a 5 valores, transformá-los em números inteiros");
