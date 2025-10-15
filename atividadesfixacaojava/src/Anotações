@@ -29,3 +29,5 @@ de forma mais direta, o period between quebra o periodo em dias, meses e anos
 o numero de anos exatos que eu pedi
 
 MonthDay
+
+diferença de optional<double> e optionaldouble

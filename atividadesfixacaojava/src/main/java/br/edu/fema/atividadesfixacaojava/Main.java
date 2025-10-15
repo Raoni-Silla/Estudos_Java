@@ -13,6 +13,7 @@ public class Main {
         Atividade CompararListAluno = new CompararListAluno();
         Atividade OrdenarDataNascimentoC = new OrdenarDataNascimento();
         Atividade obterDatasCadastroComOrdemMista = new DatasCadastroComOrdemMista();
+        Atividade SomasEMediasDeListas = new SomasEMediasDeListas();
 
 
         System.out.println("============01ConverterListSet01============");
@@ -29,6 +30,8 @@ public class Main {
         OrdenarDataNascimentoC.executar();
         System.out.println("\n============07OrdenarListaFormaMista============");
         obterDatasCadastroComOrdemMista.executar();
+        System.out.println("\n============08ListaDeSomatoriosMedias============");
+        SomasEMediasDeListas.executar();
 
         
 
