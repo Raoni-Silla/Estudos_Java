@@ -5,7 +5,6 @@ import br.edu.fema.atividadesfixacaojava.repository.AlunoRepository;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
 
 
 public class CompararListAluno implements Atividade{
@@ -16,6 +15,6 @@ public class CompararListAluno implements Atividade{
         listaAluno
                 .stream()
                 .max(Comparator.comparing(Aluno::getDataHoraCadastro))
-                .ifPresent(aluno -> System.out.printf("\nNome do ultimo aluno cadastrado %s , Hora Do Cadastro: %s ", aluno.getNomeCompleto(), aluno.getDataHoraCadastro()));;
+                .ifPresent(aluno -> System.out.printf("\nNome do ultimo aluno cadastrado %s , Hora Do Cadastro: %s ", aluno.getNomeCompleto(), aluno.getDataHoraCadastro()));
     }
 }

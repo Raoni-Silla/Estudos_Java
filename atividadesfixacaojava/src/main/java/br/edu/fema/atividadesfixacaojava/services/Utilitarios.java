@@ -45,13 +45,9 @@ public class Utilitarios {
             return LocalDate.parse(aluno.getDataNascimento(),Utilitarios.formatter).isAfter(DataLimite);
         }
 
-        public static boolean isPossuemCurso (Aluno aluno){
-            return aluno.getCurso() != null;
-        }
+        public static boolean isPossuemCurso (Aluno aluno){ return aluno.getCurso() != null;}
 
-        public static boolean isNaoPossuemCurso(Aluno aluno){
-            return aluno.getCurso() == null;
-        }
+        public static boolean isNaoPossuemCurso(Aluno aluno){return aluno.getCurso() == null;}
 
         public static boolean isverificarPeriodo (Aluno aluno){
 
@@ -80,7 +76,7 @@ public class Utilitarios {
             List<Integer> listaDeIdades = new ArrayList<>();
 
             for (LocalDate data : listaDeDatas) {
-            long idade = calculaIdade(data);
+            long idade = calculaIdadeUni(data);
             Integer novaIdade = Integer.parseInt(String.valueOf(idade));
             listaDeIdades.add(novaIdade);
          }
@@ -88,7 +84,7 @@ public class Utilitarios {
             return listaDeIdades;
     }
 
-    public static long calculaIdade(LocalDate nascimento) {
+    public static long calculaIdadeUni(LocalDate nascimento) {
             return ChronoUnit.YEARS.between(nascimento, LocalDate.now());
     }
 
