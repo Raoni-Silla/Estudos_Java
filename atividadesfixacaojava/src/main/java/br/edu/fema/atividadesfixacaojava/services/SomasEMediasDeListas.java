@@ -24,7 +24,7 @@ public class SomasEMediasDeListas implements Atividade{
         List<Double> media = Arrays.asList(1.5,8.5,10.0,7.0);
         System.out.println("\nDo tipo Double com 2 a 5 valores, transformá-los em números inteiros");
         System.out.println("(sem usar o método \"map\". Métodos nomeados com \"mapTo\" são permitidos) \ne fazer a média (retorno: OptionalDouble).");
-        //O double::intValue trunca os valores, por isso do resultado 6.5 e nao 6.75
+        //oO double::intValue trunca os valores, por isso do resultado 6.5 e nao 6.75
         OptionalDouble medias = media.stream().mapToInt(Double::intValue).average();
 
         if (medias.isPresent()) {

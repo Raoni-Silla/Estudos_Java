@@ -67,6 +67,7 @@ public class ParticionarEAgruparAlunos implements Atividade {
                         )
                      );
 
+        //imprime o resultado
         listaParticionados.forEach((possuiBeneficio, mapaPorPeriodo) -> {
 
             if (possuiBeneficio) {
