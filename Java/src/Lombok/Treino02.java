@@ -2,12 +2,15 @@ package Lombok;
 
 import lombok.*;
 
-@Getter
-@Setter
-@ToString
-@EqualsAndHashCode (onlyExplicitlyIncluded = true)
-@RequiredArgsConstructor
-@AllArgsConstructor //um construtor com todos os argumentos
+//@Getter
+//@Setter
+//@ToString
+//@EqualsAndHashCode (onlyExplicitlyIncluded = true)
+////@NoArgsConstructor //construtor sem argumentos
+////@RequiredArgsConstructor//construtor apenas com coisas obrigatorias
+//@AllArgsConstructor //um construtor com todos os argumentos
+
+@Data
 public class Treino02 {
 
     private String nome;
@@ -15,7 +18,8 @@ public class Treino02 {
     @ToString.Exclude
     //@Setter(value = AccessLevel.PRIVATE)
     @EqualsAndHashCode.Include
-    private long id;
+    @NonNull
+    private Long id;
 
     private String descricao;
 }
