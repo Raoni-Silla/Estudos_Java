@@ -1,0 +1,44 @@
+Converter List<Aluno> para Set<Aluno>.
+Converter List<Aluno> para Set<Aluno> (especificar uma implementação de Set.
+Mapear List<Aluno> para retornar:
+
+    Nome completo dos alunos.
+    Data de nascimento dos alunos (List<LocalDate>).
+    As respectivas idades sem utilizar o método "map" (List<Integer>).
+
+Filtrar List<Aluno> para conter somente:
+
+    Alunos nascidos após 15/02/2001 (retorno: List<Aluno>).
+    Alunos cadastrados a partir das 18h (retorno: Set<Aluno>).
+    Alunos que não possuam Curso (retorno: List<Aluno>).
+    Alunos com Curso (Não pode haver repetição de cursos no resultado final).
+    Alunos que estudam de manhã e que tenham mais de 30 anos (retorno: Collection<Aluno>).
+    O primeiro aluno cadastrado no ano 2021.
+    Alunos que foram cadastrados no mesmo dia e mês (retornar o total de alunos que atenda o parâmetro informado).
+
+Comparar List<Aluno> para buscar o último aluno cadastrado.
+Ordenar List<Aluno> pela data de nascimento em ordem crescente (retorno: Set<String>).
+Ordenar List<Aluno> pela data de cadastro em ordem decrescente e a hora e minuto do cadastro em ordem crescente (retorno: List<LocalDateTime>).
+Criar List:
+
+    Do tipo Integer com 2 a 5 valores e somá-los (retorno: BigDecimal).
+    Do tipo Double com 2 a 5 valores e somá-los (retorno: Optional<Double>).
+    Do tipo Double com 2 a 5 valores, transformá-los em números inteiros (sem usar o método "map". Métodos nomeados com "mapTo" são permitidos) e fazer a média (retorno: OptionalDouble).
+
+Agrupar List<Aluno> pelo(s):
+
+    Alunos que possuem algum tipo de benefício e pelos que não possuem  (retorno: Map<Boolean, List<Aluno>>).
+    Mês de nascimento (retorno: Map<Month, List<Aluno>>).
+    Ano de nascimento (retorno: Map<Year, List<Aluno>>).
+    Mês e ano de nascimento. Especificar uma implementação de Map (retorno: Map<YearMonth, List<Aluno>>).
+    Alunos que possuem curso e pelos que não possuem (retorno: Map<Boolean, List<Aluno>>).
+
+Particionar List<Aluno> pelo(s):
+
+    Alunos que possuem algum tipo de benefício e pelos que não possuem. Agrupar os alunos com base na sigla do Curso (retorno: Map<Boolean, Map<String, List<Aluno>>>).
+    Alunos que possuem algum tipo de benefício e pelos que não possuem. Agrupar os alunos com base no período do Curso. Agrupar os alunos com base na sigla do Curso (retorno: Map<Boolean, Map<Periodo, Map<String, List<Aluno>>>>).
+
+Criar um Map:
+
+    Iterar com o forEach.
+    Iterar com o forEach (sem usar a API de Stream, Programação Funcional e Method Reference)
