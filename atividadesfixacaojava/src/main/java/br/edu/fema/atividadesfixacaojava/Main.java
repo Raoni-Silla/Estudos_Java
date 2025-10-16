@@ -39,7 +39,7 @@ public class Main {
         AgruparAlunosPorCriterios.executar();
         System.out.println("\n============10ParticionarEAgruparAlunos============");
         ParticionarEAgruparAlunos.executar();
-        System.out.println("\n============11ParticionarEAgruparAlunos============");
+        System.out.println("\n============11IteraçãoForEach============");
         IterarComForEach.executar();
 
 
