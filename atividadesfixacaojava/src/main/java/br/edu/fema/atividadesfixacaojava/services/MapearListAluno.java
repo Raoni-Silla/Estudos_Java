@@ -22,7 +22,7 @@ public class MapearListAluno implements Atividade  {
                         .forEach(i -> {
                             Aluno aluno = listaAlunos.get(i);
                             Integer idade = idades.get(i);
-                            System.out.printf("\nNome: %s, Idade: %d\n", aluno.getNomeCompleto(), idade);
+                            System.out.printf("\nNome: %s, Idade: %d, Data de Nascimento: %s\n", aluno.getNomeCompleto(), idade, aluno.getDataNascimento());
                         });
 
                 //listaAlunos.stream().map(Aluno::getNomeCompleto);
