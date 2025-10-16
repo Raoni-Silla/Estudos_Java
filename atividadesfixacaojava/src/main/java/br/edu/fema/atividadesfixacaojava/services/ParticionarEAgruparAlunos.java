@@ -42,10 +42,7 @@ public class ParticionarEAgruparAlunos implements Atividade {
                 System.out.println("\n  Curso: " + siglaDoCurso);
 
 
-                listaDeAlunos.forEach(aluno -> {
-
-                    System.out.println("    - " + aluno.getNomeCompleto());
-                });
+                listaDeAlunos.forEach(aluno -> System.out.println("    - " + aluno.getNomeCompleto()));
             });
 
         } else {
@@ -53,9 +50,13 @@ public class ParticionarEAgruparAlunos implements Atividade {
         }
 
 
+        /*Alunos que possuem algum tipo de benefício e pelos que não possuem.
+        Agrupar os alunos com base no período do Curso. Agrupar os alunos com base na
+        sigla do Curso (retorno: Map<Boolean, Map<Periodo, Map<String, List<Aluno>>>>)
+        .*/
+
         Map<Boolean, List<Aluno>> alunosSeparados = listaAlunos.stream().collect(Collectors.partitioningBy(a -> a.getCurso() != null && a.getCurso().getPeriodo() != null));
         List<Aluno> validos = alunosSeparados.get(true);
-        List<Aluno> invalidos = alunosSeparados.get(false);
 
         Map<Boolean, Map<Periodo, Map<String, List<Aluno>>>> listaParticionados = validos.stream().collect(Collectors.partitioningBy(
                         Aluno::getPossuiAlgumTipoDeBeneficio,
