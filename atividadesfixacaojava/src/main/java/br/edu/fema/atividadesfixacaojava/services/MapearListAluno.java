@@ -18,7 +18,7 @@ public class MapearListAluno implements Atividade  {
 
                 idades = Utilitarios.calculaIdade(DatasNascimentos);
 
-                //adicionei data de nascimento
+                //aadicionei data de nascimento
                 IntStream.range(0, listaAlunos.size())
                         .forEach(i -> {
                             Aluno aluno = listaAlunos.get(i);
