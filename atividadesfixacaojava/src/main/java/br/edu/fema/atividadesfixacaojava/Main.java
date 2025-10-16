@@ -16,6 +16,7 @@ public class Main {
         Atividade SomasEMediasDeListas = new SomasEMediasDeListas();
         Atividade AgruparAlunosPorCriterios = new AgruparAlunosPorCriterios();
         Atividade ParticionarEAgruparAlunos = new ParticionarEAgruparAlunos();
+        Atividade IterarComForEach = new IterarComForEach();
 
 
         System.out.println("============01ConverterListSet01============");
@@ -36,6 +37,11 @@ public class Main {
         SomasEMediasDeListas.executar();
         System.out.println("\n============09AgruparAlunosPorCriterios============");
         AgruparAlunosPorCriterios.executar();
+        System.out.println("\n============10ParticionarEAgruparAlunos============");
+        ParticionarEAgruparAlunos.executar();
+        System.out.println("\n============11ParticionarEAgruparAlunos============");
+        IterarComForEach.executar();
+
 
         
 

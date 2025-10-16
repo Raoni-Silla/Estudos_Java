@@ -27,6 +27,31 @@ public class ParticionarEAgruparAlunos implements Atividade {
                         )
                 )
         );
+        System.out.println("\n--- Alunos com Benefício (Agrupados por Curso) ---");
+
+
+        Map<String, List<Aluno>> alunosComBeneficio = parte1.get(true);
+
+
+        if (alunosComBeneficio != null && !alunosComBeneficio.isEmpty()) {
+
+
+            alunosComBeneficio.forEach((siglaDoCurso, listaDeAlunos) -> {
+
+
+                System.out.println("\n  Curso: " + siglaDoCurso);
+
+
+                listaDeAlunos.forEach(aluno -> {
+
+                    System.out.println("    - " + aluno.getNomeCompleto());
+                });
+            });
+
+        } else {
+            System.out.println("  Nenhum aluno com benefício encontrado.");
+        }
+
 
         Map<Boolean, List<Aluno>> alunosSeparados = listaAlunos.stream().collect(Collectors.partitioningBy(a -> a.getCurso() != null && a.getCurso().getPeriodo() != null));
         List<Aluno> validos = alunosSeparados.get(true);
