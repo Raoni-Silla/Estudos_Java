@@ -65,5 +65,29 @@ public class ParticionarEAgruparAlunos implements Atividade {
                           )
                         )
                      );
+
+        listaParticionados.forEach((possuiBeneficio, mapaPorPeriodo) -> {
+
+            if (possuiBeneficio) {
+                System.out.println("--- Alunos COM benefício ---");
+            } else {
+                System.out.println("--- Alunos SEM benefício ---");
+            }
+
+
+            mapaPorPeriodo.forEach((periodo, mapaPorSigla) -> {
+                System.out.println("  - Período: " + periodo);
+
+
+                mapaPorSigla.forEach((sigla, listaDeAlunos) -> {
+                    System.out.println("    - Curso: " + sigla);
+
+                    listaDeAlunos.forEach(aluno -> {
+                        System.out.println("      * " + aluno.getNomeCompleto()); // Supondo que Aluno tenha o método getNome()
+                    });
+                });
+            });
+            System.out.println();
+        });
     }
 }
