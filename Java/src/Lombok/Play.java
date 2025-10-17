@@ -3,7 +3,7 @@ package Lombok;
 public class Play {
     public static void main(String[] args) {
 
-        Treino02 aluno = new Treino02("Carlos",1L,"TG02-046");
+        Treino02 aluno = new Treino02(1L);
 
         System.out.println("Aluno: " + aluno);
     }
