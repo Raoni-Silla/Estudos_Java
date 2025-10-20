@@ -2032,5 +2032,23 @@ fazer um mapeamento entre um atributo do objeto e uma coluna do bd
 eu pego o proprio objeto e faço o mapeamento dele pra uma tabela
 
 
+eu tenho uma classe pŕoduto, que eu tenho que dizer que essa classe ta mapeado pra tabela x
+e mapeo cada atributo pra cada coluna
+
+dentro do jpa tenho o @table(passo o nome da tabela)
+a classe agora ta mapeada para a tabela do banco de dados
+
+tenho um objeto e tenho uma tabela, esse obj precisa ser mapeado pra tabela
+com algum tipo de informação
+e dentro do objeto eu tenho atributos
+e esses atributos são mapeados para as colunas da tabela
+
+@table
+@Id digo que determinado atributo é a chave primaria da tabela
+@Column esse atributo aponta pra uma determinada coluna
+preciso fazer esse orm, object relaction mapper
+
+
+
 
 
