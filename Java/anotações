@@ -1985,5 +1985,36 @@ O Bloco finally
     que não implementa Comparable a um TreeSet, o programa compilará,
     mas lançará uma ClassCastException em tempo de execução.
 
+Java Persistence Api
+é um padrão de persistencia chamado data mapper, e orm, dois paradigmas agrupados
+do mundo relacional, modelo e/r, e temos outro paradigma de oo e como esses dois
+mundos se conectam, é o papel que o data mapper tem com o orm
+
+padrão
+
+Data mapper vs active record
+
+basicamente nas lgp temos o poo, de um lado temos o poo e do outro a uma tabela
+com colunas, chaves e restrições, os relacionamentos são feitos entre tabelas e etc
+
+basicamente o active record é muito encontrado em frameworks do php laravel
+eloquent, no ruby
+vou criar um obj chamado cliente
+e o cliente tem atributos e comportamentos
+ele tem uma relação com a table clientes do bd
+
+então eu tenho uma serie de atributos que vão estar relacionados com a coluna
+do bd, qnd eu tenho um padrão active record, o proprio objeto tem dentro dele todos
+os metodos necessarios para se persisitir, um registro ativo, o proprio objeto tem os metodos
+necessarios para se inserir no bd, isso é feito por herança+
+
+Cliente c = new Cliente;
+c.save(); <- metodo dentro de cliente que salva o cliente no bd
+
+muitas vezes de acessar só o obejto posso acessar o nome da classe
+Cliente.find();
+metodo estatico que pertence a classe, pq pra buscar clientes em uma tabela no bd
+eu n busco apartir de uma instancia, e sim em um bd
+a classe representasse a tabela e o objeto uma linha do bd
 
 
