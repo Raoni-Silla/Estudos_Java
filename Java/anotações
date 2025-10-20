@@ -2017,4 +2017,20 @@ metodo estatico que pertence a classe, pq pra buscar clientes em uma tabela no b
 eu n busco apartir de uma instancia, e sim em um bd
 a classe representasse a tabela e o objeto uma linha do bd
 
+proprio objeto responsavel por interagir com a camada de persistencia
+isso é active record
+
+pesquisar sobre active record em cima do framework rubyonrails
+
+ja o data mapper é o padrão utilizado pelo jpa
+
+do lado eu tenho um obj1,obj2,obj3
+
+e tenho uma tabela1,tabela2,tabela 3
+a ideia é usar um tipo de mecanismo xml, json, anotation
+fazer um mapeamento entre um atributo do objeto e uma coluna do bd
+eu pego o proprio objeto e faço o mapeamento dele pra uma tabela
+
+
+
 
