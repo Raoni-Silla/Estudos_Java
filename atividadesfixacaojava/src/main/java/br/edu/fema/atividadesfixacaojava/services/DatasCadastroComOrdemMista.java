@@ -15,4 +15,5 @@ public class DatasCadastroComOrdemMista implements Atividade{
         List<LocalDateTime> Lista =  listaAlunos.stream().sorted(Comparator.comparing((Aluno aluno) -> aluno.getDataHoraCadastro().toLocalDate()).reversed().thenComparing((aluno -> aluno.getDataHoraCadastro().toLocalTime()))).map(Aluno::getDataHoraCadastro).toList();
         Lista.forEach(a -> System.out.println(a.toString()));
     }
+
 }
