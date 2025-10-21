@@ -8,7 +8,9 @@
 
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>br.com.raoni.ModeloBasico.Usuarios</class>
+        <class>br.com.raoni.ModeloBasico.ProdutosJava</class>
         <class>br.com.raoni.ExerciciosFixacao.Gemini.ItemEstoque</class>
+
         <properties>
             <property name="javax.persistence.jdbc.driver"
                       value="com.mysql.cj.jdbc.Driver"/>
