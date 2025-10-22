@@ -1,0 +1,84 @@
+Java Persistence Api
+é um padrão de persistencia chamado data mapper, e orm, dois paradigmas agrupados
+do mundo relacional, modelo e/r, e temos outro paradigma de oo e como esses dois
+mundos se conectam, é o papel que o data mapper tem com o orm
+
+padrão
+
+Data mapper vs active record
+
+basicamente nas lgp temos o poo, de um lado temos o poo e do outro a uma tabela
+com colunas, chaves e restrições, os relacionamentos são feitos entre tabelas e etc
+
+basicamente o active record é muito encontrado em frameworks do php laravel
+eloquent, no ruby
+vou criar um obj chamado cliente
+e o cliente tem atributos e comportamentos
+ele tem uma relação com a table clientes do bd
+
+então eu tenho uma serie de atributos que vão estar relacionados com a coluna
+do bd, qnd eu tenho um padrão active record, o proprio objeto tem dentro dele todos
+os metodos necessarios para se persisitir, um registro ativo, o proprio objeto tem os metodos
+necessarios para se inserir no bd, isso é feito por herança+
+
+Cliente c = new Cliente;
+c.save(); <- metodo dentro de cliente que salva o cliente no bd
+
+muitas vezes de acessar só o obejto posso acessar o nome da classe
+Cliente.find();
+metodo estatico que pertence a classe, pq pra buscar clientes em uma tabela no bd
+eu n busco apartir de uma instancia, e sim em um bd
+a classe representasse a tabela e o objeto uma linha do bd
+
+proprio objeto responsavel por interagir com a camada de persistencia
+isso é active record
+
+pesquisar sobre active record em cima do framework rubyonrails
+
+ja o data mapper é o padrão utilizado pelo jpa
+
+do lado eu tenho um obj1,obj2,obj3
+
+e tenho uma tabela1,tabela2,tabela 3
+a ideia é usar um tipo de mecanismo xml, json, anotation
+fazer um mapeamento entre um atributo do objeto e uma coluna do bd
+eu pego o proprio objeto e faço o mapeamento dele pra uma tabela
+
+
+eu tenho uma classe pŕoduto, que eu tenho que dizer que essa classe ta mapeado pra tabela x
+e mapeo cada atributo pra cada coluna
+
+dentro do jpa tenho o @table(passo o nome da tabela)
+a classe agora ta mapeada para a tabela do banco de dados
+
+tenho um objeto e tenho uma tabela, esse obj precisa ser mapeado pra tabela
+com algum tipo de informação
+e dentro do objeto eu tenho atributos
+e esses atributos são mapeados para as colunas da tabela
+
+@table
+@Id digo que determinado atributo é a chave primaria da tabela
+@Column esse atributo aponta pra uma determinada coluna
+preciso fazer esse orm, object relaction mapper
+
+
+reunir formas de se fazer relacionametos do mundo oo e relacional
+
+relacionamentos
+temos dois lados
+da parte de oo e do outro lado pela e/r
+
+temos duas tabela com linhas e colunas
+como é feito relacionamento?
+temos dentro de uma tabela um conceito de pk
+essa pk vai pra outra tabela gerando uma fk, um pra muitos
+tenho um id 1 e posso ter varias linhas na outra tabela que terao relacionameto com id 1
+
+a relação um pra um tem a mesma estrutura mas na outra tabela temos um filtro que diz
+que nao aceita repetição, sendo unique
+
+agora muitos pra muitos
+criamos uma tabela intermediaria
+agora a chave primaria da tabela que une as duas, vai ser uma tupla das chaves estrangeiras
+que estão conectadas nessa tabela
+
