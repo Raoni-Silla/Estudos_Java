@@ -90,3 +90,23 @@ ou seja eu n pego a chave de uma tabela x e coloco em y, e a de y em x
 
 ja olhando apenas pra tabela que a pk vem, n da pra dizer quantos registros estao
 relacionados com a outra tabela
+
+
+no mundo oo temos as 3 relações de forma fisica
+
+Classe A -> Classe B de um pra um, dentro de b tem um atributo de classe A
+e se quiser ser bidirecional,dentro da classe a posso ter um atributo de tipo b
+o mais comum é ter uma relação unidirecional
+
+do ponto de vista relacional, a informação do relacionamento esta sempre do lado n
+
+class b {
+A atributo;relação um pra n, b = n e a = um
+}de forma bidirecional posso criar uma list na class a do tipo b
+
+e se fosse n pra m?
+
+dentro de a tenho uma lista <b> e do lado de b tenho um list <a>
+uma relação bidirecional muito pra muitos
+
+as relações bidirecionais podem ser inconsistentes
