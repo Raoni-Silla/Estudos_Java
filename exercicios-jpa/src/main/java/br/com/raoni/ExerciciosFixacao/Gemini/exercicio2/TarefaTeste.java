@@ -21,8 +21,8 @@ public class TarefaTeste {
         for (Tarefa tarefa : tarefas) {
             em.persist(tarefa);
         }
-        em.getTransaction().commit();
 
+        em.getTransaction().commit();
         em.getTransaction().begin();
         Tarefa buscada = em.find(Tarefa.class, 1L);
         buscada.setDescricao("conceitos de crud e jpql estão se solidificando, ta indo");
