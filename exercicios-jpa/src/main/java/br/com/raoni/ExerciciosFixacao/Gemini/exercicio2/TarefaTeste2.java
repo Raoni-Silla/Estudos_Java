@@ -4,7 +4,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
-import java.time.LocalDate;
 import java.util.List;
 
 public class TarefaTeste2 {
@@ -20,6 +19,8 @@ public class TarefaTeste2 {
             System.out.println(tarefa);
         }
 
+
+        System.out.println("concluidas:");
         String jpql2 = "select todas from Tarefa todas where todas.concluida = true";
         TypedQuery<Tarefa> query2 = em.createQuery(jpql2, Tarefa.class);
         List<Tarefa> todas2 = query2.getResultList();
@@ -28,9 +29,8 @@ public class TarefaTeste2 {
             System.out.println(tarefa);
         }
 
+
         System.out.println("Consultando com like");
-
-
 
         String jpql3 = "select t from Tarefa t where t.nome LIKE :parametro";
         TypedQuery<Tarefa> query3 = em.createQuery(jpql3, Tarefa.class);
@@ -40,7 +40,6 @@ public class TarefaTeste2 {
         for (Tarefa tarefa : todas3) {
             System.out.println(tarefa);
         }
-
         em.close();
         emf.close();
     }
