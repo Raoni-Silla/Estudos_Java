@@ -9,7 +9,8 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>br.com.raoni.ModeloBasico.Usuarios</class>
         <class>br.com.raoni.ModeloBasico.ProdutosJava</class>
-        <class>br.com.raoni.ExerciciosFixacao.Gemini.ItemEstoque</class>
+        <class>br.com.raoni.ExerciciosFixacao.Gemini.Gemini.ItemEstoque</class>
+        <class>br.com.raoni.ExerciciosFixacao.Gemini.exercicio2.Tarefa</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver"

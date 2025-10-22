@@ -1,4 +1,4 @@
-package br.com.raoni.ExerciciosFixacao.Gemini;
+package br.com.raoni.ExerciciosFixacao.Gemini.Gemini;
 
 
 import lombok.Data;
@@ -22,10 +22,13 @@ public class ItemEstoque {
 
     private int quantidade;
 
-    ItemEstoque() {}
+    public ItemEstoque() {}
+
     public ItemEstoque(String nome, double preco, int quantidade) {
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
     }
+
+
 }

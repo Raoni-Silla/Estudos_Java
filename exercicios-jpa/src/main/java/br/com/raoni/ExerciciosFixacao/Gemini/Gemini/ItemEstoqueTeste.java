@@ -1,4 +1,4 @@
-package br.com.raoni.ExerciciosFixacao.Gemini;
+package br.com.raoni.ExerciciosFixacao.Gemini.Gemini;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

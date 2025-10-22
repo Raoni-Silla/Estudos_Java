@@ -1,10 +1,10 @@
 package br.com.raoni.infra;
 
-import br.com.raoni.ModeloBasico.ProdutosJava;
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
+import java.util.List;
 
 
 public class DAO <Entidade> {
@@ -21,11 +21,11 @@ public class DAO <Entidade> {
         this(null);
     }
 
-    public DAO<Entidade> abrirTransacao(Entidade entidade) {
+    public DAO<Entidade> abrirTransacao() {
         em.getTransaction().begin();
         return this;
     }
-    public DAO<Entidade> fecharTransacao(Entidade entidade) {
+    public DAO<Entidade> fecharTransacao() {
         em.getTransaction().commit();
         return this;
     }
@@ -34,4 +34,28 @@ public class DAO <Entidade> {
         return this;
     }
 
+    public DAO<Entidade> alterar(Entidade entidade) {
+        em.merge(entidade);
+        return this;
+    }
+    public DAO<Entidade> remover(Entidade entidade) {
+        em.remove(entidade);
+        return this;
+    }
+    public List<Entidade> ObterTodos(int limit, int offset) {
+
+        if (entidade == null) {
+            throw new UnsupportedOperationException("classe nula");
+        }
+
+        String jpql = "SELECT e FROM " + entidade.getName() + " e";
+        TypedQuery<Entidade> query = em.createQuery(jpql, entidade);
+        query.setMaxResults(limit);
+        query.setFirstResult(offset);
+        return query.getResultList();
+    }
+
+    public void fecharEm() {
+        em.close();
+    }
 }
