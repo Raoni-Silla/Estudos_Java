@@ -11,6 +11,8 @@ public class TarefaTeste {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("exercicios-jpa");
         EntityManager em = emf.createEntityManager();
 
+        System.out.println("=================Consultas com JPA==================");
+
         List <Tarefa> tarefas = List.of(
                 new Tarefa("Estudar Jpa","Fixar ConceitosCrud e JPQL",false, LocalDate.now()),
                 new Tarefa("Fazer compras","Arroz, Feijão e batata", true,LocalDate.now()),
