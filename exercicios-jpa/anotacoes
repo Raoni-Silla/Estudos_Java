@@ -82,3 +82,11 @@ criamos uma tabela intermediaria
 agora a chave primaria da tabela que une as duas, vai ser uma tupla das chaves estrangeiras
 que estão conectadas nessa tabela
 
+em e/r não existe relações bidirecionais
+ou seja eu n pego a chave de uma tabela x e coloco em y, e a de y em x
+é sempre unidirecional
+
+é mais facil achar os recursos na tabela que recebe a a pk cm fk
+
+ja olhando apenas pra tabela que a pk vem, n da pra dizer quantos registros estao
+relacionados com a outra tabela
