@@ -1,87 +1,109 @@
-# ☕ Estudos de Java
+<p align="center">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg" alt="Java" width="250"/>
+</p>
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+# ☕ Repositório de Estudos Java
 
-## 🎯 Sobre o Projeto
+Este repositório centraliza todos os meus projetos, exercícios e anotações pessoais desenvolvidos durante minha jornada de aprendizado em Java.
 
-Este repositório serve como meu diário de bordo pessoal no aprendizado da linguagem Java e dos princípios da Programação Orientada a Objetos. O objetivo é documentar meu progresso, solidificar conceitos através de exercícios práticos e construir um portfólio de código que demonstre minha evolução.
+## 🎯 Objetivo
 
-Cada pacote representa um módulo de estudo, contendo desde os fundamentos da linguagem até tópicos mais avançados de OO e desafios práticos.
-
----
-
-## 📚 Tópicos Abordados
-
-A estrutura do projeto cobre os seguintes módulos de estudo:
-
-* **Fundamentos:**
-    * Sintaxe básica, tipos primitivos, variáveis e operadores.
-
-* **Estruturas de Controle:**
-    * Lógica condicional (`if/else`, `switch`) e laços de repetição (`for`, `while`, `do-while`).
-
-* **Arrays (Vetores):**
-    * Manipulação de estruturas de dados estáticas e unidimensionais.
-
-* **Coleções (Collections Framework):**
-    * Uso de `List`, `Set`, `Map` e outras estruturas de dados dinâmicas.
-
-* **Programação Orientada a Objetos (POO):**
-    * **`oo.composicao`**: Relacionamentos entre classes do tipo "tem-um" (1:1, 1:N, N:N), demonstrado em desafios práticos.
-    * **`oo.heranca`**: Reuso de código com a relação "é-um", uso de `extends`, sobrescrita de métodos (`@Override`) e o conceito de superclasses/subclasses.
-    * **`oo.encapsulamento`**: Uso de modificadores de acesso para proteger e organizar o código.
-    * **`oo.polimorfismo`**: Capacidade de objetos assumirem múltiplas formas (Sobrecarga e Sobrescrita).
+O objetivo principal é documentar meu progresso e servir como um portfólio prático da minha evolução na linguagem. Ele funciona como um "diário de bordo" dos conceitos aprendidos, cobrindo desde os fundamentos da linguagem até tópicos mais avançados, como persistência de dados com JPA.
 
 ---
 
-## 📁 Estrutura do Repositório
+## 💻 Tecnologias e Ferramentas
 
-O projeto está organizado em pacotes, seguindo as convenções de nomenclatura do Java para facilitar a navegação:
+Principais tecnologias e bibliotecas exploradas neste repositório:
 
-```
-src
-└──
- └── estudosjava
-        ├── fundamentos
-        ├── estruturasdecontrole
-        ├── arrays
-        ├── colecoes
-        └── oo
-          ├── composicao
-          │   └── desafio
-                    └── heranca
-                        └── desafio
-```
-
-Cada pacote temático contém as classes de exemplo e, quando aplicável, um sub-pacote `desafio` com exercícios práticos sobre o tema.
+<p align="left">
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
+  <img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white" alt="Hibernate"/>
+  <img src="https://img.shields.io/badge/JPA-Java%20Persistence%20API-007396?style=for-the-badge&logo=java&logoColor=white" alt="JPA"/>
+  <img src="https://img.shields.io/badge/Lombok-DC073D?style=for-the-badge&logo=lombok&logoColor=white" alt="Lombok"/>
+  <img src="https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white" alt="IntelliJ IDEA"/>
+</p>
 
 ---
 
-## 🚀 Como Utilizar
+## 🧭 Estrutura do Repositório
 
-Este repositório é ideal para consulta e execução dos exemplos. Para clonar e rodar o projeto localmente:
+O repositório está organizado em três pastas principais, localizadas na raiz do projeto:
 
-```bash
-# Clone este repositório
-git clone [https://github.com/Raoni-Silla/estudos-java.git](https://github.com/Raoni-Silla/estudos-java.git)
+### 📁 java
+Contém o código-fonte principal dos estudos, separado por conceitos dentro de `src/`:
 
-# Acesse o diretório do projeto
-cd estudos-java
-```
-Depois, abra o projeto em sua IDE Java de preferência (IntelliJ, Eclipse, VS Code) e execute as classes que contêm o método `main`.
+* **Fundamentos**: Conceitos básicos (tipos, variáveis, operadores, etc).
+* **EstruturaDeControle**: `if/else`, `switch`, `for`, `while`.
+* **Vetores**: Estudo de Arrays e Matrizes.
+* **Classe (Núcleo POO)**: Tópicos centrais de Programação Orientada a Objetos.
+    * `ooEncapsulamento`: Exemplos de encapsulamento.
+    * `ooHeranca`: Exemplos de herança.
+    * `ooPolimorfismo`: Exemplos de polimorfismo.
+    * `oo/composicao`: Exemplos de composição de objetos.
+    * *Arquivos-base*: Classes de exemplo (`Produto`, `Data`) e conceitos fundamentais (`ValorVsReferencia`, `Nulo`, `EqualsHash`).
+* **GuanabaraPOO**: Exercícios e projetos do curso de POO (Prof. Gustavo Guanabara).
+* **colecoes**: Java Collections Framework (List, Set, Map, Queue).
+* **TratamentoErros/Excecao**: Práticas de Try-Catch e exceções customizadas.
+* **Generics**: Classes e métodos genéricos.
+* **Lambdas**: Funções anônimas e programação funcional.
+* **StreamAPI**: Manipulação de coleções usando a Stream API.
+* **Lombok**: Testes com a biblioteca Lombok para redução de código (@Data, @Getter, etc).
+* **Desafios**: Algoritmos e desafios de lógica diversos.
+* **ExerciciosFixacao/ConferenciasTech**: Exercícios de fixação, incluindo o projeto "ConferenciasTech".
+* **TreinoOrganizacaoPacotes**: Testes de boas práticas para estruturação de pacotes.
+
+### 📁 atividadesfixacaojava
+Uma pasta dedicada a atividades de fixação focadas especificamente nos conceitos da **Stream API**.
+
+### 📁 exercicios-jpa
+Estudos e projetos práticos sobre persistência de dados com **Java Persistence API (JPA)** e **Hibernate**, demonstrando o mapeamento objeto-relacional (ORM).
 
 ---
 
-## 🧑‍💻 Autor
+## 📚 Tópicos e Conceitos Abordados
 
-**Raoní Silla**
+Abaixo está um checklist do que já foi estudado e o que está em progresso.
 
-Estudante de Análise e Desenvolvimento de Sistemas focado em construir uma carreira em DevSecOps, unindo desenvolvimento de software e segurança da informação.
+- [x] Sintaxe Básica e Tipos Primitivos
+- [x] Estruturas de Controle
+- [x] Programação Orientada a Objetos (Pilares da POO)
+- [x] Arrays, Matrizes e Estrutura de Pacotes
+- [x] Java Collections Framework (List, Set, Map, Queue)
+- [x] Tratamento de Exceções
+- [x] Generics
+- [x] Lambdas e Programação Funcional
+- [x] Stream API
+- [x] Persistência com JPA e Hibernate
+- [x] Biblioteca Lombok
+- [ ] Concorrência e Threads
+- [ ] Spring Framework (Próximos passos)
 
-Atualmente atuando como estágiario no Cepein | Fema.
+---
 
-Entre em contato e vamos nos conectar!
+## 🚀 Como Executar
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/raoni-mendes-silla-/)
+A maioria dos projetos utiliza o Maven ou Gradle para gerenciamento de dependências.
+
+1.  Clone o repositório:
+    ```bash
+    git clone [https://github.com/Raoni-Silla/estudos-java.git](https://github.com/Raoni-Silla/estudos-java.git)
+    ```
+2.  Abra a pasta clonada na sua IDE favorita (como o IntelliJ IDEA).
+3.  Aguarde a IDE baixar as dependências (caso seja um projeto Maven/Gradle).
+4.  Navegue até a classe principal (que contém o método `main`) e execute.
+
+---
+
+## 📖 Fontes de Estudo
+
+Este repositório é majoritariamente composto por exercícios e projetos dos seguintes cursos e plataformas (sinta-se à vontade para editar esta lista):
+
+* **Curso em Vídeo:** Java e POO (Prof. Gustavo Guanabara)
+* **Cod3r Cursos:** Formação Completa Java
+* **Documentação Oficial:** Oracle e Spring.io
+
+---
+
+Feito por [Raoní Silla](https://github.com/Raoni-Silla).edIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/raoni-mendes-silla-/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Raoni-Silla)
