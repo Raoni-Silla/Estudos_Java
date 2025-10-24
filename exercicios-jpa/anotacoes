@@ -110,3 +110,12 @@ dentro de a tenho uma lista <b> e do lado de b tenho um list <a>
 uma relação bidirecional muito pra muitos
 
 as relações bidirecionais podem ser inconsistentes
+quando fizer uma relação assim é preciso garantir a consistencia dos dados
+
+
+Jpa
+@OneToOne
+@OneToMany apartir do lado um quero relacionar uma lista do lado muitos, dentro da mae aponto pro filho
+@ManyToOne é o par da relação de cima, dentro do filho aponto pra mae
+@ManyToMany
+
