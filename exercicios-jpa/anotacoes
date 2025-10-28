@@ -119,3 +119,12 @@ Jpa
 @ManyToOne é o par da relação de cima, dentro do filho aponto pra mae
 @ManyToMany
 
+revisando conceitos, temos dois padrões de persistencia
+
+data mapper vs active record
+
+de um lado temos a poo e do outro lado uma tabela do banco de dados
+o active record é encontrado em php, como laravel, eloquent, ruby on rails
+vou criar um object chamado cliente, e o cliente tem uma serie de atributos e comportamentos
+e esse cliente tem relação com a tb cliente do banco de dados
+temos uma serie de atributos relacionados com o banco de dados
