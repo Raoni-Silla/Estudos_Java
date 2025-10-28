@@ -119,6 +119,9 @@ Jpa
 @ManyToOne é o par da relação de cima, dentro do filho aponto pra mae
 @ManyToMany
 
+
+28/10/25 <-- revisando conceitos
+
 revisando conceitos, temos dois padrões de persistencia
 
 data mapper vs active record
@@ -128,3 +131,36 @@ o active record é encontrado em php, como laravel, eloquent, ruby on rails
 vou criar um object chamado cliente, e o cliente tem uma serie de atributos e comportamentos
 e esse cliente tem relação com a tb cliente do banco de dados
 temos uma serie de atributos relacionados com o banco de dados
+
+tenho uma serie de atributos que se relacionam com a coluna do banco de dados
+cada atributo é uma coluna
+
+quando se tem um padrão active record, o proprio objeto que se relaciona com o banco de dados
+vai ter todos os metodos necessarios para se persisitir, o proprio objeto tem os metodos necessarios
+para se inserir no banco de dados
+
+se eu criar um cliente c, vou ter um metodo dentro de cliente que vai salvaer esse objeto no bd
+c.save();
+c.remove();
+
+Cliente.find(select no banco de dados)
+porque pra buscar cliente dentro de uma tabela no banco de dados
+n se busca apartir de uma unica instancia e sim da tabela
+
+classe = tabela
+objeto = linha do banco de dados
+
+isso é de acordo com o active records
+entao ele guarda metodos dentro da propria class/objeto para se persistir sozinho no banco de dados
+porque temos o proprio objeto responsavel com todos os metodos pra interagir com a camada de persistencia
+
+o data mapper é utilizado pelo jpa
+
+de um lado tenho um obj 1, obj 2, e pra cada objeto tenho uma tabela
+e a ideia aqui é usar algum tipo de mecanismo para mapear o atributo do objeto
+e uma coluna do banco de dados
+
+antes de fazer isso pego o proprio objeto dele e faço o mapeamento dele pra uma tabela
+obj 1 se relaciona com a objtb1
+entao cada atributo é mapeado como uma coluna do banco de dados
+
