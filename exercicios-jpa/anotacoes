@@ -164,3 +164,37 @@ antes de fazer isso pego o proprio objeto dele e faço o mapeamento dele pra uma
 obj 1 se relaciona com a objtb1
 entao cada atributo é mapeado como uma coluna do banco de dados
 
+data acess object eventualmente vamos acabar precisando dele pra fazer a persistencia dos dados
+##orm mapeamento objeto relacional
+
+orm
+object relational mapper
+mapeamento de objeto relacional
+
+é um conceito importante pro jpa
+
+defino uma classe produto
+produto
+nome
+preço
+qntd
+
+entao de um lado temos o produto em oo e do outro lado tenho uma tabela em e/r
+
+como eu mapeio uma classe pra uma tabela, pra fazer isso uso o conceito de anotation
+
+usamos anotation pra dizer pro jpa
+
+temos uma anotação @Table(nome da tabela)
+significa que essa classe esta sendo mapeada pra tabela do banco de dados
+table (produtos)
+produto
+nome
+preco
+qntd
+
+a classe acima agora esta relacionada com uma tabela, e o framework entende que essa classe
+esta relacionada com a tabela
+@Id determina a chave primaria do banco de dados
+@Column determina o nome da coluna e aponta pra coluna
+
