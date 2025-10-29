@@ -15,6 +15,7 @@ public class Usuarios {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     //garante que cada entidade tem sua propria sequencia de id
     //entao a tabela usuarios vai ter sua propria sequencia de id
+    //como se fosse o autoincrement do sql
     private long id;
 
     private String nome;
