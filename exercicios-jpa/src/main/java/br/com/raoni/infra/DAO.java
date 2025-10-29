@@ -9,9 +9,9 @@ import java.util.List;
 
 public class DAO <Entidade> {
 
-    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("exercicios-jpa");
+    private static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("exercicios-jpa");
     protected EntityManager em;
-    private Class<Entidade> entidade;
+    private final Class<Entidade> entidade;
 
     public DAO(Class<Entidade> entidade) {
         em = emf.createEntityManager();

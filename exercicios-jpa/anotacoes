@@ -198,3 +198,24 @@ esta relacionada com a tabela
 @Id determina a chave primaria do banco de dados
 @Column determina o nome da coluna e aponta pra coluna
 
+dependendo de como o jpa é configurado ele pode criar automaticamente uma tabela pra gente no bd
+se uma coluna é not null ou nao, vai ser util na hora que eu for criar as tabelas, qnd eu for mapear as tabelas
+esse not null nao vai validar os dados
+
+algumas dessas informações colocadas no orm serve pra criar as tabelas e outras servem pra todos os momentos
+essa classe aponta pra tabela com esse nome
+
+oque é persistencia ?
+Na computação, persistência de dados é a capacidade de guardar informações de forma permanente,
+para que elas não se percam quando o sistema é fechado.
+
+o persistence unit serve pra gente conectar nos banco de dados, no momento que eu for
+interagir com o jpa tenho que dizer qual é a unidade de persistencia que ele vai conectar
+isso vai ser definido na persitence unit, definindo o nome da persistencia
+
+temos que colocar as classes mapeadas
+
+depois informamos as propriedades do banco de dados
+criando uma serie de propertie que vai ter nome e valor
+definindo um usuario e uma senha
+
