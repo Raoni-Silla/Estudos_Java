@@ -8,7 +8,7 @@ import javax.persistence.*;
 
 @Data
 @Table(name = "tb_alunos")
-@Entity //essa classe vai ser uma entidade no bd
+@Entity //essa classe vai ser uma entidade
 public class Usuarios {
 
     @Id
