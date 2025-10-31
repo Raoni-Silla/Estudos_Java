@@ -213,9 +213,53 @@ o persistence unit serve pra gente conectar nos banco de dados, no momento que e
 interagir com o jpa tenho que dizer qual é a unidade de persistencia que ele vai conectar
 isso vai ser definido na persitence unit, definindo o nome da persistencia
 
+Persistência: É o conceito de salvar dados de objetos em um banco.
+
+Unidade de Persistência: É o conjunto de configurações nomeado
+(ex: name="meu-banco-principal") que diz ao seu programa como,
+onde e o quê persistir.
+Ela responde a todas estas perguntas:
+
+O QUÊ? Quais classes Java (Entidades) eu devo gerenciar?
+
+(Ex: Usuario.class, Produto.class, Pedido.class)
+
+ONDE? Para qual banco de dados eu devo enviar esses dados?
+
+(Ex: A URL jdbc:mysql://localhost:3306/meu_banco)
+
+COMO (Credenciais)? Como eu me autentico nesse banco?
+
+(Ex: Usuário root e Senha 123456)
+
+QUEM (Faz o trabalho)? Qual "motor" (Provedor) eu devo usar para fazer a tradução?
+
+(Ex: O HibernatePersistenceProvider)
+
+COMO (Tradução)? Em qual "dialeto" SQL eu devo falar com esse banco?
+
+(Ex: MySQL8Dialect, porque falar com MySQL é diferente de falar com PostgreSQL)
+
+QUAIS REGRAS? O que eu devo fazer com as tabelas quando o programa iniciar?
+
+(Ex: hibernate.hbm2ddl.auto = update -> "Verifique se as tabelas existem e as atualize se necessário.")
+
 temos que colocar as classes mapeadas
 
 depois informamos as propriedades do banco de dados
 criando uma serie de propertie que vai ter nome e valor
 definindo um usuario e uma senha
+
+pra inserir elementos no banco de dados (insert)
+se usa o persist em contexto de transação, da um transação begin
+e faz oque tem que ser feito
+depois commita a transação
+
+o @generatedvalue diz que o atributo é autoincremento
+temos estrategias de geração temos o auto, identity, sequence, table
+uma sequence pode ser compartilhada com outras entidades
+o identity garante que cada entidade vai ter sua propria sequencia de id
+
+o sequence pode compartilhar uma mesma sequencia com outras entidades
+
 

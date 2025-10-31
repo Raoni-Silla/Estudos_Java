@@ -13,6 +13,11 @@ public class ObterUsuario {
 
         //exige transação envolvendo persist, caso seja um insert
 
+        //o find faz uma busca unitaria no banco de dados
+        //eu passo qual tipo de classe eu quero mapear apartir do resultado do bd
+        //e depois o segundo parametro é o identificador que eu vou usar pra achar
+        //no banco de dados o determinado usuario
+
         Usuarios usuario = em.find(Usuarios.class, 3L);
         System.out.println(usuario);
 
