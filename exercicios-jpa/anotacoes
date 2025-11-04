@@ -282,3 +282,5 @@ entao o cliente aqui quem vai ter o atributo do tipo assento
 
 se eu tentar inserir o cliente primeiro que o assento em duas transações diferentes, o java vai dar erro
 pois precisa ser persistido em ordem correta no banco de dados
+
+se usa o cascade type em situações especificas , pois ele fara tudo em cascata, oque o pai sofrer o filho tambem sofre
