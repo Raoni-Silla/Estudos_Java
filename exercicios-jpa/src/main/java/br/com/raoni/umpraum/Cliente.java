@@ -17,7 +17,8 @@ public class Cliente {
 
     private String cpf;
 
-    @OneToOne
+    @OneToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @JoinColumn(unique = true)//garante que dentro dessa coluna eu tenho um valor unico
     private Assentos assento;
 
     public Cliente() {}
