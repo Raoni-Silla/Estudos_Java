@@ -284,3 +284,10 @@ se eu tentar inserir o cliente primeiro que o assento em duas transações difer
 pois precisa ser persistido em ordem correta no banco de dados
 
 se usa o cascade type em situações especificas , pois ele fara tudo em cascata, oque o pai sofrer o filho tambem sofre
+
+
+oneToMany
+o mapped by sempre fica do lado bidirecional da relação, ele diz qual atributo esta referenciado
+
+carregamento tardio e carregamento apreçado
+

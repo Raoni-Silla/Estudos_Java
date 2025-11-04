@@ -5,6 +5,7 @@ import lombok.Data;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.Date;
+import java.util.List;
 
 @Data
 @Entity
@@ -17,7 +18,8 @@ public class Pedido {
     @Column(nullable = false)
     private LocalDateTime data;
 
-
+    @OneToMany(mappedBy = "pedido") //segundo atributo na parte bidirecional, usa o maped pra dizer onde ta o atributo que esta ligado
+    private List<ItemPedido> itens;
 
     public Pedido() {
         setData(data);
