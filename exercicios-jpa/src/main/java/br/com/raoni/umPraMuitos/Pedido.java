@@ -2,10 +2,8 @@ package br.com.raoni.umPraMuitos;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Data
@@ -16,11 +14,17 @@ public class Pedido {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Date data;
+    @Column(nullable = false)
+    private LocalDateTime data;
 
-    public Pedido(){}
 
-    public Pedido(Date data) {
+
+    public Pedido() {
         setData(data);
+    }
+
+    public void setData(LocalDateTime data) {
+        this.data = LocalDateTime.now();
+
     }
 }
