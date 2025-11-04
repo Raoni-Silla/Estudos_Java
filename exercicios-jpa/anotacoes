@@ -263,3 +263,20 @@ o identity garante que cada entidade vai ter sua propria sequencia de id
 o sequence pode compartilhar uma mesma sequencia com outras entidades
 
 
+relacionamentos
+um pra um
+a primeira pergunta que eu tenho que fazer, é mais comum eu obter um cliente apartir do assento
+ou o assento apartir do cliente, isso define aonde nosso atributo de ligação vai ficar
+
+eu primeiro tenho que inserir o lado da relação que nao tem a chave estrangeira na relação um pra um
+
+preciso colocar um cascade pra persistir um cliente com persist, eu posso infromar com o cascade quais
+operções em cascata vao ser permitidads com aquela ligação
+
+atençao com o cascade pq ele executa diversas operações em cascata, nem sempre é bom utilizar
+
+então temos que nos perguntas se apartir de x é mais facil obter y, ou apartir de y é mais facil obter x
+entao aqui temos que apartir do cliente, é mais facil obter o assento
+
+entao o cliente aqui quem vai ter o atributo do tipo assento
+

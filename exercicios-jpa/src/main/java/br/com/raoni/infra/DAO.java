@@ -14,8 +14,8 @@ public class DAO <Entidade> {
     private final Class<Entidade> entidade;
 
     public DAO(Class<Entidade> entidade) {
-        em = emf.createEntityManager();
         this.entidade = entidade;
+        em = emf.createEntityManager();
     }
     public DAO() {
         this(null);
