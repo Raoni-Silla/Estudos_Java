@@ -58,4 +58,10 @@ public class DAO <Entidade> {
     public void fecharEm() {
         em.close();
     }
+
+    public List <Entidade> consultar(String nomeConuslta, Object... params) {
+        TypedQuery<Entidade> query = em.createNamedQuery(nomeConuslta, entidade);
+        query.getResultList()
+    }
+
 }

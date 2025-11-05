@@ -355,3 +355,12 @@ tia1.getSobrinhos().add(sobrinho);
 
         preciso informar que os dois lados existem pra nao falar que
         o o sobrinho 1 tem o tio 2, mas na lista de tio n existe sobrinho 1
+
+
+ consulta nomeada named query
+ voce pode criar na anotation namedquery na sua classe
+ ou em um arquivo xml dentro de meta-inf
+
+ select f from Filme f
+             join fetch f.atores
+             where f.nota >= :nota <-- isso é um parametro passado pra query
