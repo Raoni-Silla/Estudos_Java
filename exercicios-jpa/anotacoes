@@ -291,3 +291,67 @@ o mapped by sempre fica do lado bidirecional da relação, ele diz qual atributo
 
 carregamento tardio e carregamento apreçado
 
+o lazy e o igger,
+que apartir de uma entidade preciso carregar outra entidade
+existe um comportamento padrão nesse caso e sempre que eu tiver uma relação pra um
+cliente tem um assento
+por padrão jpa ja traz o assento do cliente
+pq ele entende que vai trazer um registro e isso não pesa muito
+um filho traz a mãe
+mas a mãe n traria filhos
+
+quando o relacionamento é pra muitos, o padrão vai ser o lazy
+
+lazy = tardia
+
+fetch de uma relação to one é eager
+e as relações to many por padrão sao lazy
+
+ele entende que se é uma lista pode ser muitos itens mesmo
+entao ele deixa o usuario de forma explicita pegar essas informações sem trazelas todas de
+uma vez no primeiro momento = lazy
+
+em uma relção to one eager, ele traz todos os registros de forma afobada
+pq sera apenas uma linha do bd
+fazendo apenas uma consulta só, traz tudo de uma vez com uma passagem
+
+vc vai querer colocar como eager um relacionamento que preciso acessar a maioria das vezes a classe um?
+faz sentido eu trazer em 100% dos casos x, sendo q n preciso na maioria das vezes, e so preciso de y
+faz mais sentido usar jpql que traz essas informações apartir de cenarios especificos
+
+o ideal é deixar as relações de forma padrão e quando necessario eu crio uma jpql
+
+eager é um padrão burro, é como se o garçom trouxesse junto do prato que vc pediu
+o refri, um suco, um chocolate e outras coisas q vc n pediu de fato, então ele é perigoso
+pois pode demorar muito pra fazer uma consulta geral assim
+
+o lazy so te traz o refri,suco e o chocalte se vc pedir, ele tem la, mas n traz até vc pedir
+dar um getRefri por exemplo
+
+na duvida deixe todas as relações no padrão que ja vem, e caso precise trazer mais itens
+use jpql
+
+ManyToMany
+
+se o relacionamento principal tiver dentro de tio
+ele coloca o nome da tabela tio_sobrinho
+se tiver dentro de sobrinho ele coloca sobrinho_tio
+
+se eu colocar o mapped by do lado do tio, significa que o sobrinho é o pai da relação
+como temos uma relação bidirecional é bom ter uma coerencia na relação
+
+preciso fazer a relação bidirecional, entao
+tia1.getSobrinhos().add(sobrinho);
+        sobrinho.getTios().add(tia1);
+
+        tia1.getSobrinhos().add(sobrinho2);
+        sobrinho2.getTios().add(tia1);
+
+        tio2.getSobrinhos().add(sobrinho);
+        sobrinho.getTios().add(tio2);
+
+        tio2.getSobrinhos().add(sobrinho2);
+        sobrinho2.getTios().add(tio2);
+
+        preciso informar que os dois lados existem pra nao falar que
+        o o sobrinho 1 tem o tio 2, mas na lista de tio n existe sobrinho 1
