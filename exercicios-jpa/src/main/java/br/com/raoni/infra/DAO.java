@@ -60,8 +60,11 @@ public class DAO <Entidade> {
     }
 
     public List <Entidade> consultar(String nomeConuslta, Object... params) {
-        TypedQuery<Entidade> query = em.createNamedQuery(nomeConuslta, entidade);
-        query.getResultList()
+        TypedQuery<Entidade> query = em.createNamedQuery(nomeConuslta, entidade); //nome da consulta, classe
+        for (int i = 0; i < params.length; i+= 2) {
+            query.setParameter(params[i].toString(), params[i+1]);
+        }
+        return query.getResultList();
     }
 
 }

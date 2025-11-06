@@ -16,6 +16,10 @@
         <class>br.com.raoni.ExerciciosFixacao.Gemini.exercicio2.Tarefa</class>
         <class>br.com.raoni.umpraum.Cliente</class>
         <class>br.com.raoni.umpraum.Assentos</class>
+        <class>br.com.raoni.composicao.endereco</class>
+        <class>br.com.raoni.composicao.fornecedor</class>
+        <class>br.com.raoni.composicao.funcionario</class>
+
 
         <properties>
             <property name="javax.persistence.jdbc.driver"
