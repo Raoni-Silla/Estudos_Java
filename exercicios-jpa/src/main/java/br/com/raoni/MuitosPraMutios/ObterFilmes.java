@@ -7,11 +7,10 @@ import java.util.List;
 public class ObterFilmes {
     public static void main(String[] args) {
         DAO<Filme> dao = new DAO<>(Filme.class);
-        List<Filme> filmes = dao.consultar("filmesNotaMaiorQue", "nota", 8.6);//nome da query, nome do parametro, valor do parametro
+        List<Filme> filmes = dao.consultar("filmesNotaMaiorQue", "nota", 8.6, "asdasd", "asdadsadsa");//nome da query, nome do parametro, valor do parametro
 
         for (Filme filme : filmes) {
             System.out.println(filme.getNome());
         }
-
     }
 }

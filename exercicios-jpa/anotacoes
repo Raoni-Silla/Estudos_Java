@@ -364,3 +364,8 @@ tia1.getSobrinhos().add(sobrinho);
  select f from Filme f
              join fetch f.atores
              where f.nota >= :nota <-- isso é um parametro passado pra query
+
+
+ Conceitos basicos sobre a Web:
+
+ Começando o modulo de conceitos basicos de web
