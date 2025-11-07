@@ -368,4 +368,33 @@ tia1.getSobrinhos().add(sobrinho);
 
  Conceitos basicos sobre a Web:
 
- Começando o modulo de conceitos basicos de web
+Começando o modulo de conceitos basicos de web
+
+marcos importantes:
+
+1950s -> computador eletronico, base de toda a comunicação em rede de todos os computadores
+
+1960s -> arpanet -> criado pelo departamento de defesa americano, aonde conectava militares, mas tambem estudantes
+
+1970 -> tcp/ip -> protocolo de comunicação de rede
+
+1980 -> WWW world wrad web tim berners lee
+
+1990 -> internet no brasil
+
+2000 -> ig e redes sociais
+
+
+a internet nada mais é que uma grande rede de computadores
+tendo topologias, maquinas que falam com outras
+
+tem a centralizada, varias maquinas a um modulo central
+tem esse ponto central, como se fosse um coração
+se ele para, a rede para
+
+a internet é mais parecida com a topologia distribuida
+se a rede falhar em um determinado ponto nesse caso
+voce não mata a rede toda, voce ainda tera rotas de um pc pra outro
+mesmo que uma parte fique fora do ar
+
+
