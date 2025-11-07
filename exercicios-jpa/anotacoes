@@ -501,3 +501,100 @@ significa que na maquina 1
 vou acessar o node apartir de http://10.85.0.5:8080 < - supundo que o node rode na porta 8080
 
 como a internet chega em casa? (guanabara)
+
+a internet nasceu durante a guerra fria
+foi uma corrida, quem sai na frente nessa questão é a urss
+ele lançou um satelite chamado sputnik
+ele tinha uma função, circundar a orbita terreste e cair na agua
+ele era simplesmente um teste
+
+mas os eua nao sabiam disso e preocupado com a evolução tech da urss
+o sengor dwight cria a darpa pra pesquisas tecnologicas para a guerra
+existe ate hj
+
+a primeira tecnologia criada foi para suprir um dos pavores americanos
+imagina que nos eua
+temos um centro militar A e outro centro B, se todos os dados ficassem no centro A e fosse explodido
+perderiam todos os Dados, e isso n poderia ocorrer
+
+pensando nisso criaram uma rede chamada arpanet
+~t
+
+tinha 4 pontos
+4 computadores
+
+eles tinham um projeto de comunicar esses 4 centros e criar um backup de segurança dos dados
+porem os 4 computadores eram diferentes, e na epoca, pcs diferentes falavam linguagem diferentes
+ou seja, nao eram comunicaveis
+
+pensando nisso criaram o protocolo ncp
+protocolo de controle de rede
+basicamente ele falava uma linguagem unica
+protocolos são um idioma unico que todos podem falar
+o ncp é muito simples e ruim
+basicamente eses 4 pcs, se um pc quisesse falar com outro
+a rede toda parava e eles começam a transmitir dados, quando essa transmissão acabava
+ai sim eles liberavam a rede
+
+porem a arpanet cresceu para caramba so que nesse ponto o ncp estava se tornando impraticavel
+
+foi ai que dois pesquisadores criaram dois protocolos
+transfer control protocol tcp
+a ideia dele era parar a ideia do ncp de parar toda a rede pra transmitir dados
+porem o tcp tinha dificuldade de identificar os pontos (pcs)
+foi ai que veio um protocolo de identificação de maquinas (ip)
+que cria um protocolo de identificação de maquinas
+juntando esses dois trabalhos temos o tcp/ip
+
+e com isso a arpanet cresceu muito
+e cresceu tanto que os militares abriram mão de cuidar dessa rede
+
+então separam tudo a parte militar ficou com a milnet
+a parte dos cientistas e universitarios ficou com a nsfet
+
+e tbm existiam redes comerciais
+e essas redes tinham que se comunicar a milnet, a nsfnet e as redes comerciais
+
+e pra isso eles criaram uma rede de interconexão entre elas
+chamada de interconnect networking
+que de forma abreviada
+surge o termo internet
+
+e a internet que temos hoje é gigante
+a internet não é uma rede, e sim uma conexão de varias redes
+
+e hoje como eu transfiro dados do ponto a ao ponto b
+
+o ponto A é o meu pc client
+e o Ponto B que é o pc que vai me dar a midia é chamado de server
+
+então o server tem um arquivo e eu quero esse arquivo
+
+entao A quer uma foto, e ele pede essa foto (solicita)
+se eu mandar essa imagem inteira, a internet mundial pode ficar lenta
+entao oque o tcp/ip faz, ele quebra essa imagem em pacotes, totalmente fora de ordem
+em rotas diferentes, em tempos diferentes, mas o fato é, que no fim da transmissão chega todos os pacotes no pc
+entao o tcp do server quebra o pacote e seu pc fica responsavel por montar essa imagem denovo com o tcp dele
+
+tim berners lee cria o protocolo Http hyper text transfer protocol
+e a WWW rede de alcance mundial
+
+e pra tudo isso funcionar, precisava de um navegador
+
+qual a diferença de WWW pra internet
+
+a internet é a rede mundial, mais generica
+e dentro da internet temos server especializados em varias coisas
+tipo o ftp, gopher, smtp,pop3 e imap
+e existe os servidores especializados em HTTP
+esse termo que ele criou WWW é uma sub rede de internet, é a parte da internet especializada em
+http
+eles englobam servidores especializados em http
+é uma rede dentro da grande rede internet > http > www
+
+http é um protoclo especiliazado em hipertexto
+
+
+
+
+
