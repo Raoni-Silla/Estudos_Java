@@ -397,4 +397,107 @@ se a rede falhar em um determinado ponto nesse caso
 voce não mata a rede toda, voce ainda tera rotas de um pc pra outro
 mesmo que uma parte fique fora do ar
 
+a internet de fato é destribuida mas sem um poder central ou dono
 
+web (teia)
+temos varios niveis de rede
+temos grandes backbones que ultrapassam de um rede pro outro
+redes de nivel 1,2 e 3, um dos provedores que temos em casa se enquadram nesses niveis
+
+tendo uma grande teia de comunicação em provedores diferentes
+
+transmission control protocol/ internet protocol
+orientado a conexão e confiavel <- tcp fica na camada de transporte
+ip <- ele é resposavel pelo roteamento entre redes
+
+tcp/ip é um protocolo que é um software que usa o padrão layers de camadas
+
+temos a camada fisica (rede)
+internet
+transporte
+aplicação
+
+a comunicação é a camada de cima usar a camada de baixo
+aplicação depende de transporte depende de internet depende de rede
+feito de tal forma pra dividir as responsabilidades com a camada de cima
+fazendo uso da camada de baixo
+
+a ramada de trasnporte n precisa ligar pra rede, so pra internet
+fazendo o retorno de informações da mesma forma
+
+na parte de rede temos wifi, mac adress, e fisica hw e enlace (software
+a camada mais baixa e perto do hardware
+
+internet temos ip, identifica uma maquina dentro da rede, conexão entre redes e transferencia de pacotes
+gateway < - estudar
+na camada de internet temos a conexão entre redes, e compartilhamento de pacotes
+na camada de transporte temos tcp (confiavel), udp (melhor esforço)
+aplicação <- http,ftp,smtp, comunicação processo a processo e numero da porta
+
+anatomia do ipv4
+classe A 192.168.100.230
+numero separado por 4 partes indo de 0 a 255
+parte desse ip identifica a rede e outra parte identifica o pc dentro da rede
+
+um ip de classe A, temos a seguinte organização, primeira parte a rede e as tres ultimas partes o host
+pc dentro da rede
+192.168.100.230
+192 = rede
+168.100.230 = host(maquinas ligadas a rede)
+nesse cenario fica claro que temos poucas redes e dentro da rede temos muitas maquinas
+existem poucas redes de classe A no mundo
+pra identificar oque é rede e oque é host
+temos a mascara de sub rede de um mesmo tamanho que um ip
+sempre que na mascara de sub rede um bit ta marcado com um significa que aquela parte do ip aponta pra uma rrede
+se for zero o bit correspondente no ip aponta pra uma maquina
+classe A primeira parte rede, as 3 ultimas host
+poucas redes no mundo com milhares de maquinas na rede
+endereços raros
+
+classe b
+192.168.100.230
+rede ocupa as duas primeiras partes e o host ocupa as partes finais
+oque muda é a mascara de sub rede
+255.255.0.0
+muito dificil ter na pratica
+
+classe c, mais comum
+192.168.100.230
+oque diz a classe é a mascara de sub rede
+255.255.255.0
+as tres primeiras partes mapeiam a rede e a ultima parte mapeia o host
+significa que posso ter no maximo 255 maquinas na rede
+esses tres padrões são classicos
+
+o endereço de ip sozinho não diz muita coisa, ele precisa da mascara de rede pra ser interpretado
+
+conceito de porta..
+porta na vdd é um processo
+
+imagina que temos 2 pcs
+que querem se comunicar
+um pc esta no endereço de 10.85.0.4
+e outro pc esta no endereço(ip) 10.85.0.5
+estao na mesma rede de classe c
+facilmente podem se comunicar
+so que no pc esta rodando skype, apache, dropbox
+usam portas pra se comunicar pois dependem de redes
+
+no pc 2 temos github desktop
+chrome
+node
+mysql
+
+apartir do pc quero acessar o pc 2
+alem de saber o ip da maquina preciso saber o processo
+e o processo é mapeado pela porta
+
+cada um dos procesoss precisam estar associados com um numero (porta), pra que n aja apenas
+uma comunicação de maquina a maquina mas processo a processo
+
+vamos supor que o node ta executando na porta 8080
+
+significa que na maquina 1
+vou acessar o node apartir de http://10.85.0.5:8080 < - supundo que o node rode na porta 8080
+
+como a internet chega em casa? (guanabara)
