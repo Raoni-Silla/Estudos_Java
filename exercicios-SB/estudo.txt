@@ -1,0 +1,52 @@
+http
+hyper text transfer protocol
+ele fica na camada de aplicação e serve pra transferir dados na web atual
+
+ele tem 8 metodos
+temos o metodo get que serve pra obter informações do servidos
+obter ou ler = get
+o get não é pra causar alteração ou efeito colateral
+inserir,excluir, o metodo get só le informações
+
+então eu tenho meu navegador
+que faz uma requisição pro meu sprint
+
+navegador-->request(ta associado a um metodo do protocolo http(get,post))-->spring boot
+quando faço uma requisição get, da entender que eu só espero algo como resposta
+e não modificar algo
+
+é baseado em requisição e resposta
+
+quando eu faço uma requisição dos tipos
+post, put,patch e delete
+
+o post serve pra alterar dados do servidor
+o post e o get são os 4 metodos mais usados
+o post serve pra submeter ou enviar informações pro servidor
+eu quero enviar informações pro servidor, quando tenho dados pra enviar
+quando tem impacto e mudança no servidor é post, inserir novos dados
+
+quando quero alterar eu uso ou o put ou o patch
+
+patch é uma alteração parcial e quando se tem uma operação total usa o put
+se eu quero mexer em todos os atributos do usuario uso o put
+se eu quero mudar apenas um atributo uso o patch
+
+por padrão eu uso o put
+put usado por padrão em vez do patch
+
+post = inserir novos dados
+put = alterar dados
+delete = exclusao de dados
+
+graphql é uma alternativa a uma api do tipo restful, pra inserir é post, pra alterar post, pra excluir post, e pra ler get
+
+alem desses temos o options
+retorna quais sao os metodos http que aquela url suporta
+
+trace serve pra fazer uma requisição de teste
+
+head é parecido com o get, mas ele retorna coisas no corpo da resposta
+quando quero verificar se uma url ta funcionando
+
+é necessario manter coerencia e semantica entre os metodos
