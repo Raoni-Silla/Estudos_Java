@@ -1,9 +1,7 @@
 package br.com.cod3r.exerciciosSB.controllers;
 
 import br.com.cod3r.exerciciosSB.models.Cliente;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(path = "/clientes")
@@ -11,7 +9,17 @@ public class ClienteController {
 
     @GetMapping(path = "/qualquer")
     public Cliente ObterCliente(){
-        return new Cliente("jonh marston", "marston@gmail.com","18 99698-5449","43994642389");
+        return null;
+    }
+
+    @GetMapping("/{id}")
+    public Cliente ObterClientePorID(@PathVariable int id){
+        return new Cliente(id, "Maria", "Maria@gmail.com","18996985449","4394841639");
+    }
+
+    @GetMapping
+    public Cliente obterClientePorId2(@RequestParam(name="id", defaultValue = "1") int id){
+        return new Cliente(id,"carlos","carlos@gmail.com","18996985449","4394841639");
     }
 
 }

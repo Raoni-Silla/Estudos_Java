@@ -15,10 +15,11 @@ public class Cliente {
 
     private String cpf;
 
-    public Cliente(String nome, String email, String telefone, String cpf) {
+    public Cliente (int id,String nome, String email, String telefone, String cpf) {
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
         this.cpf = cpf;
+        this.id = id;
     }
 }
