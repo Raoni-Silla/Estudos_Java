@@ -50,3 +50,79 @@ head é parecido com o get, mas ele retorna coisas no corpo da resposta
 quando quero verificar se uma url ta funcionando
 
 é necessario manter coerencia e semantica entre os metodos
+
+padrão mvc (model,view,controller)
+
+model é o coração da aplicação
+tendo regras de negocio, entidades e camadas de acesso
+
+view a camada view é responsavel por renderizar a pagina com a resposta da requisição
+aqui fica javascript, css, html, template engine
+tudo que tem haver com a tela da sua aplicação aqui, a pagina renderizada no navegador do usuario
+
+e no meio desses dois, quem fica controlando o fluxo da aplicação
+controller, ele faz o intermedio, envia os dados pro model, e depois pro view
+então ele pega os dados, e envia os dados
+
+a primeira pessoa que recebe a requisição é o front controller
+lendo um arquivo de metadado que vai ter mapeamento das rotas
+qual url aponta pra qual metodo, isso fica tudo na responsabilidade do framework
+
+controller pede pro model informações necessarias para renderizar a view, pega isso e envia
+pra quem solicitou
+
+framework mvc passa a informação pros controllers, que carrega a requisição até obter a resposta
+
+no primeiro momento temos o navegador
+navegador -> webserver ->aplicação(alvo da requisição)->controller(primeira camada a receber os dados)
+
+primeiro cenario, nao tem porque acessar dados, então nao tem pq passar pelo model, o model se liga ao banco de dados
+e nesse primeiro cenario quero apenas mostrar uma tela sem dados no navegador
+
+o navegador manda uma requisição pro controller
+o controller ve que pra essa requisição de exibir a tela inicial com o menu
+n precisa validar nem tel logica
+só envia pra view, que renderiza a resposta e envia pro browser
+
+chrome - > controller - > view - > resposta -> chrome
+
+segundo cenario precisa se acessar dados
+
+chrome gera um request que vai pro controller
+e no controller ele percebe que pra atender a requisição precisa exibir a lista de clientes
+o controller entende que precisa de dados e chama o model
+model vai no banco de dados, pega a lista de clientes, e devolve a lista pro controller
+o controller nesse momento pode precisar de mais dados, pedindo pro model a lista de clientes negaticados
+podendo repetir o fluxo diversas vezes, e só parando quando tem dados necessarios para renderizar a resposta
+
+chrome -> controller -> model ->banco de dados -> model ->controller->view->resposta
+
+sempre chega pelo controller e a resposta sempre é gerada pela view
+
+padrão mvc com spring booot
+
+tudo começa em uma requisição do navegador e do lado do servidor tem uma aplicação usando spring boot
+
+então quem é o software que recebe a requisição
+
+então temos em vista que é o servidor tomcat
+
+tomcat recebe a requisição, e esta sendo executado na porta 8080, quando chega no tomcat
+ele passa a requisição pro front controller chamado dispatcher(um codigo java que atende requisição http)
+dentro da requisição http temos uma url, e definindo diveros controller com uma anotação
+de tal forma que os spring consiga notar quem é quem, pegando a url passada na requisição e passando pro controle correto
+
+então o browser faz a requisição pro nosso servidor tomcat(servidor local do spring) que passa essa request pro
+front controller, e o front controller apartir das anotações de path, ele envia corretamente a requisição pro controller
+especifico
+
+agora vmos supor que temos uma requisição do tipo post
+queremos cadastrar um produto, e essa url vem com uma serie de dados
+passando por todo circuito, ele chega no controller, esse controller vai preceber
+que precisa interagir com a camada model, e dentro da camada model, temos regras de negocios
+validações, o controller pra ele atender essa requisição post, ele chama a camada model
+a model interage com o banco de dados, o banco retorna que deu certo a inserção, o model
+diz pro controle que esta tudo certo, e então o controller pode retornar o dado em json
+ele retorna pro front controller e devolve a resposta
+
+

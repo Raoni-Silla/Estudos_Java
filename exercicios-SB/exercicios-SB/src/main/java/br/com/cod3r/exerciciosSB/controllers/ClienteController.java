@@ -12,7 +12,7 @@ public class ClienteController {
         return null;
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{id}/{id2}")
     public Cliente ObterClientePorID(@PathVariable int id){
         return new Cliente(id, "Maria", "Maria@gmail.com","18996985449","4394841639");
     }
