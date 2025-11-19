@@ -46,6 +46,25 @@ public class ProdutoController {
 
     }
 
+    @GetMapping(path = "/nome/{nome}")
+    public Iterable<Produto> getProdutoByNome(@PathVariable String nome) {
+        return produtoRepository.findByNomeContainingIgnoreCase(nome);
+    }
+
+    @PutMapping//dois metodos do http servem pra alterar
+    public Produto updateProduct (@Valid Produto produtoparam) {
+        produtoRepository.save(produtoparam);
+        return produtoparam;
+    }//parcial é o pat, inteiro é o put, o put é comumente mais usado para alterar tanto parcial quanto todos os atributos
+
+    @DeleteMapping(path = "/{id}")
+    public void deleteProduct (@PathVariable Long id){
+        produtoRepository.deleteById(id);
+    }
+
+
+
+
     }
 
 
