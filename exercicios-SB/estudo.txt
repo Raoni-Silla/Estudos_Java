@@ -125,4 +125,20 @@ a model interage com o banco de dados, o banco retorna que deu certo a inserçã
 diz pro controle que esta tudo certo, e então o controller pode retornar o dado em json
 ele retorna pro front controller e devolve a resposta
 
+injeção de dependencia
+tenho uma classe A que precisa de uma instancia da classe B pra funcionar
+então a classe A instancia um objeto da classe B
 
+só que vamos imaginar que a classe B tenha uma complexidade enorme pra se instanciar
+varios parametros, conexões e etc
+
+não seria mais interessante receber uma instancia de B sem essas complexidades de instanciar?
+
+dai surge a ideia de se por um terceiro agente de criar uma instancia e colocar ela em uma classe
+
+entao tendo a classe A que precisa de B, oque é feito
+
+obviamente A precisa declarar que precisa de b
+so que em vez de instanciar B b = new B ();
+eu marco com autowired B b;
+o spring gerencia a classe A

@@ -10,6 +10,8 @@ public class ExerciciosSbApplication {
         SpringApplication.run(ExerciciosSbApplication.class, args);
         //metodo estatico, ou seja da classe, e vai executar nossa aplicação apartir do main
 
+
+
 	}
 
 }

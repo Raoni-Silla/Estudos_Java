@@ -1,4 +1,4 @@
-package br.com.cod3r.exerciciosSB.models;
+package br.com.cod3r.exerciciosSB.model.entities;
 
 import lombok.Data;
 
