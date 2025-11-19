@@ -52,13 +52,16 @@ Contém o código-fonte principal dos estudos, separado por conceitos dentro de 
 * **Desafios**: Algoritmos e desafios de lógica diversos.
 * **ExerciciosFixacao/ConferenciasTech**: Exercícios de fixação, incluindo o projeto "ConferenciasTech".
 * **TreinoOrganizacaoPacotes**: Testes de boas práticas para estruturação de pacotes.
-* **Exercicios-SB**: Principios fundamentais do framework spring boot
+
 
 ### 📁 atividadesfixacaojava
 Uma pasta dedicada a atividades de fixação focadas especificamente nos conceitos da **Stream API**.
 
 ### 📁 exercicios-jpa
 Estudos e projetos práticos sobre persistência de dados com **Java Persistence API (JPA)** e **Hibernate**, demonstrando o mapeamento objeto-relacional (ORM).
+
+### 📁 exercicios-SB
+Principios fundamentais do framework spring boot
 
 ---
 
