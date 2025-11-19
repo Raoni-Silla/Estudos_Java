@@ -76,7 +76,7 @@ Abaixo está um checklist do que já foi estudado e o que está em progresso.
 - [x] Stream API
 - [x] Persistência com JPA e Hibernate
 - [x] Biblioteca Lombok
-- [ ] Spring Framework (Próximos passos)
+- [x] Spring Framework 
 
 ---
 
